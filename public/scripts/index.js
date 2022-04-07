@@ -28,4 +28,11 @@
         }
       });
     });
+
+    const sliderItems = document.querySelectorAll(".slider-item");
+    setInterval(function () {
+      sliderItems.forEach((sliderItem) => {
+        sliderItem.classList.toggle("slider-item-active");
+      });
+    }, 3000);
   }))();

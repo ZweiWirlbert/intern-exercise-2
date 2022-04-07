@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       boxShadow: {
         navbar: "3px -10px 20px rgba(0,0,0,0.2)",
+        flag: "1px 1px 5px rgba(0,0,0,0.3)",
       },
     },
   },
