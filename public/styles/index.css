@@ -5,7 +5,7 @@
 
 @layer base {
   body {
-    @apply font-roboto;
+    @apply font-roboto text-[15px] font-normal leading-[1.5] tracking-[0.8px];
   }
 }
 @layer components {
@@ -73,6 +73,27 @@
   }
   .slider-item {
     @apply absolute left-0 top-0 z-[999] h-full w-full opacity-0 transition-opacity duration-1000 ease-linear;
+  }
+  .btn {
+    @apply mx-auto inline-block w-[290px] max-w-[300px] cursor-pointer rounded-[5px] border-[1px] border-solid border-transparent px-[30px] py-[11.25px] align-middle text-[15px] font-light leading-[26.25px] transition-all duration-150 ease-in-out;
+  }
+  .btn-primary {
+    @apply border-[#007bff] bg-[#007bff] text-white;
+  }
+  .btn-primary:hover {
+    @apply bg-white text-[#007bff] shadow-button;
+  }
+  .btn-outline {
+    @apply border-[#067bff] text-[#067bff];
+  }
+  .btn-outline:hover {
+    @apply border-[#74b9ff] bg-[#74b9ff] text-white shadow-button;
+  }
+  .bap-about-container {
+    @apply z-[2] mx-auto w-[90%] pb-[30px] text-center;
+  }
+  .bap-achievement {
+    @apply flex items-center justify-start;
   }
 }
 .slider-item-active {
