@@ -36,3 +36,28 @@
       });
     }, 3000);
   }))();
+
+window.onscroll = function () {
+  scrollFunction();
+};
+const navbar = document.getElementById("navbar");
+const navbarLogo = document.getElementById("navbar-logo");
+const hamburgerSlices = document.querySelectorAll(".hamburger-slice");
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    navbar.classList.add("navbar-scroll");
+    navbarLogo.classList.remove("invert");
+    navbarLogo.classList.remove("brightness-0");
+    hamburgerSlices.forEach((slice) => {
+      slice.classList.add("hamburger-slice-scroll");
+    });
+  } else {
+    navbar.classList.remove("navbar-scroll");
+    navbarLogo.classList.add("invert");
+    navbarLogo.classList.add("brightness-0");
+    hamburgerSlices.forEach((slice) => {
+      slice.classList.remove("hamburger-slice-scroll");
+    });
+  }
+}

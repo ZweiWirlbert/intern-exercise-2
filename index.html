@@ -11,6 +11,7 @@
     <!-- Navbar Section -->
     <header
       class="fixed-top bg-transparent transition-all duration-200 ease-in-out"
+      id="navbar"
     >
       <nav class="relative flex flex-wrap items-center justify-between py-3">
         <div
@@ -21,7 +22,8 @@
             <a href="/" class="mr-4 block py-[0.3125rem] duration-300">
               <!-- them class brightness-0 invert -->
               <img
-                class="bor-n h-10 max-w-full brightness-0 invert"
+                id="navbar-logo"
+                class="h-10 max-w-full border-none brightness-0 invert"
                 src="./public/assets/images/logo-bap-software-1.png"
                 alt="Công Ty Cổ Phần Đầu Tư Và Công Nghệ BAP"
               />
@@ -304,672 +306,938 @@
         class="w-full border-none align-middle"
       />
     </div>
-    <!-- About Section -->
-    <section id="bap-about" class="block py-[50px]">
-      <div class="container">
-        <div class="main-about-content flex flex-col">
-          <div class="bap-about-container">
-            <div class="row items-center">
-              <div class="relative w-full px-[10px]">
-                <h2 class="relative mb-[7.5px] flex text-2xl leading-[40px]">
-                  <span
-                    class="inline-block w-full pt-[7px] text-left font-medium leading-[30px] text-[#000]"
-                  >
-                    Về chúng tôi
-                  </span>
-                </h2>
-                <div
-                  class="mt-[30px] flex flex-col gap-[15px] text-left text-[13px] leading-[1.7] text-[#767676]"
-                >
-                  <p>
-                    BAP Group với tầm nhìn “Contribute innovation to the world”,
-                    tên viết tắt của Be Advanced Partner có nghĩa là “ Người
-                    cộng sự cùng tiến”, luôn trân quý Khách Hàng và Nhân Viên
-                    như những “cộng sự” trong công việc, luôn chủ động chia sẻ
-                    và phát triển cùng nhau.
-                  </p>
-                  <p>
-                    Cùng với những người “cộng sự” của mình, BAP Group đang phát
-                    triển các dịch vụ phát triển phần mềm cho các thương hiệu
-                    hàng đầu ở Nhật và các nước nói tiếng anh như Thuỵ Sỹ, Úc…
-                    khẳng định thế mạnh về các công nghệ AI, BLOCKCHAIN, ERP, …
-                  </p>
-                  <p>
-                    Với đội ngũ chuyên gia công nghệ của mình, BAP Group không
-                    chỉ “phát triển phần mềm outsource” mà còn cung cấp các
-                    “dịch vụ tư vấn giải pháp phần mềm” cho các công ty lớn ở
-                    Nhật, Việt Nam, các nước nói Tiếng Anh. Song song với đó,
-                    rất nhiều startup thành công tại Việt Nam đang được hậu
-                    thuẫn bởi BAP Ventures - quỹ đầu tư của BAP Group.
-                  </p>
-                </div>
-                <div class="mt-[30px] flex flex-col gap-[10px] text-center">
-                  <a href="/" class="btn-primary btn">Thông tin công ty</a>
-                  <a href="/" class="btn btn-outline"
-                    >Tải xuống hồ sơ năng lực của BAP</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <video
-            class="rounded-b-md bg-[#0e4b9d]"
-            id="video"
-            style="width: 100%; height: 100%"
-            controls=""
-            autoplay=""
-            muted=""
-            loop=""
-          >
-            <source
-              src="https://bap-software.net/wp-content/uploads/2021/06/video-nen.mp4"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-        <div
-          class="grid grid-cols-2 items-center justify-center gap-[25px] rounded border-[0.7px] border-solid border-[#f7fafc] bg-white p-[10px] shadow-achievement"
-        >
-          <div class="bap-achievement">
-            <img
-              src="./public/assets/images/iso-certified.png"
-              alt="iso-certified"
-              class="w-1/2 max-w-full"
-            />
-          </div>
-          <div class="bap-achievement h-full gap-2">
-            <div
-              class="achievement-icon transition-all duration-300 ease-in-out"
-            >
-              <img
-                src="./public/assets/images/countries-icon.png"
-                alt="countries-icon"
-              />
-            </div>
-            <div class="achievement-data flex flex-col">
-              <div
-                class="number-counter text-[28px] font-light leading-[18px] text-[#848b93]"
-              >
-                3
-              </div>
-              <p class="m-0 text-[13px] text-[#bcbaba]">Countries</p>
-            </div>
-          </div>
-          <div class="bap-achievement h-full gap-2">
-            <div
-              class="achievement-icon transition-all duration-300 ease-in-out"
-            >
-              <img src="./public/assets/images/city-icon.png" alt="city-icon" />
-            </div>
-            <div class="achievement-data flex flex-col">
-              <div
-                class="number-counter text-[28px] font-light leading-[18px] text-[#848b93]"
-              >
-                5
-              </div>
-              <p class="m-0 text-[13px] text-[#bcbaba]">Cities</p>
-            </div>
-          </div>
-          <div class="bap-achievement h-full gap-2">
-            <div
-              class="achievement-icon transition-all duration-300 ease-in-out"
-            >
-              <img
-                src="./public/assets/images/employee-icon.png"
-                alt="employee-icon"
-              />
-            </div>
-            <div class="achievement-data flex flex-col">
-              <div
-                class="number-counter text-[28px] font-light leading-[18px] text-[#848b93]"
-              >
-                320
-              </div>
-              <p class="m-0 text-[13px] text-[#bcbaba]">Employees</p>
-            </div>
-          </div>
-          <div class="bap-achievement h-full gap-2">
-            <div
-              class="achievement-icon transition-all duration-300 ease-in-out"
-            >
-              <img
-                src="./public/assets/images/handshake-icon.png"
-                alt="handshake-icon"
-              />
-            </div>
-            <div class="achievement-data flex flex-col">
-              <div
-                class="number-counter text-[28px] font-light leading-[18px] text-[#848b93]"
-              >
-                110
-              </div>
-              <p class="m-0 text-[13px] text-[#bcbaba]">Clients</p>
-            </div>
-          </div>
-          <div class="bap-achievement h-full gap-2">
-            <div
-              class="achievement-icon transition-all duration-300 ease-in-out"
-            >
-              <img
-                src="./public/assets/images/project-icon.png"
-                alt="project-icon"
-              />
-            </div>
-            <div class="achievement-data flex flex-col">
-              <div
-                class="number-counter text-[28px] font-light leading-[18px] text-[#848b93]"
-              >
-                220
-              </div>
-              <p class="m-0 text-[13px] text-[#bcbaba]">Projects</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Service Section -->
-    <section class="block bg-white py-[40px]" id="bap-service">
-      <div class="container">
-        <div class="row">
-          <div class="relative w-full px-[10px]">
-            <h2 class="text-header">
-              <span class="text-header-icon"
-                ><img
-                  src="./public/assets/images/question-icon.png"
-                  alt="question-icon"
-                  class="h-8 w-8 max-w-none object-cover"
-              /></span>
-              <span class="text-header-text"
-                >Tại sao khách hàng chọn BAP Software làm đối tác?</span
-              >
-            </h2>
-          </div>
-          <div class="relative w-full px-[10px]">
-            <div class="visible mt-[30px]">
-              <div class="main-reason">
-                <div class="item-reason text-left">
-                  <h4
-                    class="flex items-center py-[10px] text-[14px] font-[700] uppercase tracking-[-0.337647px] text-[#373737]"
-                  >
-                    <img
-                      src="./public/assets/images/person-icon.png"
-                      alt="person-icon"
-                      class="mr-[10px] w-[20px] max-w-full"
-                    />
-                    Con người
-                  </h4>
-                </div>
-                <div class="content-reason text-left">
-                  <ul>
-                    <li class="content-reason-item">
-                      Đội ngũ kỹ sư hiểu “chất lượng Nhật” với trên 8 năm kinh
-                      nghiệm làm việc tại các công ty lớn của Nhật.
-                    </li>
-                    <li class="content-reason-item">
-                      Có khả năng tham gia từ phân tích nghiệp vụ và các khâu
-                      phát triển sản phẩm đến vận hành hệ thống
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="main-reason">
-                <div class="item-reason text-left">
-                  <h4
-                    class="flex items-center py-[10px] text-[14px] font-[700] uppercase tracking-[-0.337647px] text-[#373737]"
-                  >
-                    <img
-                      src="./public/assets/images/laptop-code-icon.png"
-                      alt="laptop-code"
-                      class="mr-[10px] w-[20px] max-w-full"
-                    />
-                    Công nghệ
-                  </h4>
-                </div>
-                <div class="content-reason text-left">
-                  <ul>
-                    <li class="content-reason-item">
-                      Sử dụng công nghệ mới nhất để tối ưu hiệu năng, tăng khả
-                      năng mở rộng, tối ưu hoá chi phí cho khách hàng.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="main-reason">
-                <div class="item-reason text-left">
-                  <h4
-                    class="flex items-center py-[10px] text-[14px] font-[700] uppercase tracking-[-0.337647px] text-[#373737]"
-                  >
-                    <img
-                      src="./public/assets/images/product-icon.png"
-                      alt="product-icon"
-                      class="mr-[10px] w-[20px] max-w-full"
-                    />
-                    Sản phẩm tạo ra
-                  </h4>
-                </div>
-                <div class="content-reason text-left">
-                  <ul>
-                    <li class="content-reason-item">
-                      Tinh thần Omotenashi và Kodawari về chất lượng sản phẩm
-                      được thể hiện từ bước tư vấn sản phẩm cho khách hàng đến
-                      khi vận hành hệ thống.
-                    </li>
-                    <li class="content-reason-item">
-                      Bản thân BAP đã và đang tạo ra nhiều sản phẩm của riêng
-                      mình trong cộng đồng startup Việt Nam, từ đó có thể tư vấn
-                      hiệu quả hơn cho khách hàng.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="main-reason">
-                <div class="item-reason text-left">
-                  <h4
-                    class="flex items-center py-[10px] text-[14px] font-[700] uppercase tracking-[-0.337647px] text-[#373737]"
-                  >
-                    <img
-                      src="./public/assets/images/globe-icon.png"
-                      alt="globe-icon"
-                      class="mr-[10px] w-[20px] max-w-full"
-                    />
-                    Quy mô
-                  </h4>
-                </div>
-                <div class="content-reason text-left">
-                  <ul>
-                    <li class="content-reason-item">
-                      Hơn 320 kỹ sư, 5 văn phòng với nhiều chứng chỉ về chất
-                      lượng ISO 9001, về bảo mật thông tin ISO 27001
-                    </li>
-                    <li class="content-reason-item">
-                      TOP 20 Việt Nam thương hiệu vàng được người dùng tín nhiệm
-                      về chất lượng sản phẩm năm 2020
-                    </li>
-                    <li class="content-reason-item">
-                      TOP 10 ICT Việt Nam năm 2020, 2021 . Top 10 Doanh nghiệp
-                      ICT doanh thu ấn tượng nhất 2021
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="relative w-full px-[10px]">
-            <div class="visible mt-[30px] w-full max-w-[960px]">
-              <div class="row offshore-list">
-                <div class="offshore-list-col" id="block-left">
-                  <ul class="row m-0 p-0">
-                    <li class="relative w-full max-w-full px-[10px] py-[20px]">
-                      <a
-                        href="/"
-                        class="bg-transparent text-[#007bff] duration-200"
-                      >
-                        <div class="offshore-list-item hover-zoom select-none">
-                          <div class="item-thumb">
-                            <img
-                              src="./public/assets/images/system-icon.png"
-                              alt="system-icon"
-                            />
-                          </div>
-                          <div class="item-content">Outsystems</div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="relative w-full max-w-full px-[10px] py-[20px]">
-                      <a
-                        href="/"
-                        class="bg-transparent text-[#007bff] duration-200"
-                      >
-                        <div class="offshore-list-item hover-zoom select-none">
-                          <div class="item-thumb">
-                            <img
-                              src="./public/assets/images/bitcoin-icon.png"
-                              alt="bitcoin-icon"
-                            />
-                          </div>
-                          <div class="item-content">Blockchain</div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="relative w-full max-w-full px-[10px] py-[20px]">
-                      <a
-                        href="/"
-                        class="bg-transparent text-[#007bff] duration-200"
-                      >
-                        <div class="offshore-list-item hover-zoom select-none">
-                          <div class="item-thumb">
-                            <img
-                              src="./public/assets/images/ai-icon.png"
-                              alt="ai-icon"
-                            />
-                          </div>
-                          <div class="item-content">AI/IOT</div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="relative w-full max-w-full px-[10px] py-[20px]">
-                      <a
-                        href="/"
-                        class="bg-transparent text-[#007bff] duration-200"
-                      >
-                        <div class="offshore-list-item hover-zoom select-none">
-                          <div class="item-thumb">
-                            <img
-                              src="./public/assets/images/cloud-icon.png"
-                              alt="cloud-icon"
-                            />
-                          </div>
-                          <div class="item-content">SAP/ERP</div>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div id="center-main-block" class="offshore-list-col">
-                  <ul class="row m-0 w-full justify-center p-0">
-                    <li
-                      id="main-block"
-                      class="relative w-full max-w-full py-[20px] px-[10px]"
+    <main class="main-container">
+      <!-- About Section -->
+      <section id="bap-about" class="block py-[50px]">
+        <div class="container">
+          <div class="main-about-content flex flex-col">
+            <div class="bap-about-container">
+              <div class="row items-center">
+                <div class="relative w-full px-[10px]">
+                  <h2 class="relative mb-[7.5px] flex text-2xl leading-[40px]">
+                    <span
+                      class="inline-block w-full pt-[7px] text-left font-medium leading-[30px] text-[#000]"
                     >
-                      <a href="/">
-                        <div
-                          class="hover-zoom block min-h-[100px] rounded-[10px] border-[0.75px] border-solid border-[#e7f2ff] bg-[#3D90FD] py-[24px] px-[15px] text-center shadow-servicebox transition-all duration-300 ease-in-out"
-                        >
-                          <div class="item-thumb w-full">
-                            <img
-                              src="./public/assets/images/offshore-icon.png"
-                              alt="offshore-icon"
-                            />
-                          </div>
-                          <div class="item-content">Phát triển Offshore</div>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
+                      Về chúng tôi
+                    </span>
+                  </h2>
+                  <div
+                    class="mt-[30px] flex flex-col gap-[15px] text-left text-[13px] leading-[1.7] text-[#767676]"
+                  >
+                    <p>
+                      BAP Group với tầm nhìn “Contribute innovation to the
+                      world”, tên viết tắt của Be Advanced Partner có nghĩa là “
+                      Người cộng sự cùng tiến”, luôn trân quý Khách Hàng và Nhân
+                      Viên như những “cộng sự” trong công việc, luôn chủ động
+                      chia sẻ và phát triển cùng nhau.
+                    </p>
+                    <p>
+                      Cùng với những người “cộng sự” của mình, BAP Group đang
+                      phát triển các dịch vụ phát triển phần mềm cho các thương
+                      hiệu hàng đầu ở Nhật và các nước nói tiếng anh như Thuỵ
+                      Sỹ, Úc… khẳng định thế mạnh về các công nghệ AI,
+                      BLOCKCHAIN, ERP, …
+                    </p>
+                    <p>
+                      Với đội ngũ chuyên gia công nghệ của mình, BAP Group không
+                      chỉ “phát triển phần mềm outsource” mà còn cung cấp các
+                      “dịch vụ tư vấn giải pháp phần mềm” cho các công ty lớn ở
+                      Nhật, Việt Nam, các nước nói Tiếng Anh. Song song với đó,
+                      rất nhiều startup thành công tại Việt Nam đang được hậu
+                      thuẫn bởi BAP Ventures - quỹ đầu tư của BAP Group.
+                    </p>
+                  </div>
+                  <div class="mt-[30px] flex flex-col gap-[10px] text-center">
+                    <a href="/" class="btn-primary btn">Thông tin công ty</a>
+                    <a href="/" class="btn btn-outline"
+                      >Tải xuống hồ sơ năng lực của BAP</a
+                    >
+                  </div>
                 </div>
-                <div class="offshore-list-col" id="block-right">
-                  <ul class="row m-0 p-0">
-                    <li class="relative w-full max-w-full px-[10px] py-[20px]">
-                      <a
-                        href="/"
-                        class="bg-transparent text-[#007bff] duration-200"
+              </div>
+            </div>
+            <video
+              class="rounded-b-md bg-[#0e4b9d]"
+              id="video"
+              style="width: 100%; height: 100%"
+              controls=""
+              autoplay=""
+              muted=""
+              loop=""
+            >
+              <source
+                src="https://bap-software.net/wp-content/uploads/2021/06/video-nen.mp4"
+                type="video/mp4"
+              />
+            </video>
+          </div>
+          <div
+            class="grid grid-cols-2 items-center justify-center gap-[25px] rounded border-[0.7px] border-solid border-[#f7fafc] bg-white p-[10px] shadow-achievement"
+          >
+            <div class="bap-achievement">
+              <img
+                src="./public/assets/images/iso-certified.png"
+                alt="iso-certified"
+                class="w-1/2 max-w-full"
+              />
+            </div>
+            <div class="bap-achievement h-full gap-2">
+              <div
+                class="achievement-icon transition-all duration-300 ease-in-out"
+              >
+                <img
+                  src="./public/assets/images/countries-icon.png"
+                  alt="countries-icon"
+                />
+              </div>
+              <div class="achievement-data flex flex-col">
+                <div
+                  class="number-counter text-[28px] font-light leading-[18px] text-[#848b93]"
+                >
+                  3
+                </div>
+                <p class="m-0 text-[13px] text-[#bcbaba]">Countries</p>
+              </div>
+            </div>
+            <div class="bap-achievement h-full gap-2">
+              <div
+                class="achievement-icon transition-all duration-300 ease-in-out"
+              >
+                <img
+                  src="./public/assets/images/city-icon.png"
+                  alt="city-icon"
+                />
+              </div>
+              <div class="achievement-data flex flex-col">
+                <div
+                  class="number-counter text-[28px] font-light leading-[18px] text-[#848b93]"
+                >
+                  5
+                </div>
+                <p class="m-0 text-[13px] text-[#bcbaba]">Cities</p>
+              </div>
+            </div>
+            <div class="bap-achievement h-full gap-2">
+              <div
+                class="achievement-icon transition-all duration-300 ease-in-out"
+              >
+                <img
+                  src="./public/assets/images/employee-icon.png"
+                  alt="employee-icon"
+                />
+              </div>
+              <div class="achievement-data flex flex-col">
+                <div
+                  class="number-counter text-[28px] font-light leading-[18px] text-[#848b93]"
+                >
+                  320
+                </div>
+                <p class="m-0 text-[13px] text-[#bcbaba]">Employees</p>
+              </div>
+            </div>
+            <div class="bap-achievement h-full gap-2">
+              <div
+                class="achievement-icon transition-all duration-300 ease-in-out"
+              >
+                <img
+                  src="./public/assets/images/handshake-icon.png"
+                  alt="handshake-icon"
+                />
+              </div>
+              <div class="achievement-data flex flex-col">
+                <div
+                  class="number-counter text-[28px] font-light leading-[18px] text-[#848b93]"
+                >
+                  110
+                </div>
+                <p class="m-0 text-[13px] text-[#bcbaba]">Clients</p>
+              </div>
+            </div>
+            <div class="bap-achievement h-full gap-2">
+              <div
+                class="achievement-icon transition-all duration-300 ease-in-out"
+              >
+                <img
+                  src="./public/assets/images/project-icon.png"
+                  alt="project-icon"
+                />
+              </div>
+              <div class="achievement-data flex flex-col">
+                <div
+                  class="number-counter text-[28px] font-light leading-[18px] text-[#848b93]"
+                >
+                  220
+                </div>
+                <p class="m-0 text-[13px] text-[#bcbaba]">Projects</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Service Section -->
+      <section class="block bg-white py-[40px]" id="bap-service">
+        <div class="container">
+          <div class="row">
+            <div class="relative w-full px-[10px]">
+              <h2 class="text-header">
+                <span class="text-header-icon"
+                  ><img
+                    src="./public/assets/images/question-icon.png"
+                    alt="question-icon"
+                    class="h-8 w-8 max-w-none object-cover"
+                /></span>
+                <span class="text-header-text"
+                  >Tại sao khách hàng chọn BAP Software làm đối tác?</span
+                >
+              </h2>
+            </div>
+            <div class="relative w-full px-[10px]">
+              <div class="visible mt-[30px]">
+                <div class="main-reason">
+                  <div class="item-reason text-left">
+                    <h4
+                      class="flex items-center py-[10px] text-[14px] font-[700] uppercase tracking-[-0.337647px] text-[#373737]"
+                    >
+                      <img
+                        src="./public/assets/images/person-icon.png"
+                        alt="person-icon"
+                        class="mr-[10px] w-[20px] max-w-full"
+                      />
+                      Con người
+                    </h4>
+                  </div>
+                  <div class="content-reason text-left">
+                    <ul>
+                      <li class="content-reason-item">
+                        Đội ngũ kỹ sư hiểu “chất lượng Nhật” với trên 8 năm kinh
+                        nghiệm làm việc tại các công ty lớn của Nhật.
+                      </li>
+                      <li class="content-reason-item">
+                        Có khả năng tham gia từ phân tích nghiệp vụ và các khâu
+                        phát triển sản phẩm đến vận hành hệ thống
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="main-reason">
+                  <div class="item-reason text-left">
+                    <h4
+                      class="flex items-center py-[10px] text-[14px] font-[700] uppercase tracking-[-0.337647px] text-[#373737]"
+                    >
+                      <img
+                        src="./public/assets/images/laptop-code-icon.png"
+                        alt="laptop-code"
+                        class="mr-[10px] w-[20px] max-w-full"
+                      />
+                      Công nghệ
+                    </h4>
+                  </div>
+                  <div class="content-reason text-left">
+                    <ul>
+                      <li class="content-reason-item">
+                        Sử dụng công nghệ mới nhất để tối ưu hiệu năng, tăng khả
+                        năng mở rộng, tối ưu hoá chi phí cho khách hàng.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="main-reason">
+                  <div class="item-reason text-left">
+                    <h4
+                      class="flex items-center py-[10px] text-[14px] font-[700] uppercase tracking-[-0.337647px] text-[#373737]"
+                    >
+                      <img
+                        src="./public/assets/images/product-icon.png"
+                        alt="product-icon"
+                        class="mr-[10px] w-[20px] max-w-full"
+                      />
+                      Sản phẩm tạo ra
+                    </h4>
+                  </div>
+                  <div class="content-reason text-left">
+                    <ul>
+                      <li class="content-reason-item">
+                        Tinh thần Omotenashi và Kodawari về chất lượng sản phẩm
+                        được thể hiện từ bước tư vấn sản phẩm cho khách hàng đến
+                        khi vận hành hệ thống.
+                      </li>
+                      <li class="content-reason-item">
+                        Bản thân BAP đã và đang tạo ra nhiều sản phẩm của riêng
+                        mình trong cộng đồng startup Việt Nam, từ đó có thể tư
+                        vấn hiệu quả hơn cho khách hàng.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="main-reason">
+                  <div class="item-reason text-left">
+                    <h4
+                      class="flex items-center py-[10px] text-[14px] font-[700] uppercase tracking-[-0.337647px] text-[#373737]"
+                    >
+                      <img
+                        src="./public/assets/images/globe-icon.png"
+                        alt="globe-icon"
+                        class="mr-[10px] w-[20px] max-w-full"
+                      />
+                      Quy mô
+                    </h4>
+                  </div>
+                  <div class="content-reason text-left">
+                    <ul>
+                      <li class="content-reason-item">
+                        Hơn 320 kỹ sư, 5 văn phòng với nhiều chứng chỉ về chất
+                        lượng ISO 9001, về bảo mật thông tin ISO 27001
+                      </li>
+                      <li class="content-reason-item">
+                        TOP 20 Việt Nam thương hiệu vàng được người dùng tín
+                        nhiệm về chất lượng sản phẩm năm 2020
+                      </li>
+                      <li class="content-reason-item">
+                        TOP 10 ICT Việt Nam năm 2020, 2021 . Top 10 Doanh nghiệp
+                        ICT doanh thu ấn tượng nhất 2021
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="relative w-full px-[10px]">
+              <div class="visible mt-[30px] w-full max-w-[960px]">
+                <div class="row offshore-list">
+                  <div class="offshore-list-col" id="block-left">
+                    <ul class="row m-0 p-0">
+                      <li
+                        class="relative w-full max-w-full px-[10px] py-[20px]"
                       >
-                        <div class="offshore-list-item hover-zoom select-none">
-                          <div class="item-thumb">
-                            <img
-                              src="./public/assets/images/mobile-icon.png"
-                              alt="mobile-icon"
-                            />
+                        <a
+                          href="/"
+                          class="bg-transparent text-[#007bff] duration-200"
+                        >
+                          <div
+                            class="offshore-list-item hover-zoom select-none"
+                          >
+                            <div class="item-thumb">
+                              <img
+                                src="./public/assets/images/system-icon.png"
+                                alt="system-icon"
+                              />
+                            </div>
+                            <div class="item-content">Outsystems</div>
                           </div>
-                          <div class="item-content">
-                            WEBSITE /SMARTPHONE APP
-                          </div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="relative w-full max-w-full px-[10px] py-[20px]">
-                      <a
-                        href="/"
-                        class="bg-transparent text-[#007bff] duration-200"
+                        </a>
+                      </li>
+                      <li
+                        class="relative w-full max-w-full px-[10px] py-[20px]"
                       >
-                        <div class="offshore-list-item hover-zoom select-none">
-                          <div class="item-thumb">
-                            <img
-                              src="./public/assets/images/stock-icon.png"
-                              alt="stock-icon"
-                            />
+                        <a
+                          href="/"
+                          class="bg-transparent text-[#007bff] duration-200"
+                        >
+                          <div
+                            class="offshore-list-item hover-zoom select-none"
+                          >
+                            <div class="item-thumb">
+                              <img
+                                src="./public/assets/images/bitcoin-icon.png"
+                                alt="bitcoin-icon"
+                              />
+                            </div>
+                            <div class="item-content">Blockchain</div>
                           </div>
-                          <div class="item-content">BUSINESS APPLICATION</div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="relative w-full max-w-full px-[10px] py-[20px]">
-                      <a
-                        href="/"
-                        class="bg-transparent text-[#007bff] duration-200"
+                        </a>
+                      </li>
+                      <li
+                        class="relative w-full max-w-full px-[10px] py-[20px]"
                       >
-                        <div class="offshore-list-item hover-zoom select-none">
-                          <div class="item-thumb">
-                            <img
-                              src="./public/assets/images/bigdata-icon.png"
-                              alt="bigdata-icon"
-                            />
+                        <a
+                          href="/"
+                          class="bg-transparent text-[#007bff] duration-200"
+                        >
+                          <div
+                            class="offshore-list-item hover-zoom select-none"
+                          >
+                            <div class="item-thumb">
+                              <img
+                                src="./public/assets/images/ai-icon.png"
+                                alt="ai-icon"
+                              />
+                            </div>
+                            <div class="item-content">AI/IOT</div>
                           </div>
-                          <div class="item-content">BIGDATA</div>
-                        </div>
-                      </a>
-                    </li>
-                    <li class="relative w-full max-w-full px-[10px] py-[20px]">
-                      <a
-                        href="/"
-                        class="bg-transparent text-[#007bff] duration-200"
+                        </a>
+                      </li>
+                      <li
+                        class="relative w-full max-w-full px-[10px] py-[20px]"
                       >
-                        <div class="offshore-list-item hover-zoom select-none">
-                          <div class="item-thumb">
-                            <img
-                              src="./public/assets/images/game-icon.png"
-                              alt="game-icon"
-                            />
+                        <a
+                          href="/"
+                          class="bg-transparent text-[#007bff] duration-200"
+                        >
+                          <div
+                            class="offshore-list-item hover-zoom select-none"
+                          >
+                            <div class="item-thumb">
+                              <img
+                                src="./public/assets/images/cloud-icon.png"
+                                alt="cloud-icon"
+                              />
+                            </div>
+                            <div class="item-content">SAP/ERP</div>
                           </div>
-                          <div class="item-content">TRÒ CHƠI</div>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="center-main-block" class="offshore-list-col">
+                    <ul class="row m-0 w-full justify-center p-0">
+                      <li
+                        id="main-block"
+                        class="relative w-full max-w-full py-[20px] px-[10px]"
+                      >
+                        <a href="/">
+                          <div
+                            class="hover-zoom block min-h-[100px] rounded-[10px] border-[0.75px] border-solid border-[#e7f2ff] bg-[#3D90FD] py-[24px] px-[15px] text-center shadow-servicebox transition-all duration-300 ease-in-out"
+                          >
+                            <div class="item-thumb w-full">
+                              <img
+                                src="./public/assets/images/offshore-icon.png"
+                                alt="offshore-icon"
+                              />
+                            </div>
+                            <div class="item-content">Phát triển Offshore</div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="offshore-list-col" id="block-right">
+                    <ul class="row m-0 p-0">
+                      <li
+                        class="relative w-full max-w-full px-[10px] py-[20px]"
+                      >
+                        <a
+                          href="/"
+                          class="bg-transparent text-[#007bff] duration-200"
+                        >
+                          <div
+                            class="offshore-list-item hover-zoom select-none"
+                          >
+                            <div class="item-thumb">
+                              <img
+                                src="./public/assets/images/mobile-icon.png"
+                                alt="mobile-icon"
+                              />
+                            </div>
+                            <div class="item-content">
+                              WEBSITE /SMARTPHONE APP
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="relative w-full max-w-full px-[10px] py-[20px]"
+                      >
+                        <a
+                          href="/"
+                          class="bg-transparent text-[#007bff] duration-200"
+                        >
+                          <div
+                            class="offshore-list-item hover-zoom select-none"
+                          >
+                            <div class="item-thumb">
+                              <img
+                                src="./public/assets/images/stock-icon.png"
+                                alt="stock-icon"
+                              />
+                            </div>
+                            <div class="item-content">BUSINESS APPLICATION</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="relative w-full max-w-full px-[10px] py-[20px]"
+                      >
+                        <a
+                          href="/"
+                          class="bg-transparent text-[#007bff] duration-200"
+                        >
+                          <div
+                            class="offshore-list-item hover-zoom select-none"
+                          >
+                            <div class="item-thumb">
+                              <img
+                                src="./public/assets/images/bigdata-icon.png"
+                                alt="bigdata-icon"
+                              />
+                            </div>
+                            <div class="item-content">BIGDATA</div>
+                          </div>
+                        </a>
+                      </li>
+                      <li
+                        class="relative w-full max-w-full px-[10px] py-[20px]"
+                      >
+                        <a
+                          href="/"
+                          class="bg-transparent text-[#007bff] duration-200"
+                        >
+                          <div
+                            class="offshore-list-item hover-zoom select-none"
+                          >
+                            <div class="item-thumb">
+                              <img
+                                src="./public/assets/images/game-icon.png"
+                                alt="game-icon"
+                              />
+                            </div>
+                            <div class="item-content">TRÒ CHƠI</div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- Product Section  -->
-    <section class="block bg-[#f7fafc] py-[40px]">
-      <div class="container">
-        <h2 class="text-header">
-          <span class="text-header-icon"
-            ><img
-              src="./public/assets/images/cup-icon.png"
-              alt="question-icon"
-              class="h-8 w-8 max-w-none object-cover"
-          /></span>
-          <div class="flex w-[calc(100%-75px)] flex-col">
-            <span class="text-header-text">Dự án thực tế</span>
-            <p
-              class="my-4 text-[14px] font-normal leading-[25px] text-[#6f6f6f]"
-            >
-              Tại BAP, chúng tôi không ngừng học hỏi, cập nhật, chia sẻ kiến
-              thức từ những thông tin về dịch vụ Offshore cũng như những xu
-              hướng công nghệ mới nhất.
-            </p>
-          </div>
-        </h2>
-      </div>
-    </section>
-    <!-- Partnert Section -->
-    <section class="block bg-white pb-0 pt-[50px]">
-      <div class="container">
-        <div class="mb-[30px]">
+      </section>
+      <!-- Product Section  -->
+      <section class="block bg-[#f7fafc] py-[40px]">
+        <div class="container">
           <h2 class="text-header">
             <span class="text-header-icon"
               ><img
-                src="./public/assets/images/white-handshake-icon.png"
-                alt="white-handshake-icon-icon"
+                src="./public/assets/images/cup-icon.png"
+                alt="question-icon"
                 class="h-8 w-8 max-w-none object-cover"
             /></span>
             <div class="flex w-[calc(100%-75px)] flex-col">
-              <span class="text-header-text w-full">Khách hàng tiêu biểu</span>
+              <span class="text-header-text">Dự án thực tế</span>
               <p
                 class="my-4 text-[14px] font-normal leading-[25px] text-[#6f6f6f]"
               >
-                Đa dạng về quy mô và loại hình kinh doanh, đã có hơn 100 khách
-                hàng trở thành đối tác của BAP.
+                Tại BAP, chúng tôi không ngừng học hỏi, cập nhật, chia sẻ kiến
+                thức từ những thông tin về dịch vụ Offshore cũng như những xu
+                hướng công nghệ mới nhất.
               </p>
             </div>
           </h2>
         </div>
-      </div>
-    </section>
-    <!-- Clients Section  -->
-    <section class="client-recomments">
-      <div class="container">
-        <ul class="lists-recomments flex flex-col gap-4">
-          <li class="customer-items">
-            <div
-              class="recomment-items mx-auto w-full rounded-[10px] bg-[#0782ed] p-5"
-            >
-              <div class="client-name text-center">
-                <img
-                  src="./public/assets/images/mediotec-director.jpg"
-                  class="mx-auto h-[120px] w-[120px] max-w-full rounded-[50%] object-cover"
-                />
-                <p class="mt-1 mb-[15px] text-[18px] text-white">
-                  Mediotec Co.,Ltd Matsumoto Hidemori CEO
+      </section>
+      <!-- Partnert Section -->
+      <section class="block bg-white pb-0 pt-[50px]">
+        <div class="container">
+          <div class="mb-[30px]">
+            <h2 class="text-header">
+              <span class="text-header-icon"
+                ><img
+                  src="./public/assets/images/white-handshake-icon.png"
+                  alt="white-handshake-icon-icon"
+                  class="h-8 w-8 max-w-none object-cover"
+              /></span>
+              <div class="flex w-[calc(100%-75px)] flex-col">
+                <span class="text-header-text w-full"
+                  >Khách hàng tiêu biểu</span
+                >
+                <p
+                  class="my-4 text-[14px] font-normal leading-[25px] text-[#6f6f6f]"
+                >
+                  Đa dạng về quy mô và loại hình kinh doanh, đã có hơn 100 khách
+                  hàng trở thành đối tác của BAP.
                 </p>
               </div>
-              <h4
-                class="mb-[7.5px] text-[19px] font-light leading-[1.2] text-white"
-              >
-                BAP thật sự đã xây dựng được một thể chế mà có thể uyển chuyển
-                đối ứng tốt với các vấn đề của việc phát triển offshore
-              </h4>
-            </div>
-          </li>
-          <li class="customer-items">
-            <div
-              class="recomment-items mx-auto w-full rounded-[10px] bg-[#0782ed] p-5"
-            >
-              <div class="client-name text-center">
-                <img
-                  src="./public/assets/images/ogawa-1.jpg"
-                  class="mx-auto h-[120px] w-[120px] max-w-full rounded-[50%] object-cover"
-                />
-                <p class="mt-1 mb-[15px] text-[18px] text-white">
-                  Mr. Ogawa - Trợ lý Giám đốc, Tập đoàn NTT DATA NJK
-                </p>
-              </div>
-              <h4
-                class="mb-[7.5px] text-[19px] font-light leading-[1.2] text-white"
-              >
-                Chỉ có thể là BAP. Tôi đã có 1 comtor tuyệt vời và 1 đội phản
-                hồi rất nhanh.
-              </h4>
-            </div>
-          </li>
-          <li class="customer-items">
-            <div
-              class="recomment-items mx-auto w-full rounded-[10px] bg-[#0782ed] p-5"
-            >
-              <div class="client-name text-center">
-                <img
-                  src="./public/assets/images/mr-sugimoto-1.jpg"
-                  class="mx-auto h-[120px] w-[120px] max-w-full rounded-[50%] object-cover"
-                />
-                <p class="mt-1 mb-[15px] text-[18px] text-white">
-                  Mr. Sugimoto - Phó Quản lý, Tập đoàn iXIT
-                </p>
-              </div>
-              <h4
-                class="mb-[7.5px] text-[19px] font-light leading-[1.2] text-white"
-              >
-                Hiệu suất công việc luôn cao hơn chúng tôi yêu cầu, đó là lý do
-                chúng tôi chọn BAP.
-              </h4>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- Offshore Section -->
-    <section class="offshore-section block py-10">
-      <div class="container">
-        <div class="mb-[30px]">
-          <h2 class="text-header">
-            <span class="text-header-icon"
-              ><img
-                src="./public/assets/images/white-offshore-icon.png"
-                alt="white-offshore-icon"
-                class="h-8 w-8 max-w-none object-cover"
-            /></span>
-            <span class="text-header-text"
-              >Lợi ích và bất lợi khi dùng nhân lực bên ngoài</span
-            >
-          </h2>
+            </h2>
+          </div>
         </div>
-        <div class="row">
-          <div class="relative w-full px-[10px]">
-            <div class="main-block relative">
-              <div class="item-nomal advance-block relative mb-[100px]">
-                <h4 class="bg-[#0383ed] text-white">Thuận lợi</h4>
-                <ul class="my-[15px] pl-5">
-                  <li>Chí phí giảm gần ½</li>
-                  <li>Nguồn nhân lực dồi dào</li>
-                  <li>Tiếp cận các công nghệ mới nhanh</li>
-                  <li>Chủ động nguồn tài chính, tăng giảm nhân sự dễ dàng</li>
-                  <li>Tạo nguồn sinh khí mới cho công ty</li>
-                </ul>
-              </div>
-              <div class="item-nomal disadvance-block relative">
-                <h4 class="bg-[rgba(255,196,192,.18)] text-[#ff564d]">
-                  Bất lợi
+      </section>
+      <!-- Clients Section  -->
+      <section class="client-recomments">
+        <div class="container">
+          <ul class="lists-recomments flex flex-col gap-4">
+            <li class="customer-items">
+              <div
+                class="recomment-items mx-auto w-full rounded-[10px] bg-[#0782ed] p-5"
+              >
+                <div class="client-name text-center">
+                  <img
+                    src="./public/assets/images/mediotec-director.jpg"
+                    class="mx-auto h-[120px] w-[120px] max-w-full rounded-[50%] object-cover"
+                  />
+                  <p class="mt-1 mb-[15px] text-[18px] text-white">
+                    Mediotec Co.,Ltd Matsumoto Hidemori CEO
+                  </p>
+                </div>
+                <h4
+                  class="mb-[7.5px] text-[19px] font-light leading-[1.2] text-white"
+                >
+                  BAP thật sự đã xây dựng được một thể chế mà có thể uyển chuyển
+                  đối ứng tốt với các vấn đề của việc phát triển offshore
                 </h4>
-                <ul class="my-[15px] pl-5">
-                  <li>
-                    Mất thời gian giao tiếp khi nhân lực không ở cùng trong một
-                    công ty → ở BAP được giải quyết bằng cách các yêu cầu ban
-                    đầu về dự án được thực hiện trực tiếp tại công ty khách hàng
+              </div>
+            </li>
+            <li class="customer-items">
+              <div
+                class="recomment-items mx-auto w-full rounded-[10px] bg-[#0782ed] p-5"
+              >
+                <div class="client-name text-center">
+                  <img
+                    src="./public/assets/images/ogawa-1.jpg"
+                    class="mx-auto h-[120px] w-[120px] max-w-full rounded-[50%] object-cover"
+                  />
+                  <p class="mt-1 mb-[15px] text-[18px] text-white">
+                    Mr. Ogawa - Trợ lý Giám đốc, Tập đoàn NTT DATA NJK
+                  </p>
+                </div>
+                <h4
+                  class="mb-[7.5px] text-[19px] font-light leading-[1.2] text-white"
+                >
+                  Chỉ có thể là BAP. Tôi đã có 1 comtor tuyệt vời và 1 đội phản
+                  hồi rất nhanh.
+                </h4>
+              </div>
+            </li>
+            <li class="customer-items">
+              <div
+                class="recomment-items mx-auto w-full rounded-[10px] bg-[#0782ed] p-5"
+              >
+                <div class="client-name text-center">
+                  <img
+                    src="./public/assets/images/mr-sugimoto-1.jpg"
+                    class="mx-auto h-[120px] w-[120px] max-w-full rounded-[50%] object-cover"
+                  />
+                  <p class="mt-1 mb-[15px] text-[18px] text-white">
+                    Mr. Sugimoto - Phó Quản lý, Tập đoàn iXIT
+                  </p>
+                </div>
+                <h4
+                  class="mb-[7.5px] text-[19px] font-light leading-[1.2] text-white"
+                >
+                  Hiệu suất công việc luôn cao hơn chúng tôi yêu cầu, đó là lý
+                  do chúng tôi chọn BAP.
+                </h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Offshore Section -->
+      <section class="offshore-section block py-10">
+        <div class="container">
+          <div class="mb-[30px]">
+            <h2 class="text-header">
+              <span class="text-header-icon"
+                ><img
+                  src="./public/assets/images/white-offshore-icon.png"
+                  alt="white-offshore-icon"
+                  class="h-8 w-8 max-w-none object-cover"
+              /></span>
+              <span class="text-header-text"
+                >Lợi ích và bất lợi khi dùng nhân lực bên ngoài</span
+              >
+            </h2>
+          </div>
+          <div class="row">
+            <div class="relative w-full px-[10px]">
+              <div class="main-block relative">
+                <div class="item-nomal advance-block relative mb-[100px]">
+                  <h4 class="bg-[#0383ed] text-white">Thuận lợi</h4>
+                  <ul class="my-[15px] pl-5">
+                    <li>Chí phí giảm gần ½</li>
+                    <li>Nguồn nhân lực dồi dào</li>
+                    <li>Tiếp cận các công nghệ mới nhanh</li>
+                    <li>Chủ động nguồn tài chính, tăng giảm nhân sự dễ dàng</li>
+                    <li>Tạo nguồn sinh khí mới cho công ty</li>
+                  </ul>
+                </div>
+                <div class="item-nomal disadvance-block relative">
+                  <h4 class="bg-[rgba(255,196,192,.18)] text-[#ff564d]">
+                    Bất lợi
+                  </h4>
+                  <ul class="my-[15px] pl-5">
+                    <li>
+                      Mất thời gian giao tiếp khi nhân lực không ở cùng trong
+                      một công ty → ở BAP được giải quyết bằng cách các yêu cầu
+                      ban đầu về dự án được thực hiện trực tiếp tại công ty
+                      khách hàng
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="relative w-full px-[10px]">
+              <div class="plus-icon grid w-full py-[40px] text-center">
+                <img
+                  src="./public/assets/images/plus-icon.png"
+                  alt="plus-icon"
+                  class="my-[15px] mx-auto max-w-full"
+                />
+                <ul class="mb-[15px]">
+                  <li class="mb-[5px] text-[11px]">
+                    Kinh nghiệm phát triển của BAP
                   </li>
                 </ul>
               </div>
             </div>
-          </div>
-          <div class="relative w-full px-[10px]">
-            <div class="plus-icon grid w-full py-[40px] text-center">
+            <div class="relative w-full px-[10px]">
               <img
-                src="./public/assets/images/plus-icon.png"
-                alt="plus-icon"
-                class="my-[15px] mx-auto max-w-full"
+                src="./public/assets/images/be-advance-partner.png"
+                class="max-w-full"
               />
-              <ul class="mb-[15px]">
-                <li class="mb-[5px] text-[11px]">
-                  Kinh nghiệm phát triển của BAP
-                </li>
-              </ul>
             </div>
           </div>
-          <div class="relative w-full px-[10px]">
-            <img
-              src="./public/assets/images/be-advance-partner.png"
-              class="max-w-full"
-            />
+        </div>
+      </section>
+      <!-- Service Product Section -->
+      <section class="service-product block bg-white py-[50px]">
+        <div class="container">
+          <h2 class="text-header">
+            <span class="text-header-icon"
+              ><img
+                src="./public/assets/images/white-www-icon.png"
+                alt="white-www-icon-icon"
+                class="h-8 w-8 max-w-none object-cover"
+            /></span>
+            <div class="flex w-[calc(100%-75px)] flex-col">
+              <span class="text-header-text w-full"
+                >Sản phẩm startup công nghệ của BAP</span
+              >
+              <p
+                class="my-4 text-[14px] font-normal leading-[25px] text-[#6f6f6f]"
+              >
+                Hơn thế nữa, BAP cũng phát triển các sản phẩm Start-up của riêng
+                mình, làm phong phú kinh nghiệm thực tiễn.
+              </p>
+            </div>
+          </h2>
+        </div>
+      </section>
+    </main>
+    <footer class="bap-footer footer-services block">
+      <div class="new-footer-bap">
+        <div class="container">
+          <div class="double-block-new">
+            <div class="row">
+              <div class="relative w-full px-[10px]">
+                <div class="footer-new-img">
+                  <img
+                    src="./public/assets/images/ayumy-4.png"
+                    alt="ayumi higashi"
+                  />
+                  <div class="comtor">
+                    <h4>ayumi higashi</h4>
+                    <span>Comtor Lead</span>
+                  </div>
+                </div>
+              </div>
+              <div class="relative w-full px-[10px]">
+                <div class="new-item-footer">
+                  <h4>
+                    <img
+                      src="./public/assets/images/phone.png"
+                      alt="phone"
+                      class="max-w-full"
+                    />
+                    <span>Bạn cần tư vấn dịch vụ phát triển phần mềm?</span>
+                  </h4>
+                  <h5>
+                    Hãy để BAP là đối tác mang đến đột phá cho dự án của bạn!
+                  </h5>
+                  <a href="/" class="btn-see-all">Tư vấn ngay</a>
+                </div>
+              </div>
+              <div class="relative w-full px-[10px]">
+                <div class="new-item-footer">
+                  <h4>
+                    <img
+                      src="./public/assets/images/shop.png"
+                      alt="phone"
+                      class="max-w-full"
+                    />
+                    <span>Gia nhập đội ngũ tài năng?</span>
+                  </h4>
+                  <h5>
+                    Tại BAP, những tài năng là những “cộng sự” tuyệt vời nhất!
+                  </h5>
+                  <a href="/" class="btn-more-info"
+                    >Tìm hiểu thêm
+                    <img
+                      src="./public/assets/images/white-arrow-right-icon.png"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="deco-bot">
+          <img src="./public/assets/images/deco-bot.png" />
+        </div>
+      </div>
+      <div class="bap-footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="relative w-full px-[10px]">
+              <div class="footer-logo">
+                <a class="navbar-brand" href="/">
+                  <img src="./public/assets/images/logo-bap-software-1.png" />
+                </a>
+              </div>
+              <div class="footer-info">
+                <h3>Địa chỉ</h3>
+                <p>
+                  <strong>Tokyo, Nhật Bản</strong><br />
+                  103-0025 Lầu 5 tòa nhà Okamoto, 1-11-3 Nihonbashi, Kayabacho,
+                  Chuo-ku, Tokyo<br />
+                  Tel: (+81) 03 6280 4268<br />
+                  <strong>Osaka, Nhật Bản</strong><br />
+                  541-0053 Lầu 8 tòa nhà Toshiba Osaka, 4-2-12 Honmachi,
+                  Chuo-ku, Osaka<br />
+                  <strong>Hồ Chí Minh, Việt Nam</strong><br />
+                  Lầu 17 Viettel Complex Building, 285 Cách Mạng Tháng 8, Quận
+                  10, HCM<br />
+                  Tel: (+84) 028 6270 1557<br />
+                  <strong>Đà Nẵng, Việt Nam</strong><br />
+                  Lầu 10, 81 Quang Trung – Hải Châu – Đà Nẵng<br />
+                  Tel: (+84) 0236 6565 115<br />
+                  <strong>Huế, Việt Nam</strong><br />
+                  Lầu 5, 28 Lý Thường Kiệt – Vĩnh Ninh – Huế<br />
+                  Tel: (+84) 0234 6273 555<br />
+                  <strong>Hà Nội, Việt Nam</strong><br />
+                  Tầng 9, toà nhà HB, 106 Hoàng Quốc Việt, Cầu Giấy, Hà Nội<br />
+                  Tel: Đang cập nhật
+                </p>
+              </div>
+            </div>
+            <div class="footer-item-list relative w-full px-[10px]">
+              <div class="row">
+                <div class="relative w-full px-[10px]">
+                  <h3>Thông tin</h3>
+                  <div class="mb-[22.5px]">
+                    <ul class="my-[15px] inline-grid">
+                      <li class="mb-[2px] block">
+                        <a
+                          href="/"
+                          class="mr-[15px] text-center leading-[25px] text-[#d4edff] duration-200"
+                          >Tin tức</a
+                        >
+                      </li>
+                      <li class="mb-[2px] block">
+                        <a
+                          href="/"
+                          class="mr-[15px] text-center leading-[25px] text-[#d4edff] duration-200"
+                          >Liên Hệ</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-[22.5px]">
+                    <ul class="my-[20px] flex gap-4">
+                      <li class="inline-block">
+                        <a class="social-icon" href="/">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="inline-block">
+                        <a class="social-icon" href="/">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                          >
+                            <path
+                              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="inline-block">
+                        <a class="social-icon" href="/">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="my-[20px] flex gap-4">
+                      <li>
+                        <img src="./public/assets/images/certification.png" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-item-list relative w-full px-[10px]">
+              <div class="row">
+                <div class="relative w-full px-[10px]">
+                  <div class="service max-w-[50%]">
+                    <div class="mb-[22.5px]">
+                      <h3
+                        class="mb-[7.5px] text-[20px] font-medium leading-[1.2]"
+                      >
+                        Dịch vụ
+                      </h3>
+                      <ul class="my-[20px]">
+                        <li class="mb-[2px] block">
+                          <a href="/"> Phát triển Website/Smartphone App </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/"> Phát triển Business Application </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/"> Phát triển và tư vấn SAP, ERP </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/"> Phát triển trò chơi </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/">
+                            Phát triển ứng dụng dùng công nghệ Blokchain
+                          </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/">
+                            Phát triển ứng dụng dùng công nghệ AI
+                          </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/">
+                            Phát triển ứng dụng dùng công nghệ BigData
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Service Product Section -->
-    <section class="service-product block bg-white py-[50px]">
-      <div class="container">
-        <h2 class="text-header">
-          <span class="text-header-icon"
-            ><img
-              src="./public/assets/images/white-www-icon.png"
-              alt="white-www-icon-icon"
-              class="h-8 w-8 max-w-none object-cover"
-          /></span>
-          <div class="flex w-[calc(100%-75px)] flex-col">
-            <span class="text-header-text w-full"
-              >Sản phẩm startup công nghệ của BAP</span
-            >
-            <p
-              class="my-4 text-[14px] font-normal leading-[25px] text-[#6f6f6f]"
-            >
-              Hơn thế nữa, BAP cũng phát triển các sản phẩm Start-up của riêng
-              mình, làm phong phú kinh nghiệm thực tiễn.
-            </p>
+      <div class="bap-footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="relative w-full px-[10px] text-center">
+              <p class="leading-[1.8]">
+                Copyright © 2021 BAP IT CO., JSC. All Rights Reserved.
+              </p>
+            </div>
           </div>
-        </h2>
+        </div>
       </div>
-    </section>
+    </footer>
     <script src="./public/scripts/index.js" defer></script>
   </body>
 </html>

@@ -15,6 +15,10 @@
   .container {
     @apply mx-auto w-full max-w-full px-[15px];
   }
+  main.main-container,
+  footer.bap-footer.footer-services {
+    @apply overflow-hidden;
+  }
   .row {
     @apply -mx-[10px] flex flex-wrap;
   }
@@ -209,6 +213,115 @@
   .main-block .disadvance-block ul li::before {
     @apply top-[15%] bg-[#fe565c];
   }
+  .new-footer-bap {
+    @apply bg-cover bg-no-repeat;
+    background-image: url("../assets/images/bg-contact.jpg");
+  }
+  .double-block-new {
+    @apply py-[40px];
+  }
+  .footer-new-img {
+    @apply relative text-center;
+  }
+  .footer-new-img img {
+    @apply mx-auto h-[250px] max-w-full align-middle;
+  }
+  .footer-new-img .comtor {
+    @apply absolute left-0 right-0 bottom-[10%] mx-auto flex w-full items-center justify-center text-center;
+  }
+  .footer-new-img .comtor h4 {
+    @apply m-0 text-[18px] uppercase text-white;
+  }
+  .footer-new-img .comtor span {
+    @apply ml-[7px] rounded-[5px] bg-white py-[1px] px-[5px] text-[12px] text-[#0c7cff];
+  }
+  .new-item-footer {
+    @apply mt-[15px] rounded-[4px] bg-[rgba(255,255,255,.95)] p-5 shadow-newitemfooter;
+  }
+  .new-item-footer h4 {
+    @apply mb-[7.5px] flex items-center text-[18.75px] font-normal leading-[1.2];
+  }
+  .new-item-footer h4 span {
+    @apply ml-[10px] text-[16px] leading-[1.4] -tracking-[0.1px] text-[#141414];
+  }
+  .new-item-footer h5 {
+    @apply mb-[7.5px] py-[5px] text-[14px] font-light leading-5 text-[#424242];
+  }
+  .new-item-footer a {
+    @apply text-[10px];
+  }
+  .btn-see-all {
+    @apply inline-block select-none rounded-[45px] border-[1px] border-solid border-[#0c7cff] bg-[#0c7cff] py-[11.25px] px-[37.5px] text-center align-middle font-medium uppercase leading-[1.5] text-white shadow-colorbutton;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+      -webkit-box-shadow 0.15s ease-in-out;
+  }
+  .btn-see-all:hover {
+    @apply border-[#0c7cff] bg-white text-[#0c7cff];
+  }
+  .btn-more-info {
+    @apply flex w-fit select-none items-center justify-start gap-1 rounded-[45px] border-[1px] border-solid border-[#f2638f] bg-[#f2638f] py-[11.25px] px-[37.5px] text-center align-middle font-medium uppercase leading-[1.5] text-white shadow-colorbutton;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+      border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+      -webkit-box-shadow 0.15s ease-in-out;
+  }
+  .btn-more-info:hover {
+    @apply border-[#f2638f] bg-white text-[#f2638f];
+  }
+  .btn-more-info:hover img {
+    @apply translate-x-2;
+  }
+  .btn-more-info img {
+    @apply inline-block h-[12px] w-[12px] transition-transform duration-200 ease-in-out;
+  }
+  .deco-bot {
+    @apply relative;
+  }
+  .deco-bot img {
+    @apply max-w-full align-middle;
+  }
+  .bap-footer-top {
+    @apply bg-[#0c7cff];
+  }
+  .navbar-brand {
+    @apply mr-[15px] inline-block whitespace-nowrap py-[4.6875px] text-[18.75px] leading-[inherit] text-[#007bff] duration-200;
+  }
+  .navbar-brand img {
+    @apply max-h-[50px] max-w-full align-middle brightness-0 invert-[1];
+  }
+  .footer-info {
+    @apply mt-[15px] text-[12px] text-[#d4edff];
+  }
+  .footer-info h3 {
+    @apply mb-[15px] text-[20px] font-medium leading-[1.2] text-white;
+  }
+  .footer-info p {
+    @apply relative mb-[10px] leading-[30px];
+  }
+  .bap-footer-top .footer-item-list {
+    @apply max-w-full pt-[5px] text-[13px] text-white;
+  }
+  .bap-footer-top .footer-item-list h3 {
+    @apply mb-[7.5px] text-[20px] font-normal leading-[1.2];
+  }
+  .bap-footer-top .footer-item-list li .social-icon {
+    @apply block rounded-[50%] border-[1px] border-solid border-white bg-transparent p-3;
+  }
+  .bap-footer-top .footer-item-list li .social-icon:hover {
+    @apply bg-white;
+  }
+  .bap-footer-top .footer-item-list li .social-icon svg {
+    @apply h-[20px] w-[20px] fill-white transition-all duration-500;
+  }
+  .bap-footer-top .footer-item-list li .social-icon:hover svg {
+    @apply fill-[#0c7cff];
+  }
+  .bap-footer-top .footer-item-list .service ul li a {
+    @apply mr-[15px] text-center leading-[25px] text-[#d4edff] duration-200;
+  }
+  .bap-footer-copyright {
+    @apply bg-[#0c7cff] pb-10 text-center text-[14px] leading-[1] text-[#d4edff];
+  }
 }
 .slider-item-active {
   opacity: 1;
@@ -216,7 +329,18 @@
 }
 .navbar-active {
   left: 0px;
-  /* @apply shadow-navbar; */
+}
+.navbar-scroll {
+  background-color: #fff !important;
+  @apply shadow-navbar;
+}
+.navbar-logo-scroll {
+  invert: unset !important;
+  brightness: unset !important;
+}
+
+.hamburger-slice-scroll {
+  background-color: #000;
 }
 
 @layer utilities {
