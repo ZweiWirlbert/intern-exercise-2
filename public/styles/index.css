@@ -106,7 +106,9 @@
   .text-header-icon {
     @apply relative top-0 flex h-[56px] w-[50px] items-center justify-center bg-cover;
     background-image: url("../assets/images/polygon-bg.png");
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
   }
+
   .text-header-text {
     @apply inline-block pt-[7px] text-2xl font-medium leading-[30px] text-black;
     width: calc(100% - 75px);
@@ -186,6 +188,26 @@
   .client-recomments {
     @apply block;
     background: linear-gradient(to top, #f7fafc 50%, #fff 50%);
+  }
+  .item-nomal {
+    @apply rounded-[3px] bg-white p-[5px] shadow-itemnomal;
+  }
+  .main-block .advance-block::before {
+    @apply absolute left-0 right-0 -bottom-[88px] m-auto h-[68px] w-14;
+    content: url("../assets/images/arrow-down.png");
+  }
+  .main-block h4 {
+    @apply mb-[7.5px] rounded-[4.5px] p-[10px] text-center text-[15px] font-light uppercase leading-[18px];
+  }
+  .main-block .item-nomal ul li {
+    @apply relative py-[5px] text-[13px] -tracking-[0.3px] text-[#474747];
+  }
+  .main-block .item-nomal ul li::before {
+    @apply absolute -left-4 top-[45%] inline-block h-[3px] w-[3px] rounded-full bg-[#0383ed];
+    content: "";
+  }
+  .main-block .disadvance-block ul li::before {
+    @apply top-[15%] bg-[#fe565c];
   }
 }
 .slider-item-active {

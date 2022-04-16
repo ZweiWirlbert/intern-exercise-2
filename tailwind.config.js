@@ -12,6 +12,7 @@ module.exports = {
         button: "2px 2px 5px rgba(0,0,0,0.6)",
         achievement: "0px 12px 31px rgba(211,211,211,0.220744)",
         servicebox: " 3px 3px 21px rgba(0,0,0,0.0426574)",
+        itemnomal: "0px 2px 11px rgba(0,0,0,.0851453)",
       },
     },
   },
