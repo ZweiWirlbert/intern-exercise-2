@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="public/dist/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
     <title>BAP Software</title>
   </head>
   <body>
@@ -268,7 +272,7 @@
                 <div class="mt-[45px]">
                   <a
                     href="/"
-                    class="font-[17px] btn btn-primary inline-block rounded-[40px] py-[11.25px] px-[30px] leading-[26.25px] tracking-normal"
+                    class="font-[17px] btn btn-primary inline-block w-fit rounded-[40px] py-[11.25px] px-[30px] leading-[26.25px] tracking-normal"
                     >Liên hệ với chúng tôi</a
                   >
                 </div>
@@ -803,7 +807,7 @@
         </div>
       </section>
       <!-- Product Section  -->
-      <section class="block bg-[#f7fafc] py-[40px]">
+      <section class="product-section block bg-[#f7fafc] pt-[40px]">
         <div class="container">
           <h2 class="text-header">
             <span class="text-header-icon"
@@ -823,6 +827,12 @@
               </p>
             </div>
           </h2>
+          <div class="product-slider">
+            <div class="swiper mySwiper !pb-[40px]">
+              <div class="swiper-wrapper product-swiper-wrapper"></div>
+              <div class="swiper-pagination bottom-0 top-[unset]"></div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Partnert Section -->
@@ -1239,5 +1249,17 @@
       </div>
     </footer>
     <script src="./public/scripts/index.js" defer></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 2,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+          dynamicMainBullets: 7,
+        },
+      });
+    </script>
   </body>
 </html>

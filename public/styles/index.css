@@ -87,10 +87,10 @@
     @apply mx-auto inline-block w-[290px] max-w-[300px] cursor-pointer rounded-[5px] border-[1px] border-solid border-transparent px-[30px] py-[11.25px] align-middle text-[15px] font-light leading-[26.25px] transition-all duration-150 ease-in-out;
   }
   .btn-primary {
-    @apply border-[#007bff] bg-[#007bff] text-white;
+    @apply border-[#007bff] bg-[#007bff] text-white transition-all duration-200 ease-in-out;
   }
   .btn-primary:hover {
-    @apply bg-white text-[#007bff] shadow-button;
+    @apply bg-white  tracking-[2px] text-[#007bff] shadow-button;
   }
   .btn-outline {
     @apply border-[#067bff] text-[#067bff];
@@ -112,11 +112,48 @@
     background-image: url("../assets/images/polygon-bg.png");
     filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
   }
-
   .text-header-text {
     @apply inline-block pt-[7px] text-2xl font-medium leading-[30px] text-black;
     width: calc(100% - 75px);
   }
+
+  .product-section {
+    @apply -mx-[10px] bg-transparent;
+  }
+  .product-section .swiper-slide {
+    @apply w-[50%] select-none;
+  }
+  .product-section .swiper-slide .swiper-slide-item {
+    @apply p-[10px];
+  }
+  .product-section .swiper-slide .swiper-slide-item a {
+    @apply bg-transparent text-[#333];
+  }
+  .product-section .swiper-slide .swiper-slide-item a:hover .item-inner {
+    @apply shadow-slideritem;
+  }
+  .product-section .swiper-slide .swiper-slide-item a:hover .item-thumb img {
+    @apply scale-[1.2];
+  }
+  .product-section .swiper-slide-item .item-inner {
+    @apply overflow-hidden rounded-[4px] bg-white transition-all duration-500 ease-in-out;
+  }
+  .product-section .swiper-slide-item .item-inner .item-thumb {
+    @apply max-h-[180px] min-h-[140px];
+  }
+  .product-section .swiper-slide-item .item-inner .item-thumb img {
+    @apply block h-[140px] max-h-[180px] min-h-[140px] w-full object-cover object-center transition-all  duration-500 ease-in-out;
+  }
+  .product-section .swiper-slide-item .item-inner .item-inner-text {
+    @apply py-[20px] px-[15px];
+  }
+  .product-section .swiper-slide-item .item-inner .item-inner-text p {
+    @apply mt-[10px] max-h-[54px] overflow-hidden text-[13px] leading-[18px] text-[#494949];
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+
   .content-reason-item {
     @apply relative py-[5px] pl-[30px] text-[14px] text-[#373737];
   }

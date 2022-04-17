@@ -5,6 +5,13 @@ module.exports = {
     fontFamily: {
       roboto: ["Roboto", ...defaultTheme.fontFamily["serif"]],
     },
+    screens: {
+      tablet: "640px",
+
+      laptop: "1024px",
+
+      desktop: "1280px",
+    },
     extend: {
       boxShadow: {
         navbar: "3px -10px 20px rgba(0,0,0,0.2)",
@@ -15,6 +22,7 @@ module.exports = {
         itemnomal: "0px 2px 11px rgba(0,0,0,.0851453)",
         newitemfooter: "0px 5px 9px rgba(0, 0, 0, 0.0821728)",
         colorbutton: "0px 5px 7px rgba(11,40,88,.119154)",
+        slideritem: "3px 3px 3px rgba(0,0,0,0.3)",
       },
     },
   },
