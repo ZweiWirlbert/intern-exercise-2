@@ -168,6 +168,30 @@
     left: 8px;
     top: 10px;
   }
+
+  /* -------------------------Client Section */
+  .client-recomments {
+    @apply block;
+    background: linear-gradient(to top, #f7fafc 50%, #fff 50%);
+  }
+  .client-recomments .lists-recomments .recomment-items {
+    @apply mx-auto w-full rounded-[10px] bg-[#0782ed] p-5;
+  }
+
+  .client-recomments .lists-recomments .recomment-items .client-name {
+    @apply text-center;
+  }
+  .client-recomments .lists-recomments .recomment-items .client-name img {
+    @apply mx-auto h-[120px] w-[120px] max-w-full rounded-[50%] object-cover;
+  }
+  .client-recomments .lists-recomments .recomment-items .client-name p {
+    @apply mt-1 mb-[15px] text-[18px] text-white;
+  }
+  .client-recomments .lists-recomments .recomment-items h4 {
+    @apply mb-[7.5px] text-[19px] font-light leading-[1.2] text-white;
+  }
+  /* -------------------------Offshore Section */
+
   .offshore-list {
     @apply relative grid grid-cols-3;
   }
@@ -226,10 +250,7 @@
   #block-right .offshore-list-item::after {
     @apply -left-[22px] right-[unset];
   }
-  .client-recomments {
-    @apply block;
-    background: linear-gradient(to top, #f7fafc 50%, #fff 50%);
-  }
+
   .item-nomal {
     @apply rounded-[3px] bg-white p-[5px] shadow-itemnomal;
   }

@@ -880,71 +880,11 @@
       <!-- Clients Section  -->
       <section class="client-recomments">
         <div class="container">
-          <ul class="lists-recomments flex flex-col gap-4">
-            <li class="customer-items">
-              <div
-                class="recomment-items mx-auto w-full rounded-[10px] bg-[#0782ed] p-5"
-              >
-                <div class="client-name text-center">
-                  <img
-                    src="./public/assets/images/mediotec-director.jpg"
-                    class="mx-auto h-[120px] w-[120px] max-w-full rounded-[50%] object-cover"
-                  />
-                  <p class="mt-1 mb-[15px] text-[18px] text-white">
-                    Mediotec Co.,Ltd Matsumoto Hidemori CEO
-                  </p>
-                </div>
-                <h4
-                  class="mb-[7.5px] text-[19px] font-light leading-[1.2] text-white"
-                >
-                  BAP thật sự đã xây dựng được một thể chế mà có thể uyển chuyển
-                  đối ứng tốt với các vấn đề của việc phát triển offshore
-                </h4>
-              </div>
-            </li>
-            <li class="customer-items">
-              <div
-                class="recomment-items mx-auto w-full rounded-[10px] bg-[#0782ed] p-5"
-              >
-                <div class="client-name text-center">
-                  <img
-                    src="./public/assets/images/ogawa-1.jpg"
-                    class="mx-auto h-[120px] w-[120px] max-w-full rounded-[50%] object-cover"
-                  />
-                  <p class="mt-1 mb-[15px] text-[18px] text-white">
-                    Mr. Ogawa - Trợ lý Giám đốc, Tập đoàn NTT DATA NJK
-                  </p>
-                </div>
-                <h4
-                  class="mb-[7.5px] text-[19px] font-light leading-[1.2] text-white"
-                >
-                  Chỉ có thể là BAP. Tôi đã có 1 comtor tuyệt vời và 1 đội phản
-                  hồi rất nhanh.
-                </h4>
-              </div>
-            </li>
-            <li class="customer-items">
-              <div
-                class="recomment-items mx-auto w-full rounded-[10px] bg-[#0782ed] p-5"
-              >
-                <div class="client-name text-center">
-                  <img
-                    src="./public/assets/images/mr-sugimoto-1.jpg"
-                    class="mx-auto h-[120px] w-[120px] max-w-full rounded-[50%] object-cover"
-                  />
-                  <p class="mt-1 mb-[15px] text-[18px] text-white">
-                    Mr. Sugimoto - Phó Quản lý, Tập đoàn iXIT
-                  </p>
-                </div>
-                <h4
-                  class="mb-[7.5px] text-[19px] font-light leading-[1.2] text-white"
-                >
-                  Hiệu suất công việc luôn cao hơn chúng tôi yêu cầu, đó là lý
-                  do chúng tôi chọn BAP.
-                </h4>
-              </div>
-            </li>
-          </ul>
+          <div class="swiper clientSwiper">
+            <ul
+              class="lists-recomments swiper-wrapper client-swiper-wrapper"
+            ></ul>
+          </div>
         </div>
       </section>
       <!-- Offshore Section -->
@@ -1283,6 +1223,16 @@
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
+        },
+      });
+      var swiper = new Swiper(".clientSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        speed: 1000,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
         },
       });
     </script>

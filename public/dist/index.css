@@ -931,6 +931,57 @@ main.main-container, footer.bap-footer.footer-services{
   top: 10px;
 }
 
+/* -------------------------Client Section */
+
+.client-recomments{
+  display: block;
+  background: linear-gradient(to top, #f7fafc 50%, #fff 50%);
+}
+
+.client-recomments .lists-recomments .recomment-items{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 10px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 130 237 / var(--tw-bg-opacity));
+  padding: 1.25rem;
+}
+
+.client-recomments .lists-recomments .recomment-items .client-name{
+  text-align: center;
+}
+
+.client-recomments .lists-recomments .recomment-items .client-name img{
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px;
+  width: 120px;
+  max-width: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.client-recomments .lists-recomments .recomment-items .client-name p{
+  margin-top: 0.25rem;
+  margin-bottom: 15px;
+  font-size: 18px;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.client-recomments .lists-recomments .recomment-items h4{
+  margin-bottom: 7.5px;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 1.2;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* -------------------------Offshore Section */
+
 .offshore-list{
   position: relative;
   display: grid;
@@ -1094,11 +1145,6 @@ main.main-container, footer.bap-footer.footer-services{
 #block-right .offshore-list-item::after{
   left: -22px;
   right: unset;
-}
-
-.client-recomments{
-  display: block;
-  background: linear-gradient(to top, #f7fafc 50%, #fff 50%);
 }
 
 .item-nomal{
@@ -2048,12 +2094,12 @@ main.main-container, footer.bap-footer.footer-services{
   font-size: 14px;
 }
 
-.text-\[18px\]{
-  font-size: 18px;
-}
-
 .text-\[19px\]{
   font-size: 19px;
+}
+
+.text-\[18px\]{
+  font-size: 18px;
 }
 
 .text-\[11px\]{
