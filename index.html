@@ -828,14 +828,16 @@
             </div>
           </h2>
           <div class="product-slider">
-            <div class="swiper mySwiper !pb-[40px]">
+            <div class="swiper productSwiper !pb-[40px]">
               <div class="swiper-wrapper product-swiper-wrapper"></div>
-              <div class="swiper-pagination bottom-0 top-[unset]"></div>
+              <div
+                class="swiper-pagination product-swiper-pagination bottom-0 top-[unset]"
+              ></div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Partnert Section -->
+      <!-- Partner Section -->
       <section class="block bg-white pb-0 pt-[50px]">
         <div class="container">
           <div class="mb-[30px]">
@@ -858,6 +860,20 @@
                 </p>
               </div>
             </h2>
+            <div class="partner-slider">
+              <div class="swiper partnerSwiper">
+                <div class="swiper-wrapper partner-swiper-wrapper">
+                  <!-- <div class="swiper-slide">
+                    <div class="swiper-slide-item">
+                      <img
+                        src="./public/assets/images/logo-parner.png"
+                        class="block w-full max-w-full object-cover"
+                      />
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -1251,13 +1267,22 @@
     <script src="./public/scripts/index.js" defer></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".productSwiper", {
         slidesPerView: 2,
+
         pagination: {
-          el: ".swiper-pagination",
+          el: ".product-swiper-pagination",
           clickable: true,
           dynamicBullets: true,
           dynamicMainBullets: 7,
+        },
+      });
+      var swiper = new Swiper(".partnerSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
         },
       });
     </script>

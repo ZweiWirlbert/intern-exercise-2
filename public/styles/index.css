@@ -116,7 +116,7 @@
     @apply inline-block pt-[7px] text-2xl font-medium leading-[30px] text-black;
     width: calc(100% - 75px);
   }
-
+  /* product section */
   .product-section {
     @apply -mx-[10px] bg-transparent;
   }

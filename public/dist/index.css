@@ -821,6 +821,8 @@ main.main-container, footer.bap-footer.footer-services{
   width: calc(100% - 75px);
 }
 
+/* product section */
+
 .product-section{
   margin-left: -10px;
   margin-right: -10px;
@@ -1597,10 +1599,6 @@ main.main-container, footer.bap-footer.footer-services{
   margin-right: 10px;
 }
 
-.mb-\[5px\]{
-  margin-bottom: 5px;
-}
-
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -1611,6 +1609,10 @@ main.main-container, footer.bap-footer.footer-services{
 
 .mb-\[100px\]{
   margin-bottom: 100px;
+}
+
+.mb-\[5px\]{
+  margin-bottom: 5px;
 }
 
 .mb-\[22\.5px\]{
@@ -2044,10 +2046,6 @@ main.main-container, footer.bap-footer.footer-services{
 
 .text-\[14px\]{
   font-size: 14px;
-}
-
-.text-\[16px\]{
-  font-size: 16px;
 }
 
 .text-\[18px\]{
