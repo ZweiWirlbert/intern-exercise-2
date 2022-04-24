@@ -19,7 +19,6 @@ module.exports = {
       "max-lg": { max: "991px" },
 
       "2lg": "1024px",
-      "max-2lg": { max: "1024px" },
 
       xl: "1200px",
 
@@ -40,6 +39,9 @@ module.exports = {
         colorbutton: "0px 5px 7px rgba(11,40,88,.119154)",
         slideritem: "3px 3px 3px rgba(0,0,0,0.3)",
         navbardesktop: "1px 3px 15px rgba(0,0,0,.1)",
+      },
+      flex: {
+        col6: "0 0 50%",
       },
     },
   },
