@@ -6,11 +6,27 @@ module.exports = {
       roboto: ["Roboto", ...defaultTheme.fontFamily["serif"]],
     },
     screens: {
-      tablet: "640px",
+      sm: "576px",
+      "max-sm": { max: "575px" },
 
-      laptop: "1024px",
+      md: "768px",
+      "max-md": { max: "767px" },
 
-      desktop: "1280px",
+      "2md": "982px",
+      "max-2md": { max: "981px" },
+
+      lg: "992px",
+      "max-lg": { max: "991px" },
+
+      "2lg": "1024px",
+      "max-2lg": { max: "1024px" },
+
+      xl: "1200px",
+
+      "2xl": "1230px",
+
+      "3xl": "1441px",
+      "max-3xl": { max: "1440px" },
     },
     extend: {
       boxShadow: {
@@ -23,6 +39,7 @@ module.exports = {
         newitemfooter: "0px 5px 9px rgba(0, 0, 0, 0.0821728)",
         colorbutton: "0px 5px 7px rgba(11,40,88,.119154)",
         slideritem: "3px 3px 3px rgba(0,0,0,0.3)",
+        navbardesktop: "1px 3px 15px rgba(0,0,0,.1)",
       },
     },
   },

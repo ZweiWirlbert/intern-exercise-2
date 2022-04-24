@@ -43,6 +43,8 @@ window.onscroll = function () {
 const navbar = document.getElementById("navbar");
 const navbarLogo = document.getElementById("navbar-logo");
 const hamburgerSlices = document.querySelectorAll(".hamburger-slice");
+const mainMenuItemLink = document.querySelectorAll(".main-menu-item-link");
+const navyItem = document.querySelector(".navy-item");
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -52,12 +54,19 @@ function scrollFunction() {
     hamburgerSlices.forEach((slice) => {
       slice.classList.add("hamburger-slice-scroll");
     });
+    mainMenuItemLink.forEach((links) => {
+      links.classList.add("main-menu-item-link-scroll");
+    });
+    navyItem.classList.remove("main-menu-item-link-scroll");
   } else {
     navbar.classList.remove("navbar-scroll");
     navbarLogo.classList.add("invert");
     navbarLogo.classList.add("brightness-0");
     hamburgerSlices.forEach((slice) => {
       slice.classList.remove("hamburger-slice-scroll");
+    });
+    mainMenuItemLink.forEach((links) => {
+      links.classList.remove("main-menu-item-link-scroll");
     });
   }
 }
@@ -269,6 +278,89 @@ function Client(data) {
                     ${mess}
                   </h4>
                 </div>`;
+
+  return client;
+}
+
+// service swiper
+const serviceSlides = [
+  {
+    image: "./public/assets/images/lodyhelp.jpg",
+    title: "LODYHELP",
+    desc: "All expats need in their new town",
+  },
+  {
+    image: "./public/assets/images/logo-top-sinh-vien.jpg",
+    title: "Top Students",
+    desc: "",
+  },
+  {
+    image: "./public/assets/images/lyberzy.jpg",
+    title: "LIBERZY",
+    desc: "Social Media platform for travelers",
+  },
+  {
+    image: "./public/assets/images/dayconkieunhat.jpg",
+    title: "Dayconkieunhat",
+    desc: "Online portal for Vietnamese in Japan's style of raising kids",
+  },
+  {
+    image: "./public/assets/images/danang-services.jpg",
+    title: "Danang-services",
+    desc: "Real Estate platform for expats in Da Nang",
+  },
+  {
+    image: "./public/assets/images/cosy.jpg",
+    title: "Cosy Chat",
+    desc: "A chat application",
+  },
+  {
+    image: "./public/assets/images/smart-fashion-logo.jpg",
+    title: "Smart Fashion",
+    desc: "Fashion fitting App, powered by AI technology",
+  },
+  {
+    image: "./public/assets/images/logo-green-beli.jpg",
+    title: "Green Beli",
+    desc: "",
+  },
+];
+
+const serviceProductSwiperWapper = document.querySelector(
+  ".service-product-swiper-wrapper"
+);
+serviceSlides.forEach((item) => {
+  serviceProductSwiperWapper.appendChild(ServiceProduct(item));
+});
+
+function ServiceProduct(data) {
+  const { image, title, desc } = data;
+  const client = document.createElement("div");
+  client.className = "swiper-slide service-product-items";
+  client.innerHTML = `<a href="/" target="_blank">
+                  <div
+                    class="box-sevices mb-[16px] rounded-[3px] border-[1px] border-solid border-[#ececec] bg-white p-5 text-center shadow-none"
+                  >
+                    <div class="img-services my-[15px]">
+                      <img
+                        src="${image}"
+                        class="h-[45px] max-h-[45px] w-full max-w-[175px] object-contain"
+                      />
+                    </div>
+                    <div class="info-services text-center">
+                      <h4
+                        class="mb-[15px] text-[13px] font-normal leading-[1.2] text-[#393939]"
+                      >
+                        ${title}
+                      </h4>
+                      <p
+                        class="h-[30px] overflow-hidden text-center text-[10px] text-[#007bff]"
+                      >
+                        ${desc}
+                      </p>
+                    </div>
+                  </div>
+                </a>`;
 
   return client;
 }

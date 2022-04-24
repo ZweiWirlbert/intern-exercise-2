@@ -13,7 +13,7 @@
     @apply block h-[2px] w-[22px] bg-white duration-300;
   }
   .container {
-    @apply mx-auto w-full max-w-full px-[15px];
+    @apply mx-auto w-full px-[15px] sm:max-w-[540px] max-sm:max-w-full md:max-w-[720px] max-md:max-w-[calc(100%-20px)] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1170px];
   }
   main.main-container,
   footer.bap-footer.footer-services {
@@ -23,7 +23,7 @@
     @apply -mx-[10px] flex flex-wrap;
   }
   .navbar-toggler {
-    @apply my-auto flex cursor-pointer flex-col gap-1 rounded-[4px] bg-transparent py-2;
+    @apply my-auto  hidden cursor-pointer rounded-[4px] bg-transparent py-2 max-2lg:flex max-2lg:flex-col max-2lg:gap-1;
   }
   .navbar-toggler:not(.collapsed) span:nth-child(1) {
     @apply translate-y-[6px] rotate-45;
@@ -34,30 +34,56 @@
   .navbar-toggler:not(.collapsed) span:nth-child(3) {
     @apply translate-y-[-6px] -rotate-45;
   }
+  .navbar-menu {
+    @apply z-[9] 2lg:flex 2lg:items-center max-2lg:fixed max-2lg:-left-full max-2lg:top-[74px] max-2lg:h-full max-2lg:w-full max-2lg:overflow-y-auto max-2lg:bg-white max-2lg:transition-all max-2lg:duration-300 max-2lg:ease-in-out;
+  }
+  .navbar-menu .main-menu {
+    @apply float-left m-0 list-none p-0 2lg:flex max-2lg:w-full max-2lg:py-[10px];
+  }
+  .navbar-menu .lang-menu {
+    @apply float-left mt-[20px] flex items-center justify-center gap-[5px] py-[15px] 2lg:my-auto 2lg:ml-[25px] max-2lg:w-full;
+  }
+  .navbar-menu .main-menu .main-menu-item {
+    @apply relative 2lg:ml-[22px] 2lg:p-0 max-2lg:w-full;
+  }
+  .navbar-menu .main-menu .main-menu-item .main-menu-item-link {
+    @apply relative inline-block w-fit bg-transparent py-[10px] text-left text-[13px] font-normal tracking-[0.8px] text-white duration-200 hover:text-[#037eee] max-2lg:px-[15px] max-2lg:text-[#333];
+  }
 
-  .main-menu-item {
-    @apply relative border-b-[1px] border-solid border-[#ececec] p-0;
+  .navbar-menu .main-menu .main-menu-item .sub-menu-toggle {
+    @apply absolute right-[15px] top-[12px] z-[101] cursor-pointer 2lg:hidden;
   }
-  .main-menu-item-link {
-    @apply relative inline-block w-fit bg-transparent px-4 py-[10px] text-left text-[13px] font-normal tracking-[0.8px] text-[#333] duration-200;
-  }
-
-  .sub-menu-toggle {
-    @apply absolute right-[15px] top-[12px] z-[101] cursor-pointer;
+  .navbar-menu .main-menu .main-menu-item:hover .sub-menu {
+    @apply 2lg:visible 2lg:opacity-100;
   }
 
-  .sub-menu {
-    @apply block h-0 w-full overflow-hidden border-t-[1px] border-solid border-[#ececec] bg-[#f5f5f5] duration-200;
+  .navbar-menu .main-menu .main-menu-item .sub-menu {
+    @apply block h-0 w-full overflow-hidden border-t-[1px] border-solid border-[#ececec] bg-[#f5f5f5] transition-all duration-200 2lg:invisible 2lg:absolute 2lg:top-full 2lg:m-0 2lg:mt-2 2lg:h-fit 2lg:w-[280px] 2lg:overflow-visible 2lg:rounded-[3px] 2lg:border-t-[4px] 2lg:border-[#037eee] 2lg:bg-white 2lg:p-[20px] 2lg:opacity-0 2lg:shadow-navbardesktop;
   }
 
-  .sub-menu-item {
-    @apply relative m-0 inline-block w-full border-b-[1px] border-solid border-[#ececec] p-0;
+  .navbar-menu .main-menu .main-menu-item .sub-menu::before {
+    @apply absolute h-0 w-0  border-x-[5px] border-b-[10px] border-solid border-x-transparent border-b-[#037eee] 2lg:-top-[14px] 2lg:left-[10%];
+    content: "";
   }
-  .sub-menu-item-link {
-    @apply inline-block py-[10px] pl-[30px] pr-[15px] text-[13px] font-normal tracking-[0.8px] text-[#363636];
+
+  .navbar-menu .main-menu .main-menu-item .sub-menu .sub-menu-item {
+    @apply relative m-0 inline-block w-full border-b-[1px] border-solid border-[#ececec] p-0 2lg:border-none;
   }
-  .sub-menu-item-link::before {
-    @apply absolute inline-block h-0 w-0;
+  .navbar-menu
+    .main-menu
+    .main-menu-item
+    .sub-menu
+    .sub-menu-item
+    .sub-menu-item-link {
+    @apply inline-block py-[10px] pl-[30px] pr-[15px] text-[13px] font-normal tracking-[0.8px] text-[#363636] hover:text-[#037eee]  2lg:px-0;
+  }
+  .navbar-menu
+    .main-menu
+    .main-menu-item
+    .sub-menu
+    .sub-menu-item
+    .sub-menu-item-link::before {
+    @apply absolute inline-block h-0 w-0 2lg:hidden;
     content: "";
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
@@ -65,9 +91,33 @@
     left: 15px;
     top: 17px;
   }
-  .navy-item {
-    @apply w-full bg-[#3c90fd] py-[10px] px-[25px] font-semibold text-white;
+  .navbar-menu .main-menu .main-menu-item .navy-item {
+    @apply w-full bg-[#3c90fd] py-[10px] px-[25px] font-semibold  text-white hover:bg-[#1476f2] hover:text-white 2lg:py-[8px];
   }
+
+  /* -----------------------Slider Section -----------------*/
+  .bap-slider {
+    @apply relative block overflow-x-hidden bg-slate-500;
+  }
+  .bap-slider .bap-intro-slider {
+    @apply absolute inset-0 bottom-[50px] z-[2] flex items-center;
+  }
+  .bap-slider .bap-intro-slider .bap-intro-left {
+    @apply relative flex w-full items-center px-[10px] text-[#fff] max-lg:text-center;
+  }
+  .bap-slider .bap-intro-slider .bap-intro-left .web-title {
+    @apply mb-[30px] text-[33px] font-normal leading-[1.2] tracking-[0.8px] sm:text-[45px] 2lg:text-[45px] 3xl:mb-[45px] 3xl:text-[60px];
+  }
+  .bap-slider .bap-intro-slider .bap-intro-left .web-desc {
+    @apply mb-[7.5px] text-base font-light leading-[1.6] tracking-[0.8px] 2md:text-[18px] 2lg:text-[22.5px];
+  }
+  .bap-slider .bap-intro-slider .bap-intro-left .contact-button {
+    @apply mt-[45px] 2lg:mt-[75px];
+  }
+  .bap-slider .bap-intro-slider .bap-intro-left .contact-button .btn {
+    @apply !w-[unset] text-[17px] 2md:w-[250px] 2md:text-[18.75px];
+  }
+
   .slideshow {
     @apply relative z-[1] h-screen w-screen overflow-hidden bg-[#333];
   }
@@ -271,6 +321,12 @@
   .main-block .disadvance-block ul li::before {
     @apply top-[15%] bg-[#fe565c];
   }
+
+  /* Service Product Section */
+  .service-product-items {
+    @apply px-[10px];
+  }
+
   .new-footer-bap {
     @apply bg-cover bg-no-repeat;
     background-image: url("../assets/images/bg-contact.jpg");
@@ -385,8 +441,10 @@
   opacity: 1;
   z-index: 1000;
 }
-.navbar-active {
-  left: 0px;
+@media (max-width: 1024px) {
+  .navbar-active {
+    left: 0px !important;
+  }
 }
 .navbar-scroll {
   background-color: #fff !important;
@@ -399,6 +457,10 @@
 
 .hamburger-slice-scroll {
   background-color: #000;
+}
+
+.main-menu-item-link-scroll {
+  @apply !text-black;
 }
 
 @layer utilities {

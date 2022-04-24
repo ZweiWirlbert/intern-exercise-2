@@ -18,9 +18,7 @@
       id="navbar"
     >
       <nav class="relative flex flex-wrap items-center justify-between py-3">
-        <div
-          class="mx-auto flex w-full max-w-full flex-wrap items-center justify-between px-4"
-        >
+        <div class="container flex flex-wrap items-center justify-between">
           <!-- nav-logo -->
           <div class="h-full">
             <a href="/" class="mr-4 block py-[0.3125rem] duration-300">
@@ -39,10 +37,8 @@
             <span class="hamburger-slice"></span>
             <span class="hamburger-slice"></span>
           </button>
-          <div
-            class="navbar-menu fixed top-[74px] -left-full z-[9] h-full w-full overflow-y-auto bg-white duration-300"
-          >
-            <ul id="main-menu" class="m-0 w-full list-none py-[10px]">
+          <div class="navbar-menu">
+            <ul id="main-menu" class="main-menu">
               <li class="main-menu-item">
                 <p class="sub-menu-toggle">
                   <img
@@ -224,9 +220,7 @@
                 <a href="/" class="main-menu-item-link navy-item">LIÊN HỆ</a>
               </li>
             </ul>
-            <div
-              class="mt-[20px] flex w-full items-center justify-center gap-[5px] py-[15px]"
-            >
+            <div class="lang-menu">
               <div class="w-[30px] cursor-pointer shadow-flag">
                 <img
                   src="./public/assets/images/jp.png"
@@ -247,32 +241,24 @@
       </nav>
     </header>
     <!-- Slider Section -->
-    <section class="relative block overflow-x-hidden bg-slate-500">
-      <div class="absolute inset-0 bottom-[50px] z-[2] flex items-center">
-        <div class="mx-auto w-full max-w-full px-[15px]">
-          <div class="-mx-[10px] flex flex-wrap">
-            <div
-              class="relative flex w-full items-center px-[10px] text-center text-[#fff]"
-            >
-              <div class="w-full">
-                <h1
-                  class="mb-[30px] text-[33px] font-normal leading-[1.2] tracking-[0.8px]"
-                >
-                  Xin chào!
-                </h1>
-                <h2
-                  class="mb-[7.5px] text-base font-light leading-[1.6] tracking-[0.8px]"
-                >
+    <section class="bap-slider">
+      <div class="bap-intro-slider">
+        <div class="container">
+          <div class="row">
+            <div class="bap-intro-left">
+              <div class="max-lg:w-full">
+                <h1 class="web-title">Xin chào!</h1>
+                <h2 class="web-desc">
                   Tại BAP, đổi mới sáng tạo trong ngành công nghệ chưa bao giờ
                   có giới hạn.
                   <br />
                   Hãy để chúng tôi là đối tác mang đến đột phá công nghệ cho
                   bạn!
                 </h2>
-                <div class="mt-[45px]">
+                <div class="contact-button">
                   <a
                     href="/"
-                    class="font-[17px] btn btn-primary inline-block w-fit rounded-[40px] py-[11.25px] px-[30px] leading-[26.25px] tracking-normal"
+                    class="btn btn-primary inline-block rounded-[40px] py-[11.25px] px-[30px] leading-[26.25px] tracking-normal"
                     >Liên hệ với chúng tôi</a
                   >
                 </div>
@@ -976,6 +962,9 @@
               </p>
             </div>
           </h2>
+          <div class="swiper serviceProductSwiper">
+            <div class="swiper-wrapper service-product-swiper-wrapper"></div>
+          </div>
         </div>
       </section>
     </main>
@@ -1234,6 +1223,10 @@
         fadeEffect: {
           crossFade: true,
         },
+      });
+      var swiper = new Swiper(".serviceProductSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 10,
       });
     </script>
   </body>
