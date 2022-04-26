@@ -322,11 +322,54 @@
   .btn-outline:hover {
     @apply border-[#74b9ff] bg-[#74b9ff] text-white shadow-button;
   }
-  .bap-about-container {
-    @apply z-[2] mx-auto w-[90%] pb-[30px] text-center;
+
+  /* ----------------------- About Section -----------------------*/
+  .main-about-content {
+    @apply relative flex flex-col 2md:flex-none 2md:overflow-hidden 2md:shadow-aboutcontainer;
   }
-  .bap-achievement {
+
+  .main-about-content::before {
+    @apply invisible absolute inset-0 right-[unset] z-[1] w-full 
+  bg-[rgba(0,22,76,.7)] 2md:visible;
+    content: "";
+  }
+  .main-about-content video {
+    @apply bg-[#0e4b9d];
+  }
+
+  .bap-about-container {
+    @apply z-[2] mx-auto w-[90%] pb-[30px]  text-center 2md:absolute 2md:left-0 2md:top-[5%] 2md:right-0;
+  }
+  .bap-about-container .text-header {
+    @apply relative mb-[7.5px] flex text-left  text-2xl leading-[40px] 2md:text-center lg:text-[28px];
+  }
+
+  .bap-about-container .text-header-text {
+    @apply inline-block w-full pt-[7px] font-medium leading-[30px] text-[#373737] 2md:w-[calc(100%-75px)] 2md:text-white lg:text-[28px];
+  }
+  .bap-about-container .text-description {
+    @apply mt-[30px] flex flex-col gap-[15px] text-left text-[13px] leading-[1.7] text-[#767676] 2md:text-center 2md:text-[15px] 2md:text-[#addcff];
+  }
+  .bap-about-container .btn-container {
+    @apply mt-[30px] flex flex-col gap-[10px] text-center 2md:block;
+  }
+  .bap-about-container .btn-container .btn {
+    @apply 2md:m-0 2md:inline-block;
+  }
+
+  .bap-about-container .btn-container .btn-outline {
+    @apply 2md:ml-10 2md:border-white 2md:text-white;
+  }
+
+  .bap-achievement-list {
+    @apply grid grid-cols-2 items-center justify-center gap-[25px] rounded border-[0.7px] border-solid border-[#f7fafc] bg-white p-[10px] shadow-achievement 2md:grid-cols-3 lg:flex lg:flex-wrap lg:justify-around lg:gap-0 lg:py-[40px] lg:px-0;
+  }
+
+  .bap-achievement-list .bap-achievement {
     @apply flex items-center justify-start;
+  }
+  .bap-achievement-list .bap-achievement .iso {
+    @apply w-1/2 max-w-full lg:w-full;
   }
   .text-header {
     @apply relative mb-[7.5px] flex gap-[25px] text-2xl font-semibold leading-10 text-black;

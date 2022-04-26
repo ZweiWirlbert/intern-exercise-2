@@ -39,6 +39,7 @@ module.exports = {
         colorbutton: "0px 5px 7px rgba(11,40,88,.119154)",
         slideritem: "3px 3px 3px rgba(0,0,0,0.3)",
         navbardesktop: "1px 3px 15px rgba(0,0,0,.1)",
+        aboutcontainer: "6px 5px 30px rgba(0,0,0,.15826)",
       },
       flex: {
         col6: "0 0 50%",
