@@ -602,6 +602,50 @@ main.main-container, footer.bap-footer.footer-services{
   flex-wrap: wrap;
 }
 
+.text-header{
+  position: relative;
+  margin-bottom: 7.5px;
+  display: flex;
+  gap: 25px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 2.5rem;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-header-icon{
+  position: relative;
+  top: 0px;
+  display: flex;
+  height: 56px;
+  width: 50px;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-image: url("../assets/images/polygon-bg.png");
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+}
+
+.text-header .text-header-text{
+  display: inline-block;
+  padding-top: 7px;
+  font-weight: 500;
+  line-height: 30px;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+@media (min-width: 982px){
+  .text-header .text-header-text{
+    width: calc(100% - 75px);
+  }
+}
+
+.text-header .text-header-text {
+  width: calc(100% - 75px);
+}
+
 .navbar-toggler{
   margin-top: auto;
   margin-bottom: auto;
@@ -1863,43 +1907,6 @@ main.main-container, footer.bap-footer.footer-services{
   }
 }
 
-.text-header{
-  position: relative;
-  margin-bottom: 7.5px;
-  display: flex;
-  gap: 25px;
-  font-size: 1.5rem;
-  font-weight: 600;
-  line-height: 2.5rem;
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-header-icon{
-  position: relative;
-  top: 0px;
-  display: flex;
-  height: 56px;
-  width: 50px;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  background-image: url("../assets/images/polygon-bg.png");
-  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
-}
-
-.text-header-text{
-  display: inline-block;
-  padding-top: 7px;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 500;
-  line-height: 30px;
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-  width: calc(100% - 75px);
-}
-
 /* product section */
 
 .product-section{
@@ -3157,12 +3164,28 @@ main.main-container, footer.bap-footer.footer-services{
 }
 
 @media (min-width: 992px){
+  .col-lg-5{
+    max-width: 41.666667%;
+  }
+
+  .col-lg-5{
+    flex: 0 0 41.666667%;
+  }
+
   .col-lg-6{
     max-width: 50%;
   }
 
   .col-lg-6{
     flex: 0 0 50%;
+  }
+
+  .col-lg-7{
+    max-width: 58.333333%;
+  }
+
+  .col-lg-7{
+    flex: 0 0 58.333333%;
   }
 }
 
@@ -3277,6 +3300,12 @@ main.main-container, footer.bap-footer.footer-services{
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 992px){
+  .lg\:text-\[16px\]{
+    font-size: 16px;
   }
 }
 

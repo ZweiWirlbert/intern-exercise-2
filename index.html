@@ -516,7 +516,7 @@
       <section class="block bg-white py-[40px]" id="bap-service">
         <div class="container">
           <div class="row">
-            <div class="relative w-full px-[10px]">
+            <div class="container">
               <h2 class="text-header">
                 <span class="text-header-icon"
                   ><img
@@ -529,7 +529,7 @@
                 >
               </h2>
             </div>
-            <div class="relative w-full px-[10px]">
+            <div class="col-lg-5 container">
               <div class="visible mt-[30px]">
                 <div class="main-reason">
                   <div class="item-reason text-left">
@@ -639,7 +639,7 @@
                 </div>
               </div>
             </div>
-            <div class="relative w-full px-[10px]">
+            <div class="col-lg-7 container">
               <div class="visible mt-[30px] w-full max-w-[960px]">
                 <div class="row offshore-list">
                   <div class="offshore-list-col" id="block-left">
@@ -853,7 +853,7 @@
             <div class="flex w-[calc(100%-75px)] flex-col">
               <span class="text-header-text">Dự án thực tế</span>
               <p
-                class="my-4 text-[14px] font-normal leading-[25px] text-[#6f6f6f]"
+                class="my-4 text-[14px] font-normal leading-[25px] text-[#6f6f6f] lg:text-[16px]"
               >
                 Tại BAP, chúng tôi không ngừng học hỏi, cập nhật, chia sẻ kiến
                 thức từ những thông tin về dịch vụ Offshore cũng như những xu
@@ -887,7 +887,7 @@
                   >Khách hàng tiêu biểu</span
                 >
                 <p
-                  class="my-4 text-[14px] font-normal leading-[25px] text-[#6f6f6f]"
+                  class="my-4 text-[14px] font-normal leading-[25px] text-[#6f6f6f] lg:text-[16px]"
                 >
                   Đa dạng về quy mô và loại hình kinh doanh, đã có hơn 100 khách
                   hàng trở thành đối tác của BAP.
@@ -896,16 +896,7 @@
             </h2>
             <div class="partner-slider">
               <div class="swiper partnerSwiper">
-                <div class="swiper-wrapper partner-swiper-wrapper">
-                  <!-- <div class="swiper-slide">
-                    <div class="swiper-slide-item">
-                      <img
-                        src="./public/assets/images/logo-parner.png"
-                        class="block w-full max-w-full object-cover"
-                      />
-                    </div>
-                  </div> -->
-                </div>
+                <div class="swiper-wrapper partner-swiper-wrapper"></div>
               </div>
             </div>
           </div>
@@ -1253,6 +1244,14 @@
           dynamicBullets: true,
           dynamicMainBullets: 7,
         },
+        breakpoints: {
+          1280: {
+            slidesPerView: 4,
+            pagination: {
+              dynamicMainBullets: 4,
+            },
+          },
+        },
       });
       var swiper = new Swiper(".partnerSwiper", {
         slidesPerView: 2,
@@ -1260,6 +1259,14 @@
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
+        },
+        breakpoints: {
+          991: {
+            slidesPerView: 4,
+          },
+          1280: {
+            slidesPerView: 6,
+          },
         },
       });
       var swiper = new Swiper(".clientSwiper", {

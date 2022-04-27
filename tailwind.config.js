@@ -42,7 +42,9 @@ module.exports = {
         aboutcontainer: "6px 5px 30px rgba(0,0,0,.15826)",
       },
       flex: {
+        col5: "0 0 41.666667%",
         col6: "0 0 50%",
+        col7: "0 0 58.333333%",
       },
     },
   },

@@ -22,6 +22,19 @@
   .row {
     @apply -mx-[10px] flex flex-wrap;
   }
+  .text-header {
+    @apply relative mb-[7.5px] flex gap-[25px] text-[28px]  font-semibold leading-10 text-black;
+  }
+  .text-header-icon {
+    @apply relative top-0 flex h-[56px] w-[50px] items-center justify-center bg-cover;
+    background-image: url("../assets/images/polygon-bg.png");
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
+  }
+  .text-header .text-header-text {
+    @apply inline-block pt-[7px] font-medium leading-[30px] text-black 2md:w-[calc(100%-75px)];
+    width: calc(100% - 75px);
+  }
+
   .navbar-toggler {
     @apply my-auto  flex cursor-pointer flex-col gap-1 rounded-[4px] bg-transparent py-2 2lg:hidden;
   }
@@ -371,18 +384,7 @@
   .bap-achievement-list .bap-achievement .iso {
     @apply w-1/2 max-w-full lg:w-full;
   }
-  .text-header {
-    @apply relative mb-[7.5px] flex gap-[25px] text-2xl font-semibold leading-10 text-black;
-  }
-  .text-header-icon {
-    @apply relative top-0 flex h-[56px] w-[50px] items-center justify-center bg-cover;
-    background-image: url("../assets/images/polygon-bg.png");
-    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.4));
-  }
-  .text-header-text {
-    @apply inline-block pt-[7px] text-2xl font-medium leading-[30px] text-black;
-    width: calc(100% - 75px);
-  }
+
   /* product section */
   .product-section {
     @apply -mx-[10px] bg-transparent;
@@ -684,8 +686,15 @@
   .fixed-top {
     @apply fixed inset-0 bottom-[unset] z-[100];
   }
+  .col-lg-5 {
+    @apply lg:max-w-[41.666667%] lg:flex-col5;
+  }
+
   .col-lg-6 {
     @apply lg:max-w-[50%] lg:flex-col6;
+  }
+  .col-lg-7 {
+    @apply lg:max-w-[58.333333%] lg:flex-col7;
   }
 }
 
