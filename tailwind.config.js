@@ -37,7 +37,7 @@ module.exports = {
         itemnomal: "0px 2px 11px rgba(0,0,0,.0851453)",
         newitemfooter: "0px 5px 9px rgba(0, 0, 0, 0.0821728)",
         colorbutton: "0px 5px 7px rgba(11,40,88,.119154)",
-        slideritem: "3px 3px 3px rgba(0,0,0,0.3)",
+        slideritem: "3px 6px 12px 0 rgba(0,0,0,0.1)",
         navbardesktop: "1px 3px 15px rgba(0,0,0,.1)",
         aboutcontainer: "6px 5px 30px rgba(0,0,0,.15826)",
       },

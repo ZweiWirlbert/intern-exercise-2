@@ -541,35 +541,28 @@ body{
   transition-duration: 300ms;
 }
 
+/* .container {
+    @apply mx-auto w-full px-[15px] sm:max-w-[540px] max-sm:max-w-full md:max-w-[720px] max-md:max-w-[calc(100%-20px)] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1170px];
+  } */
+
 .container{
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 @media (min-width: 576px){
   .container{
-    max-width: 540px;
-  }
-}
-
-@media (max-width: 575px){
-  .container{
-    max-width: 100%;
+    max-width: calc(100% - 20px);
   }
 }
 
 @media (min-width: 768px){
   .container{
     max-width: 720px;
-  }
-}
-
-@media (max-width: 767px){
-  .container{
-    max-width: calc(100% - 20px);
   }
 }
 
@@ -2544,8 +2537,8 @@ main.main-container, footer.bap-footer.footer-services{
 }
 
 .product-section .swiper-slide .swiper-slide-item a:hover .item-inner{
-  --tw-shadow: 3px 3px 3px rgba(0,0,0,0.3);
-  --tw-shadow-colored: 3px 3px 3px var(--tw-shadow-color);
+  --tw-shadow: 3px 6px 12px 0 rgba(0,0,0,0.1);
+  --tw-shadow-colored: 3px 6px 12px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -3583,10 +3576,6 @@ main.main-container, footer.bap-footer.footer-services{
 
   .lg\:pb-\[65px\]{
     padding-bottom: 65px;
-  }
-
-  .lg\:pt-\[75px\]{
-    padding-top: 75px;
   }
 
   .lg\:text-\[16px\]{

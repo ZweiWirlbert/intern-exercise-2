@@ -12,8 +12,11 @@
   .hamburger-slice {
     @apply block h-[2px] w-[22px] bg-white duration-300;
   }
-  .container {
+  /* .container {
     @apply mx-auto w-full px-[15px] sm:max-w-[540px] max-sm:max-w-full md:max-w-[720px] max-md:max-w-[calc(100%-20px)] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1170px];
+  } */
+  .container {
+    @apply mx-auto w-full max-w-full px-[15px] sm:max-w-[calc(100%-20px)] md:max-w-[720px] lg:max-w-[960px] xl:max-w-[1140px] 2xl:max-w-[1170px];
   }
   main.main-container,
   footer.bap-footer.footer-services {
