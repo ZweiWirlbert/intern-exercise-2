@@ -867,6 +867,11 @@
               <div
                 class="swiper-pagination product-swiper-pagination bottom-0 top-[unset]"
               ></div>
+              <a
+                class="btn-see-all invisible float-right hidden w-fit 2md:visible 2md:block"
+                href="/"
+                >Xem thêm</a
+              >
             </div>
           </div>
         </div>
@@ -909,11 +914,13 @@
             <ul
               class="lists-recomments swiper-wrapper client-swiper-wrapper"
             ></ul>
+            <div class="swiper-btn swiper-button-prev"></div>
+            <div class="swiper-btn swiper-button-next"></div>
           </div>
         </div>
       </section>
       <!-- Offshore Section -->
-      <section class="offshore-section block py-10">
+      <section class="offshore-section block py-10 lg:pt-[50px] lg:pb-[65px]">
         <div class="container">
           <div class="mb-[30px]">
             <h2 class="text-header">
@@ -929,7 +936,7 @@
             </h2>
           </div>
           <div class="row">
-            <div class="relative w-full px-[10px]">
+            <div class="col-lg-3 relative w-full px-[10px] lg:px-[15px]">
               <div class="main-block relative">
                 <div class="item-nomal advance-block relative mb-[100px]">
                   <h4 class="bg-[#0383ed] text-white">Thuận lợi</h4>
@@ -956,8 +963,10 @@
                 </div>
               </div>
             </div>
-            <div class="relative w-full px-[10px]">
-              <div class="plus-icon grid w-full py-[40px] text-center">
+            <div class="col-lg-2 relative w-full px-[10px] lg:px-[15px]">
+              <div
+                class="plus-icon grid w-full py-[40px] text-center 2md:py-[70px]"
+              >
                 <img
                   src="./public/assets/images/plus-icon.png"
                   alt="plus-icon"
@@ -970,7 +979,7 @@
                 </ul>
               </div>
             </div>
-            <div class="relative w-full px-[10px]">
+            <div class="col-lg-7 relative w-full px-[10px] lg:px-[15px]">
               <img
                 src="./public/assets/images/be-advance-partner.png"
                 class="max-w-full"
@@ -994,7 +1003,7 @@
                 >Sản phẩm startup công nghệ của BAP</span
               >
               <p
-                class="my-4 text-[14px] font-normal leading-[25px] text-[#6f6f6f]"
+                class="my-4 text-[14px] font-normal leading-[25px] text-[#6f6f6f] lg:text-[16px]"
               >
                 Hơn thế nữa, BAP cũng phát triển các sản phẩm Start-up của riêng
                 mình, làm phong phú kinh nghiệm thực tiễn.
@@ -1012,7 +1021,7 @@
         <div class="container">
           <div class="double-block-new">
             <div class="row">
-              <div class="relative w-full px-[10px]">
+              <div class="col-lg-4 relative w-full px-[10px] lg:px-[15px]">
                 <div class="footer-new-img">
                   <img
                     src="./public/assets/images/ayumy-4.png"
@@ -1024,7 +1033,7 @@
                   </div>
                 </div>
               </div>
-              <div class="relative w-full px-[10px]">
+              <div class="col-lg-4 relative w-full px-[10px] lg:px-[15px]">
                 <div class="new-item-footer">
                   <h4>
                     <img
@@ -1040,7 +1049,7 @@
                   <a href="/" class="btn-see-all">Tư vấn ngay</a>
                 </div>
               </div>
-              <div class="relative w-full px-[10px]">
+              <div class="col-lg-4 relative w-full px-[10px] lg:px-[15px]">
                 <div class="new-item-footer">
                   <h4>
                     <img
@@ -1071,7 +1080,7 @@
       <div class="bap-footer-top">
         <div class="container">
           <div class="row">
-            <div class="relative w-full px-[10px]">
+            <div class="col-lg-6 relative w-full px-[10px] lg:px-[15px]">
               <div class="footer-logo">
                 <a class="navbar-brand" href="/">
                   <img src="./public/assets/images/logo-bap-software-1.png" />
@@ -1103,7 +1112,7 @@
                 </p>
               </div>
             </div>
-            <div class="footer-item-list relative w-full px-[10px]">
+            <div class="col-lg-3 footer-item-list">
               <div class="row">
                 <div class="relative w-full px-[10px]">
                   <h3>Thông tin</h3>
@@ -1173,7 +1182,7 @@
                 </div>
               </div>
             </div>
-            <div class="footer-item-list relative w-full px-[10px]">
+            <div class="col-lg-3 footer-item-list">
               <div class="row">
                 <div class="relative w-full px-[10px]">
                   <div class="service max-w-[50%]">
@@ -1235,7 +1244,7 @@
     <script src="./public/scripts/index.js" defer></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      var swiper = new Swiper(".productSwiper", {
+      const productSwiper = new Swiper(".productSwiper", {
         slidesPerView: 2,
 
         pagination: {
@@ -1245,7 +1254,7 @@
           dynamicMainBullets: 7,
         },
         breakpoints: {
-          1280: {
+          1024: {
             slidesPerView: 4,
             pagination: {
               dynamicMainBullets: 4,
@@ -1253,7 +1262,7 @@
           },
         },
       });
-      var swiper = new Swiper(".partnerSwiper", {
+      const partnerSwiper = new Swiper(".partnerSwiper", {
         slidesPerView: 2,
         spaceBetween: 30,
         autoplay: {
@@ -1261,7 +1270,7 @@
           disableOnInteraction: false,
         },
         breakpoints: {
-          991: {
+          600: {
             slidesPerView: 4,
           },
           1280: {
@@ -1269,7 +1278,7 @@
           },
         },
       });
-      var swiper = new Swiper(".clientSwiper", {
+      const clientSwiper = new Swiper(".clientSwiper", {
         slidesPerView: 1,
         spaceBetween: 10,
         loop: true,
@@ -1278,10 +1287,22 @@
         fadeEffect: {
           crossFade: true,
         },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
       });
-      var swiper = new Swiper(".serviceProductSwiper", {
+      const serviceProductSwiper = new Swiper(".serviceProductSwiper", {
         slidesPerView: 2,
         spaceBetween: 10,
+        breakpoints: {
+          600: {
+            slidesPerView: 4,
+          },
+          1280: {
+            slidesPerView: 5,
+          },
+        },
       });
     </script>
   </body>

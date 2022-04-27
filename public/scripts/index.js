@@ -339,23 +339,18 @@ function ServiceProduct(data) {
   client.className = "swiper-slide service-product-items";
   client.innerHTML = `<a href="/" target="_blank">
                   <div
-                    class="box-sevices mb-[16px] rounded-[3px] border-[1px] border-solid border-[#ececec] bg-white p-5 text-center shadow-none"
+                    class="box-services "
                   >
-                    <div class="img-services my-[15px]">
+                    <div class="img-services ">
                       <img
                         src="${image}"
-                        class="h-[45px] max-h-[45px] w-full max-w-[175px] object-contain"
                       />
                     </div>
-                    <div class="info-services text-center">
-                      <h4
-                        class="mb-[15px] text-[13px] font-normal leading-[1.2] text-[#393939]"
-                      >
+                    <div class="info-services ">
+                      <h4>
                         ${title}
                       </h4>
-                      <p
-                        class="h-[30px] overflow-hidden text-center text-[10px] text-[#007bff]"
-                      >
+                      <p>
                         ${desc}
                       </p>
                     </div>
