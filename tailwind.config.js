@@ -28,6 +28,9 @@ module.exports = {
       "max-3xl": { max: "1440px" },
     },
     extend: {
+      backgroundSize: {
+        aboutheader: "100% 100%",
+      },
       boxShadow: {
         navbar: "3px -10px 20px rgba(0,0,0,0.2)",
         flag: "1px 1px 5px rgba(0,0,0,0.3)",
@@ -40,11 +43,13 @@ module.exports = {
         slideritem: "3px 6px 12px 0 rgba(0,0,0,0.1)",
         navbardesktop: "1px 3px 15px rgba(0,0,0,.1)",
         aboutcontainer: "6px 5px 30px rgba(0,0,0,.15826)",
+        btngradientblue: "2px 4px 20px rgba(36,168,255,0.6)",
+        bapmapiframe: "5px 5px 20px rgba(0,0,0,.05)",
       },
       flex: {
         col2: "0 0 16.666667%",
-        col3: "0 0 33.333333%",
-        col4: "0 0 25%",
+        col3: "0 0 25%",
+        col4: "0 0 33.333333%",
         col5: "0 0 41.666667%",
         col6: "0 0 50%",
         col7: "0 0 58.333333%",
