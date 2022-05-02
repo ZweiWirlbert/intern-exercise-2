@@ -244,6 +244,136 @@ section.section.new-bap-history .adress-info p {
 .table-history-bap table tr td:last-child {
   @apply border-l-[1px] border-solid border-[#d8ecf9];
 }
+section#keymember {
+  @apply block pt-[60px];
+  background: linear-gradient(to top, #f7fafc 70%, #fff 30%);
+}
+@media (max-width: 767px) {
+  section#keymember .item .item-inner {
+    background: #ffff !important;
+  }
+}
+
+section#keymember .item .item-inner {
+  @apply mx-auto block gap-[30px] md:grid md:grid-cols-keymembergrid;
+  background: linear-gradient(to left, #fff 90%, #f7fafc 10%);
+}
+.keymember-carousel .item .item-inner .member-avatar {
+  @apply mb-[30px] text-center;
+}
+section#keymember .bap-keymember-container {
+  @apply relative max-lg:py-[40px] max-lg:px-[20px];
+}
+section#keymember .keymember-carousel .item .item-inner .member-avatar img {
+  @apply h-[370px] w-full max-w-full border-[5px] border-solid border-white object-cover md:shadow-keymember;
+}
+section#keymember .ceo-left {
+  @apply text-left md:ml-[40%] max-md:px-[20px] max-md:pt-[20px];
+}
+section#keymember .ceo-left h4 {
+  @apply my-[10px] text-[22px] leading-[1.2] text-[#1d9eff];
+}
+section#keymember .ceo-left b {
+  @apply text-[15px] font-normal leading-[18px] text-[#313131];
+}
+.keymember-carousel .item .item-inner .keymem-desc {
+  @apply relative mb-[30px];
+}
+section#keymember .keymem-desc-inner {
+  @apply pt-[85px] text-[#212529] max-md:p-[20px] max-md:pt-0 max-md:text-[14px];
+}
+section#keymember
+  .keymember-carousel
+  .item
+  .item-inner
+  .keymem-desc
+  .keymem-desc-inner
+  div
+  > ul {
+  @apply m-0 w-full max-w-[unset] p-0 !text-left;
+}
+section#keymember
+  .keymember-carousel
+  .item
+  .item-inner
+  .keymem-desc
+  .keymem-desc-inner
+  p {
+  @apply !text-left;
+}
+
+.keymember-slider .swiper {
+  @apply pt-[30px];
+}
+.keymember-slider .keymember-swiper-pagination {
+  @apply !left-[50%] top-0 flex h-[30px] !w-fit items-center justify-center md:!left-[52%] md:top-[8%] max-md:!translate-x-[-50%] lg:!top-[7%] lg:!left-[56%] xl:!left-[60%];
+}
+
+.keymember-slider .swiper-pagination-bullet {
+  @apply !mx-[10px] !h-[10px] !w-[10px] !rounded-full !bg-[rgba(0,0,0,0.8)] transition-all duration-300 ease-in-out;
+}
+
+.keymember-slider .swiper-pagination-bullet-active {
+  @apply !scale-[1.8] !bg-[#066DED] transition-all duration-300 ease-in-out;
+}
+.keymember-slider .btn-nav-container {
+  @apply !invisible absolute top-[10%] right-0 !hidden w-[58%]  justify-between md:!visible md:!flex;
+}
+.keymember-slider .btn-nav-container .nav-button {
+  @apply z-[9] flex h-[40px] w-[40px] items-center justify-center rounded-full bg-[#037EEE] transition-all duration-200 ease-in-out;
+}
+.keymember-slider .btn-nav-container .nav-button.button-prev img {
+  @apply !rotate-180;
+}
+.keymember-slider .swiper-button-prev::after,
+.keymember-slider .swiper-button-next::after {
+  content: unset !important;
+}
+
+.keymember-slider .btn-nav-container .nav-button.button-prev {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#037eee),
+    to(#10d8ec)
+  ) !important;
+}
+.keymember-slider .btn-nav-container .nav-button.button-next {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#10d8ec),
+    to(#037eee)
+  ) !important;
+}
+.row.albums-container {
+  @apply block overflow-x-auto overflow-y-hidden whitespace-nowrap md:flex;
+  -webkit-overflow-scrolling: touch;
+}
+.albums-container .inner-albums {
+  @apply mb-[30px] w-full px-[15px] md:max-w-[50%] md:flex-col6;
+}
+.list-activity .inner-albums .list-activity-body .list-activity-text {
+  @apply bg-[#e5f0f7] p-[15px] pl-0;
+}
+.list-activity .inner-albums .list-activity-body .list-activity-text h5 {
+  @apply border-l-[3px] border-solid border-[#6bb6fd] pl-[10px] text-left;
+}
+.list-activity a.activity-item {
+  @apply inline-block w-full text-[18.75px] text-[#007bff];
+}
+
+.list-activity-img img {
+  @apply h-[320px] w-full max-w-full object-cover;
+}
+.chanel-item-title {
+  @apply py-[3.75px] text-center text-[18.75px];
+}
+.news-swiper-pagination {
+  @apply !absolute !bottom-0 !left-[50%] !w-[unset] !translate-x-[-50%];
+}
 
 @keyframes fadeInLeft {
   0% {
