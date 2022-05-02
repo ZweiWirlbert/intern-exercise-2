@@ -205,6 +205,45 @@
 .office-map-item .bap-map-iframe iframe {
   @apply -mb-[6px];
 }
+#bap-achievements {
+  @apply bg-cover bg-center bg-no-repeat;
+  background-image: url("../assets/images/bg-contact.jpeg");
+}
+section.section.new-bap-history * {
+  @apply text-white;
+}
+section.section.new-bap-history .adress-info {
+  @apply border-b-[1px] border-solid border-[#acacac] py-[15px];
+}
+section.section.new-bap-history .adress-info h5 {
+  @apply text-[20px] font-semibold text-[#1d9eff];
+}
+section.section.new-bap-history .adress-info p {
+  @apply mb-[15px] text-[15px] leading-[26px] tracking-[-0.4px] text-white;
+}
+.new-bap-history-image-cert-item img {
+  @apply mx-auto w-[85%];
+}
+.table-responsive {
+  @apply block w-full overflow-x-auto;
+  -webkit-overflow-scrolling: touch;
+}
+.table-history-bap table tr {
+  @apply border-t-[10px] border-b-[10px] border-solid border-white;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid #fff;
+}
+.table-history-bap table tr th {
+  @apply w-[100px] bg-[#e8f6ff] text-center text-[16px] text-[#519bf1] max-lg:min-w-[80px];
+  font-family: "Avenir Next LT Pro Demi", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+}
+.table-history-bap table tr td {
+  @apply py-[10px] px-[12px] md:px-[20px] lg:px-[40px] max-lg:whitespace-nowrap;
+}
+.table-history-bap table tr td:last-child {
+  @apply border-l-[1px] border-solid border-[#d8ecf9];
+}
 
 @keyframes fadeInLeft {
   0% {
