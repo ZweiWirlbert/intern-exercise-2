@@ -2,7 +2,8 @@
   "scripts": {
     "concurrently": "concurrently \"yarn:tailwind-*\"",
     "tailwind-home": "tailwindcss -i ./public/styles/index.css -o ./public/dist/index.css --watch",
-    "tailwind-about": "tailwindcss -i ./public/styles/about.css -o ./public/dist/about.css --watch"
+    "tailwind-about": "tailwindcss -i ./public/styles/about.css -o ./public/dist/about.css --watch",
+    "tailwind-services": "tailwindcss -i ./public/styles/services.css -o ./public/dist/services.css --watch"
   },
   "devDependencies": {
     "concurrently": "^7.1.0",

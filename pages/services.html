@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/dist/index.css" />
+    <link rel="stylesheet" href="../public/dist/services.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <title>BAP Software</title>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <header
+      class="fixed-top bg-transparent transition-all duration-200 ease-in-out"
+      id="navbar"
+    >
+      <nav class="relative flex flex-wrap items-center justify-between py-3">
+        <div class="container flex flex-wrap items-center justify-between">
+          <!-- nav-logo -->
+          <div class="h-full">
+            <a href="/" class="mr-4 block py-[0.3125rem] duration-300">
+              <!-- them class brightness-0 invert -->
+              <img
+                id="navbar-logo"
+                class="h-10 max-w-full border-none brightness-0 invert"
+                src="../public/assets/images/logo-bap-software-1.png"
+                alt="Công Ty Cổ Phần Đầu Tư Và Công Nghệ BAP"
+              />
+            </a>
+          </div>
+          <!-- nav-button-toggle -->
+          <button id="hamburger" class="navbar-toggler collapsed">
+            <span class="hamburger-slice"></span>
+            <span class="hamburger-slice"></span>
+            <span class="hamburger-slice"></span>
+          </button>
+          <div class="navbar-menu">
+            <ul id="main-menu" class="main-menu">
+              <li class="main-menu-item">
+                <p class="sub-menu-toggle">
+                  <img
+                    src="https://bap-software.net/wp-content/uploads/2020/01/downwards-pointer.svg"
+                    class="w-4 max-w-full"
+                  />
+                </p>
+                <a href="./about.html" class="main-menu-item-link"
+                  >VỀ CHÚNG TÔI</a
+                >
+                <!-- sub menu  -->
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Tầm nhìn</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Thông điệp CEO</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Thông tin công ty</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Vị trí</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Thành tựu</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Lịch sử công ty</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Thành viên chủ chốt</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Tìm hiểu thêm</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-item">
+                <p class="sub-menu-toggle">
+                  <img
+                    src="https://bap-software.net/wp-content/uploads/2020/01/downwards-pointer.svg"
+                    class="w-4 max-w-full"
+                  />
+                </p>
+                <a href="/" class="main-menu-item-link">DỊCH VỤ</a>
+                <!-- sub menu  -->
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển Website/Smartphone App</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển Business Application</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển và tư vấn SAP, ERP</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển trò chơi</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển ứng dụng dùng công nghệ Blockchain</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển ứng dụng dùng công nghệ AI</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển ứng dụng dùng công nghệ BigData</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-item">
+                <p class="sub-menu-toggle">
+                  <img
+                    src="https://bap-software.net/wp-content/uploads/2020/01/downwards-pointer.svg"
+                    class="w-4 max-w-full"
+                  />
+                </p>
+                <a href="/" class="main-menu-item-link">DỰ ÁN THỰC TẾ</a>
+                <!-- sub menu  -->
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Khách hàng của chúng tôi</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Dự án Website/ Smartphone App</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Dự án Business Application</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Dự án SAP ERP</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Dự án Trò chơi</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Dự án dùng công nghệ Blockchain</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Dự án dùng công nghệ AI</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"> Dự án BigData </a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Dự án Migration Cobol</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-item">
+                <a href="/" class="main-menu-item-link">THẾ MẠNH</a>
+              </li>
+              <li class="main-menu-item">
+                <p class="sub-menu-toggle">
+                  <img
+                    src="https://bap-software.net/wp-content/uploads/2020/01/downwards-pointer.svg"
+                    class="w-4 max-w-full"
+                  />
+                </p>
+                <a href="/" class="main-menu-item-link">KIẾN THỨC</a>
+                <!-- sub menu  -->
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Công nghệ</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Offshore</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-item">
+                <p class="sub-menu-toggle">
+                  <img
+                    src="https://bap-software.net/wp-content/uploads/2020/01/downwards-pointer.svg"
+                    class="w-4 max-w-full"
+                  />
+                </p>
+                <a href="/" class="main-menu-item-link">TUYỂN DỤNG & TIN TỨC</a>
+                <!-- sub menu  -->
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Tuyển dụng</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Hoạt động của công ty</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-item">
+                <a href="/" class="main-menu-item-link navy-item">LIÊN HỆ</a>
+              </li>
+            </ul>
+            <div class="lang-menu">
+              <div class="w-[30px] cursor-pointer shadow-flag">
+                <img
+                  src="../public/assets/images/jp.png"
+                  alt="japan"
+                  class="h-auto w-full max-w-full"
+                />
+              </div>
+              <div class="w-[30px] cursor-pointer shadow-flag">
+                <img
+                  src="../public/assets/images/gb.png"
+                  alt="great british"
+                  class="h-auto w-full max-w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container block overflow-hidden">
+      <section class="new-about-header bg-white">
+        <div class="contact-banner about-header-inner">
+          <div class="container">
+            <div class="text-center">
+              <h1 class="single-header-text">Dịch vụ</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-intro">
+        <div class="container"><h2>Let's</h2></div>
+        <div class="main-contact-intro">
+          <div class="container">
+            <div class="row">
+              <div class="col col-md-6">
+                <div class="contact-slogan">
+                  <h4>BE ADVANCED</h4>
+                  <span> PARTNER </span>
+                </div>
+              </div>
+              <div class="col col-md-6">
+                <div class="contact-content">
+                  <p>
+                    Với kiến thức công nghệ cùng kinh nghiệm thực tiễn dồi dào,
+                    chúng tôi mang đến dịch vụ Offshore cho nhiều loại hình sản
+                    phẩm đa dạng, mang hàm lượng công nghệ cao.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="connect-bap info-tech section lg:bg-white">
+      <div class="container">
+        <div class="section contact-controler">
+          <div class="text-center">
+            <h2 class="single-header-text">Bạn đang tìm kiếm dịch vụ về</h2>
+          </div>
+          <div class="row mt-[22.5px] justify-center">
+            <div class="col col-md-6 col-lg-4 py-[20px]">
+              <div class="item-services">
+                <a href="/"
+                  ><div class="offshore_list_item hover-zoom">
+                    <div class="item-content">Outsystems</div>
+                    <div class="item-thumb">
+                      <img src="../public/assets/images/offshore-icon.png" />
+                    </div>
+                    <div class="offshore_list_item_content">Outsystems...</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col col-md-6 col-lg-4 py-[20px]">
+              <div class="item-services">
+                <a href="/"
+                  ><div class="offshore_list_item hover-zoom">
+                    <div class="item-content">BLOCKCHAIN</div>
+                    <div class="item-thumb">
+                      <img src="../public/assets/images/countries-icon.png" />
+                    </div>
+                    <div class="offshore_list_item_content">
+                      BAP là công ty outsourcing duy nhất lọt vào danh sách
+                      fintech việt nam, là một trong những công ty phát triển
+                      phần mềm, website bằng công nghệ blockchain đầu tiên ở
+                      Việt Nam....
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col col-md-6 col-lg-4 py-[20px]">
+              <div class="item-services">
+                <a href="/"
+                  ><div class="offshore_list_item hover-zoom">
+                    <div class="item-content">AI/IoT</div>
+                    <div class="item-thumb">
+                      <img src="../public/assets/images/ai-icon.png" />
+                    </div>
+                    <div class="offshore_list_item_content">
+                      Với đội ngũ trên 20 kỹ sư, chúng tôi là một trong các công
+                      ty hiếm hoi có đầy đủ từ chuyên gia tư vấn cũng như kỹ sư
+                      phát triển và vận hành trong lĩnh vực AI. Chúng tôi có đội
+                      ngũ ưu tú Data Scientist, Deep learning...
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col col-md-6 col-lg-3 py-[20px]">
+              <div class="item-services">
+                <a href="/"
+                  ><div class="offshore_list_item hover-zoom">
+                    <div class="item-content">Phát triển Offshore</div>
+                    <div class="item-thumb">
+                      <img src="../public/assets/images/employee-icon.png" />
+                    </div>
+                    <div class="offshore_list_item_content">
+                      Là một công ty phát triển Offshore về công nghệ thông tin
+                      với hơn 200 nhân sự tại các văn phòng ở Tokyo, Osaka và
+                      Việt Nam (Đà Nẵng, Huế, thành phố Hồ Chí Minh). Sự khác
+                      biệt so với các công ty nước ngoài là BAP sở hữu...
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col col-md-6 col-lg-3 py-[20px]">
+              <div class="item-services">
+                <a href="/"
+                  ><div class="offshore_list_item hover-zoom">
+                    <div class="item-content">WEBSITE /SMARTPHONE APP</div>
+                    <div class="item-thumb">
+                      <img src="../public/assets/images/mobile-icon.png" />
+                    </div>
+                    <div class="offshore_list_item_content">
+                      Tại BAP chúng tôi luôn dùng những công nghệ mới nhất, hiệu
+                      năng tốt nhất để phát triển web, app. Chúng tôi cùng với
+                      khách hàng tham gia từ khâu ý tưởng sau đó thiết kế, phát
+                      triển và vận hành. Ngoài ra đối với các công ty lớn...
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col col-md-6 col-lg-3 py-[20px]">
+              <div class="item-services">
+                <a href="/"
+                  ><div class="offshore_list_item hover-zoom">
+                    <div class="item-content">BUSINESS APPLICATION</div>
+                    <div class="item-thumb">
+                      <img src="../public/assets/images/stock-icon.png" />
+                    </div>
+                    <div class="offshore_list_item_content">
+                      Tại BAP chúng tôi cùng với khách hàng phân tích từ những
+                      nghiệp vụ phức tạp nhất để tạo ra sản phẩm công nghệ giúp
+                      quá trình chuyển đổi số hoá theo quy mô nhỏ, vừa đến lớn.
+                      Ngoài việc phát triển ứng dụng từ đầu chúng tôi còn...
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col col-md-6 col-lg-3 py-[20px]">
+              <div class="item-services">
+                <a href="/"
+                  ><div class="offshore_list_item hover-zoom">
+                    <div class="item-content">BIGDATA</div>
+                    <div class="item-thumb">
+                      <img src="../public/assets/images/bigdata-icon.png" />
+                    </div>
+                    <div class="offshore_list_item_content">
+                      Dựa trên cấu hình giao diện đơn giản và dễ xem, chúng tôi
+                      sẽ trao đổi phát triển theo mong muốn của khách hàng....
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col col-md-6 col-lg-4 py-[20px]">
+              <div class="item-services">
+                <a href="/"
+                  ><div class="offshore_list_item hover-zoom">
+                    <div class="item-content">TRÒ CHƠI</div>
+                    <div class="item-thumb">
+                      <img src="../public/assets/images/game-icon.png" />
+                    </div>
+                    <div class="offshore_list_item_content">
+                      Chúng tôi có đội ngũ từ artist đến developer phát triển
+                      game từ phase ý tưởng đến giai đoạn vận hành.Game của
+                      chúng tôi từng đứng thứ 99 trên top charts của apple store
+                      . Ngoài ra đội ngũ key member của chúng tôi đã từng làm
+                      cho các...
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bap-partner" id="bappartner">
+      <div class="container">
+        <div class="mb-[30px]">
+          <h2 class="headding-contact">
+            <span class="text-header-text">Khách hàng tiêu biểu</span>
+          </h2>
+          <p class="pl-[22.5px]">
+            Đa dạng về quy mô và loại hình kinh doanh, đã có hơn 100 khách hàng
+            trở thành đối tác của BAP.
+          </p>
+        </div>
+        <div class="partner-slider">
+          <div class="swiper partnerSwiper">
+            <div class="swiper-wrapper partner-swiper-wrapper"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="client-recomments mb-[20px]">
+      <div class="container">
+        <div class="swiper clientSwiper">
+          <ul
+            class="lists-recomments swiper-wrapper client-swiper-wrapper"
+          ></ul>
+          <div class="swiper-btn swiper-button-prev"></div>
+          <div class="swiper-btn swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="product-section section-bap-product" id="bapachievement">
+      <div class="container">
+        <div class="mb-[30px]">
+          <h2 class="headding-contact">
+            <span class="text-header-text">Dự án thực tế</span>
+          </h2>
+        </div>
+        <div class="product-slider">
+          <div class="swiper productSwiper !pb-[40px]">
+            <div class="swiper-wrapper product-swiper-wrapper"></div>
+            <div
+              class="swiper-pagination product-swiper-pagination bottom-0 top-[unset]"
+            ></div>
+            <a
+              class="btn-see-all invisible float-right hidden w-fit 2md:visible 2md:block"
+              href="/"
+              >Xem thêm</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bap-footer footer-services block">
+      <div class="new-footer-bap">
+        <div class="container">
+          <div class="double-block-new">
+            <div class="row">
+              <div class="col-lg-4 relative w-full px-[10px] lg:px-[15px]">
+                <div class="footer-new-img">
+                  <img
+                    src="../public/assets/images/ayumy-4.png"
+                    alt="ayumi higashi"
+                  />
+                  <div class="comtor">
+                    <h4>ayumi higashi</h4>
+                    <span>Comtor Lead</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 relative w-full px-[10px] lg:px-[15px]">
+                <div class="new-item-footer">
+                  <h4>
+                    <img
+                      src="../public/assets/images/phone.png"
+                      alt="phone"
+                      class="max-w-full"
+                    />
+                    <span>Bạn cần tư vấn dịch vụ phát triển phần mềm?</span>
+                  </h4>
+                  <h5>
+                    Hãy để BAP là đối tác mang đến đột phá cho dự án của bạn!
+                  </h5>
+                  <a href="/" class="btn-see-all">Tư vấn ngay</a>
+                </div>
+              </div>
+              <div class="col-lg-4 relative w-full px-[10px] lg:px-[15px]">
+                <div class="new-item-footer">
+                  <h4>
+                    <img
+                      src="../public/assets/images/shop.png"
+                      alt="phone"
+                      class="max-w-full"
+                    />
+                    <span>Gia nhập đội ngũ tài năng?</span>
+                  </h4>
+                  <h5>
+                    Tại BAP, những tài năng là những “cộng sự” tuyệt vời nhất!
+                  </h5>
+                  <a href="/" class="btn-more-info"
+                    >Tìm hiểu thêm
+                    <img
+                      src="../public/assets/images/white-arrow-right-icon.png"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="deco-bot">
+          <img src="../public/assets/images/deco-bot.png" />
+        </div>
+      </div>
+      <div class="bap-footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 relative w-full px-[10px] lg:px-[15px]">
+              <div class="footer-logo">
+                <a class="navbar-brand" href="/">
+                  <img src="../public/assets/images/logo-bap-software-1.png" />
+                </a>
+              </div>
+              <div class="footer-info">
+                <h3>Địa chỉ</h3>
+                <p>
+                  <strong>Tokyo, Nhật Bản</strong><br />
+                  103-0025 Lầu 5 tòa nhà Okamoto, 1-11-3 Nihonbashi, Kayabacho,
+                  Chuo-ku, Tokyo<br />
+                  Tel: (+81) 03 6280 4268<br />
+                  <strong>Osaka, Nhật Bản</strong><br />
+                  541-0053 Lầu 8 tòa nhà Toshiba Osaka, 4-2-12 Honmachi,
+                  Chuo-ku, Osaka<br />
+                  <strong>Hồ Chí Minh, Việt Nam</strong><br />
+                  Lầu 17 Viettel Complex Building, 285 Cách Mạng Tháng 8, Quận
+                  10, HCM<br />
+                  Tel: (+84) 028 6270 1557<br />
+                  <strong>Đà Nẵng, Việt Nam</strong><br />
+                  Lầu 10, 81 Quang Trung – Hải Châu – Đà Nẵng<br />
+                  Tel: (+84) 0236 6565 115<br />
+                  <strong>Huế, Việt Nam</strong><br />
+                  Lầu 5, 28 Lý Thường Kiệt – Vĩnh Ninh – Huế<br />
+                  Tel: (+84) 0234 6273 555<br />
+                  <strong>Hà Nội, Việt Nam</strong><br />
+                  Tầng 9, toà nhà HB, 106 Hoàng Quốc Việt, Cầu Giấy, Hà Nội<br />
+                  Tel: Đang cập nhật
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 footer-item-list">
+              <div class="row">
+                <div class="relative w-full px-[10px]">
+                  <h3>Thông tin</h3>
+                  <div class="mb-[22.5px]">
+                    <ul class="my-[15px] inline-grid">
+                      <li class="mb-[2px] block">
+                        <a
+                          href="/"
+                          class="mr-[15px] text-center leading-[25px] text-[#d4edff] duration-200"
+                          >Tin tức</a
+                        >
+                      </li>
+                      <li class="mb-[2px] block">
+                        <a
+                          href="/"
+                          class="mr-[15px] text-center leading-[25px] text-[#d4edff] duration-200"
+                          >Liên Hệ</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-[22.5px]">
+                    <ul class="my-[20px] flex gap-4">
+                      <li class="inline-block">
+                        <a class="social-icon" href="/">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="inline-block">
+                        <a class="social-icon" href="/">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                          >
+                            <path
+                              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="inline-block">
+                        <a class="social-icon" href="/">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="my-[20px] flex gap-4">
+                      <li>
+                        <img src="../public/assets/images/certification.png" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 footer-item-list">
+              <div class="row">
+                <div class="relative w-full px-[10px]">
+                  <div class="service max-w-[50%]">
+                    <div class="mb-[22.5px]">
+                      <h3
+                        class="mb-[7.5px] text-[20px] font-medium leading-[1.2]"
+                      >
+                        Dịch vụ
+                      </h3>
+                      <ul class="my-[20px]">
+                        <li class="mb-[2px] block">
+                          <a href="/"> Phát triển Website/Smartphone App </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/"> Phát triển Business Application </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/"> Phát triển và tư vấn SAP, ERP </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/"> Phát triển trò chơi </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/">
+                            Phát triển ứng dụng dùng công nghệ Blokchain
+                          </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/">
+                            Phát triển ứng dụng dùng công nghệ AI
+                          </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/">
+                            Phát triển ứng dụng dùng công nghệ BigData
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bap-footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="relative w-full px-[10px] text-center">
+              <p class="leading-[1.8]">
+                Copyright © 2021 BAP IT CO., JSC. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../public/scripts/index.js" defer></script>
+    <script src="../public/scripts/servicesPartnerSwiper.js" defer></script>
+    <script src="../public/scripts/servicesClientSwiper.js" defer></script>
+    <script src="../public/scripts/servicesProductSwiper.js" defer></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const partnerSwiper = new Swiper(".partnerSwiper", {
+        slidesPerView: 2,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          600: {
+            slidesPerView: 4,
+          },
+          1280: {
+            slidesPerView: 6,
+          },
+        },
+      });
+      const clientSwiper = new Swiper(".clientSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        speed: 1000,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      const productSwiper = new Swiper(".productSwiper", {
+        slidesPerView: 1,
+        speed: 1500,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".product-swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+          dynamicMainBullets: 7,
+        },
+        breakpoints: {
+          450: {
+            slidesPerView: 2,
+          },
+          992: {
+            slidesPerView: 3,
+          },
+          1200: {
+            slidesPerView: 4,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -676,6 +676,10 @@ main.main-container, footer.bap-footer.footer-services{
   top: unset;
 }
 
+.left-0{
+  left: 0px;
+}
+
 .float-right{
   float: right;
 }
@@ -766,6 +770,14 @@ main.main-container, footer.bap-footer.footer-services{
 
 .mb-\[25px\]{
   margin-bottom: 25px;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mb-\[20px\]{
+  margin-bottom: 20px;
 }
 
 .block{
@@ -926,6 +938,10 @@ main.main-container, footer.bap-footer.footer-services{
   gap: 1rem;
 }
 
+.gap-\[20px\]{
+  gap: 20px;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -995,6 +1011,11 @@ main.main-container, footer.bap-footer.footer-services{
 
 .bg-\[rgba\(255\2c 196\2c 192\2c \.18\)\]{
   background-color: rgba(255,196,192,.18);
+}
+
+.\!bg-white{
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
 .object-cover{
@@ -1090,12 +1111,20 @@ main.main-container, footer.bap-footer.footer-services{
   padding-top: 60px !important;
 }
 
-.pb-\[20px\]{
-  padding-bottom: 20px;
-}
-
 .\!pb-\[20px\]{
   padding-bottom: 20px !important;
+}
+
+.pl-4{
+  padding-left: 1rem;
+}
+
+.pl-\[22\.5\]{
+  padding-left: 22.5;
+}
+
+.pl-\[22\.5px\]{
+  padding-left: 22.5px;
 }
 
 .text-left{
@@ -3654,6 +3683,11 @@ main.main-container, footer.bap-footer.footer-services{
 }
 
 @media (min-width: 992px){
+  .lg\:bg-white{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  }
+
   .lg\:px-\[15px\]{
     padding-left: 15px;
     padding-right: 15px;
@@ -3675,5 +3709,10 @@ main.main-container, footer.bap-footer.footer-services{
 @media (max-width: 991px){
   .max-lg\:w-full{
     width: 100%;
+  }
+
+  .max-lg\:bg-white{
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 }
