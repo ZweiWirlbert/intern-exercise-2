@@ -763,6 +763,9 @@
   .col-lg-7 {
     @apply lg:max-w-[58.333333%] lg:flex-col7;
   }
+  .col-lg-9 {
+    @apply lg:max-w-[75%] lg:flex-col9;
+  }
 }
 
 @keyframes iconzoom {

@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../public/dist/index.css" />
+    <link rel="stylesheet" href="../public/dist/case-study.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <title>BAP Software</title>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <header
+      class="fixed-top bg-transparent transition-all duration-200 ease-in-out"
+      id="navbar"
+    >
+      <nav class="relative flex flex-wrap items-center justify-between py-3">
+        <div class="container flex flex-wrap items-center justify-between">
+          <!-- nav-logo -->
+          <div class="h-full">
+            <a href="/" class="mr-4 block py-[0.3125rem] duration-300">
+              <!-- them class brightness-0 invert -->
+              <img
+                id="navbar-logo"
+                class="h-10 max-w-full border-none brightness-0 invert"
+                src="../public/assets/images/logo-bap-software-1.png"
+                alt="Công Ty Cổ Phần Đầu Tư Và Công Nghệ BAP"
+              />
+            </a>
+          </div>
+          <!-- nav-button-toggle -->
+          <button id="hamburger" class="navbar-toggler collapsed">
+            <span class="hamburger-slice"></span>
+            <span class="hamburger-slice"></span>
+            <span class="hamburger-slice"></span>
+          </button>
+          <div class="navbar-menu">
+            <ul id="main-menu" class="main-menu">
+              <li class="main-menu-item">
+                <p class="sub-menu-toggle">
+                  <img
+                    src="https://bap-software.net/wp-content/uploads/2020/01/downwards-pointer.svg"
+                    class="w-4 max-w-full"
+                  />
+                </p>
+                <a href="./about.html" class="main-menu-item-link"
+                  >VỀ CHÚNG TÔI</a
+                >
+                <!-- sub menu  -->
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Tầm nhìn</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Thông điệp CEO</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Thông tin công ty</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Vị trí</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Thành tựu</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Lịch sử công ty</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Thành viên chủ chốt</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Tìm hiểu thêm</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-item">
+                <p class="sub-menu-toggle">
+                  <img
+                    src="https://bap-software.net/wp-content/uploads/2020/01/downwards-pointer.svg"
+                    class="w-4 max-w-full"
+                  />
+                </p>
+                <a href="/" class="main-menu-item-link">DỊCH VỤ</a>
+                <!-- sub menu  -->
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển Website/Smartphone App</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển Business Application</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển và tư vấn SAP, ERP</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển trò chơi</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển ứng dụng dùng công nghệ Blockchain</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển ứng dụng dùng công nghệ AI</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Phát triển ứng dụng dùng công nghệ BigData</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-item">
+                <p class="sub-menu-toggle">
+                  <img
+                    src="https://bap-software.net/wp-content/uploads/2020/01/downwards-pointer.svg"
+                    class="w-4 max-w-full"
+                  />
+                </p>
+                <a href="/" class="main-menu-item-link">DỰ ÁN THỰC TẾ</a>
+                <!-- sub menu  -->
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Khách hàng của chúng tôi</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Dự án Website/ Smartphone App</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Dự án Business Application</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Dự án SAP ERP</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Dự án Trò chơi</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Dự án dùng công nghệ Blockchain</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Dự án dùng công nghệ AI</a
+                    >
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"> Dự án BigData </a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Dự án Migration Cobol</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-item">
+                <a href="/" class="main-menu-item-link">THẾ MẠNH</a>
+              </li>
+              <li class="main-menu-item">
+                <p class="sub-menu-toggle">
+                  <img
+                    src="https://bap-software.net/wp-content/uploads/2020/01/downwards-pointer.svg"
+                    class="w-4 max-w-full"
+                  />
+                </p>
+                <a href="/" class="main-menu-item-link">KIẾN THỨC</a>
+                <!-- sub menu  -->
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Công nghệ</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Offshore</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-item">
+                <p class="sub-menu-toggle">
+                  <img
+                    src="https://bap-software.net/wp-content/uploads/2020/01/downwards-pointer.svg"
+                    class="w-4 max-w-full"
+                  />
+                </p>
+                <a href="/" class="main-menu-item-link">TUYỂN DỤNG & TIN TỨC</a>
+                <!-- sub menu  -->
+                <ul class="sub-menu">
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link">Tuyển dụng</a>
+                  </li>
+                  <li class="sub-menu-item">
+                    <a href="/" class="sub-menu-item-link"
+                      >Hoạt động của công ty</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-item">
+                <a href="/" class="main-menu-item-link navy-item">LIÊN HỆ</a>
+              </li>
+            </ul>
+            <div class="lang-menu">
+              <div class="w-[30px] cursor-pointer shadow-flag">
+                <img
+                  src="../public/assets/images/jp.png"
+                  alt="japan"
+                  class="h-auto w-full max-w-full"
+                />
+              </div>
+              <div class="w-[30px] cursor-pointer shadow-flag">
+                <img
+                  src="../public/assets/images/gb.png"
+                  alt="great british"
+                  class="h-auto w-full max-w-full"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container block overflow-hidden">
+      <section class="new-about-header bg-white">
+        <div class="contact-banner about-header-inner">
+          <div class="container">
+            <div class="text-center">
+              <h1 class="single-header-text">Dự án thực tế</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-intro section">
+        <div class="container"><h2>Let's</h2></div>
+        <div class="main-contact-intro">
+          <div class="container">
+            <div class="row">
+              <div class="col col-md-6">
+                <div class="contact-slogan">
+                  <h4>BE ADVANCED</h4>
+                  <span> PARTNER </span>
+                </div>
+              </div>
+              <div class="col col-md-6">
+                <div class="contact-content">
+                  <p>
+                    Tại BAP, chúng tôi không ngừng học hỏi, cập nhật, chia sẻ
+                    kiến thức từ những thông tin về dịch vụ Offshore cũng như
+                    những xu hướng công nghệ mới nhất.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="section product-category">
+      <div class="container">
+        <h2 class="headding-contact mb-[30px]">Bạn muốn tìm hiểu dự án về</h2>
+        <div class="row">
+          <div class="col col-sm-6 col-lg-4">
+            <div class="case-item">
+              <a class="nav-link" href="/"><h4>AI</h4> </a>
+              <a class="nav-link" href="/">
+                <img
+                  src="https://bap-software.net/wp-content/uploads/2020/02/Combined-Shape-5.png "
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <div class="col col-sm-6 col-lg-4">
+            <div class="case-item hover-zoom">
+              <a class="nav-link" href="/"><h4>BIGDATA</h4> </a>
+              <a class="nav-link" href="/">
+                <img
+                  src="https://bap-software.net/wp-content/uploads/2020/02/Combined-Shape-10.png "
+                  alt=""
+                />
+              </a>
+              <div class="content"></div>
+            </div>
+          </div>
+          <div class="col col-sm-6 col-lg-4">
+            <div class="case-item hover-zoom">
+              <a class="nav-link" href="/"><h4>MIGRATION COBOL</h4> </a>
+              <a class="nav-link" href="/">
+                <img
+                  src="https://bap-software.net/wp-content/uploads/2020/02/Combined-Shape-11.png "
+                  alt=""
+                />
+              </a>
+              <div class="content"></div>
+            </div>
+          </div>
+          <div class="col col-sm-6 col-lg-4">
+            <div class="case-item hover-zoom">
+              <a class="nav-link" href="/"><h4>SAP ERP</h4> </a>
+              <a class="nav-link" href="/">
+                <img
+                  src="https://bap-software.net/wp-content/uploads/2020/02/Group-11-Copy-6.png "
+                  alt=""
+                />
+              </a>
+              <div class="content"></div>
+            </div>
+          </div>
+          <div class="col col-sm-6 col-lg-4">
+            <div class="case-item hover-zoom">
+              <a class="nav-link" href="/"><h4>TRÒ CHƠI</h4> </a>
+              <a class="nav-link" href="/">
+                <img
+                  src="https://bap-software.net/wp-content/uploads/2020/02/Combined-Shape-8.png "
+                  alt=""
+                />
+              </a>
+              <div class="content"></div>
+            </div>
+          </div>
+          <div class="col col-sm-6 col-lg-4">
+            <div class="case-item hover-zoom">
+              <a class="nav-link" href="/"><h4>WEBSITE/ SMARTPHONE APP</h4> </a>
+              <a class="nav-link" href="/">
+                <img
+                  src="https://bap-software.net/wp-content/uploads/2020/02/Combined-Shape-9.png "
+                  alt=""
+                />
+              </a>
+              <div class="content"></div>
+            </div>
+          </div>
+          <div class="col col-sm-6 col-lg-4">
+            <div class="case-item hover-zoom">
+              <a class="nav-link" href="/"><h4>BLOCKCHAIN</h4> </a>
+              <a class="nav-link" href="/">
+                <img
+                  src="https://bap-software.net/wp-content/uploads/2020/02/Combined-Shape-7.png "
+                  alt=""
+                />
+              </a>
+              <div class="content"></div>
+            </div>
+          </div>
+          <div class="col col-sm-6 col-lg-4">
+            <div class="case-item hover-zoom">
+              <a class="nav-link" href="/"><h4>BUSINESS APPLICATION</h4> </a>
+              <a class="nav-link" href="/">
+                <img
+                  src="https://bap-software.net/wp-content/uploads/2020/02/Combined-Shape-6.png "
+                  alt=""
+                />
+              </a>
+              <div class="content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section list-product bg-white">
+      <div class="container">
+        <h2 class="headding-contact mb-5">Dự án thực tế</h2>
+        <div class="content-case-study">
+          <div class="row">
+            <div class="col col-lg-9">
+              <div class="row">
+                <div class="col">
+                  <div class="item-case-study">
+                    <div class="study-img">
+                      <a href="/">
+                        <img
+                          src="https://bap-software.net/wp-content/uploads/2020/06/food-delivery-2-1.jpg"
+                          alt="Food Delivery"
+                        />
+                      </a>
+                    </div>
+                    <div class="info-case">
+                      <div class="meta">
+                        <div class="heading-title">
+                          <h5>
+                            WEBSITE/ SMARTPHONE APP <span>|</span>
+                            <span> <time>22-06-2020</time> </span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="content-case">
+                        <a href="/"><h4>Food Delivery</h4> </a>
+                        <p>
+                          <strong>Thách thức:</strong> Bạn luôn muốn đặt thức ăn
+                          đến nhà bạn từ các cửa hàng nhưng họ không có dịch vụ
+                          giao hàng? Đối với nhu cầu người tiêu dùng, họ luôn
+                          muốn tận hưởng thức ăn thơm ngon tại nhà hoặc bất cứ
+                          nơi nào, là có thật và nhu cầu tăng nhanh vì người
+                          hiện đại luôn bận rộn với công việc, sở thích và chăm
+                          sóc gia đình.
+                        </p>
+                        <p>
+                          Hơn nữa, nhiều nhà hàng không đủ khả năng để có dịch
+                          vụ giao hàng riêng vì sẽ mất rất nhiều chi phí để xây
+                          dựng, nhưng họ lại muốn bán nhiều hơn cho khách hàng
+                          để tăng doanh thu. Đồng thời, nhiều người cũng muốn
+                          kiếm thêm tiền và sẵn lòng tìm đến công ty dịch vụ vận
+                          chuyển như một người giao hàng khi họ có thời gian
+                          rảnh tại các địa điểm gần đó. Nếu bạn đang có kế hoạch
+                          xây dựng một nền tảng giúp người dùng có thể đặt thức
+                          ăn từ các cửa hàng không có dịch vụ giao hàng, và giúp
+                          chủ doanh nghiệp tăng doanh số, cũng như hỗ trợ mọi
+                          người kiếm thêm từ dịch vụ giao hàng, BAP sẵn sàng làm
+                          điều đó giúp bạn.
+                        </p>
+                        <p>
+                          <strong>Giải pháp:</strong> Ứng dụng giao thức ăn là
+                          một giải pháp hoàn hảo mà BAP đã nghiên cứu và phát
+                          triển. Ứng dụng cung cấp 4 chức năng chính cho 4 nhóm
+                          như người dùng, chủ nhà hàng, người giao hàng, và quản
+                          trị viên.<br />
+                          Chủ nhà hàng có thể đăng ký thực đơn cũng như vị trí
+                          cửa hàng, nhận đơn hàng của người dùng thông qua ứng
+                          dụng và nhận thông tin về người giao hàng sẽ đến lấy
+                          thức đến từ đâu.<br />
+                          Người dùng có thể tìm kiếm thức ăn, đặt hàng, và đăng
+                          ký địa chỉ muốn nhận thức ăn, thanh toán qua ứng dụng,
+                          theo dõi quá trình giao hàng, nơi người giao hàng đang
+                          đứng.<br />
+                          Người giao hàng sử dụng thiết bị di động của mình, có
+                          thể đăng ký để trở thành người giao hàng, nhận đơn
+                          hàng từ hệ thống sau đó đến nhà hàng để lấy thực phẩm
+                          đi giao cho người dùng.<br />
+                          Quản trị viên có thể quản lý nhà hàng đăng ký, người
+                          giao hàng, và nhận thanh toán từ người dùng, sau đó
+                          chuyển tiền đến người giao hàng và chủ nhà hàng sau
+                          khi lấy khoản hoa hồng. Họ có thể hỗ trợ người dùng,
+                          nhà hàng, người giao hàng giải quyết những vấn đề
+                          trong suốt quá trình giao dịch cũng như chạy chiến
+                          dịch để tăng doanh số trong một giai đoạn cụ thể.
+                        </p>
+                        <p>
+                          Các chức năng trên chỉ là một bản tóm tắt ngắn gọn về
+                          những gì hệ thống có thể làm vì còn nhiều chức năng
+                          hơn và ứng dụng sẽ phải mất một danh sách dài để mô
+                          tả.
+                        </p>
+                        <p>
+                          Đằng sau quy trình làm việc trên là một hệ thống lớn.
+                          Chúng tôi tự hào về hệ thống này khi tự mình có thể
+                          nghiên cứu và phát triển vì có nhiều công nghệ như AI,
+                          Big Data, GPS, bản đồ đều được áp dụng. Mặt khác,
+                          chúng tôi cũng lắng nghe các yêu cầu từ khách hàng để
+                          xây dựng một hệ thống phù hợp cho bất kỳ nhu cầu kinh
+                          doanh nào. Hãy liên lạc với chúng tôi qua
+                          <a href="/">sales@bap.jp</a> để có thể thảo luận và
+                          cùng nhau khám phá cuộc phiêu lưu mới phía trước.
+                        </p>
+                        <table
+                          style="
+                            border-collapse: collapse;
+                            width: 100%;
+                            height: 116px;
+                          "
+                        >
+                          <tbody>
+                            <tr style="height: 24px">
+                              <td style="width: 28.4242%; height: 24px">
+                                Khách hàng
+                              </td>
+                              <td style="width: 71.5758%; height: 24px">
+                                <strong>BAP IT</strong>
+                              </td>
+                            </tr>
+                            <tr style="height: 24px">
+                              <td style="width: 28.4242%; height: 24px">
+                                Loại hình phát triển
+                              </td>
+                              <td style="width: 71.5758%; height: 24px">Lab</td>
+                            </tr>
+                            <tr style="height: 24px">
+                              <td style="width: 28.4242%; height: 10px">
+                                Ngôn ngữ lập trình
+                              </td>
+                              <td style="width: 71.5758%; height: 10px">
+                                React native<br />
+                                MySQL<br />
+                                AWS
+                              </td>
+                            </tr>
+                            <tr style="height: 24px">
+                              <td style="width: 28.4242%; height: 24px">
+                                Sản phẩm
+                              </td>
+                              <td style="width: 71.5758%; height: 24px">
+                                Web, IOS, Android
+                              </td>
+                            </tr>
+                            <tr style="height: 24px">
+                              <td style="width: 28.4242%; height: 24px">
+                                Nhà phát triển
+                              </td>
+                              <td style="width: 71.5758%; height: 24px">
+                                BAP Software
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="item-case-study">
+                    <div class="study-img">
+                      <a href="/">
+                        <img
+                          src="https://bap-software.net/wp-content/uploads/2020/03/smart-fashion-2.jpg"
+                          alt="Smartfashion"
+                        />
+                      </a>
+                    </div>
+                    <div class="info-case">
+                      <div class="meta">
+                        <div class="heading-title">
+                          <h5>
+                            AI <span>|</span>
+                            <span> <time>13-05-2020</time> </span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="content-case">
+                        <a href="/"><h4>Smartfashion</h4> </a>
+                        <p>
+                          <strong>Thách thức:</strong> Con người hiện đại luôn
+                          bận rộn, họ thậm đôi khi thậm chí không có thời gian
+                          để mua sắm nhu yếu phẩm. Nói cách khác, các nhà bán lẻ
+                          thời trang đang đối mặt với các giỏ hàng mua sắm trống
+                          không khi nhắc đến mua sắm online và hàng đống món
+                          hàng đổi trả do không đúng kích cỡ hay có vấn đề về
+                          màu sắc. SMART FASHION là ứng dụng sử dụng
+                          <strong>công nghệ AI</strong> mà BAP đã xây dựng để
+                          giúp các nhà bán lẻ giải quyết vấn đề trên với
+                          <strong>chức năng thử đồ ảo</strong> và
+                          <strong>tự động phối đồ</strong> với quần áo có sẵn
+                          trong tủ đồ của người dùng.
+                        </p>
+                        <p>
+                          <strong>Giải pháp:</strong>
+                          <a href="/">SMART FASHION</a>
+                          là một vũ khí mới để xóa bỏ khoảng cách này. Trên ứng
+                          dụng, người dùng có thể sử dụng phòng thay đồ ảo để
+                          thử quần áo, và họ cũng có thể tự tạo phong cách riêng
+                          từ tủ đồ của mình với chức năng phối đồ trên ứng dụng,
+                          SMART Fashion sẽ chấm điểm các trang phục được tạo ra
+                          bởi người dùng. Đây là một giải pháp để tiết kiệm thời
+                          gian và nâng cao trải nghiệm khách hàng trên
+                          <strong>thương mại điện tử</strong>, hay các cửa hàng
+                          thời trang. <strong>Công nghệ máy học</strong> đã góp
+                          phần trong việc phát triển ứng dụng này, khi khách
+                          hàng có thể cảm nhận như thật với mỗi sản phẩm quần
+                          áo. Đây có thể được xem như là một trong những ứng
+                          dụng tốt nhất của đội ngũ BAP.
+                        </p>
+                        <p>
+                          BAP là một công ty cung cấp
+                          <strong>giải pháp cho các doanh nghiệp</strong>. Ngoài
+                          những yêu cầu từ khách hàng, chúng tôi sẵn sàng đưa ra
+                          ý tưởng dựa trên đó để mang đến hiệu suất tốt nhất.
+                          Đội ngũ kỹ sư của chúng tôi có nhiều kinh nghiệm làm
+                          việc trong các công ty Nhật và cũng như các khách hàng
+                          người Nhật, vì thế chúng tôi có thể đưa ra ý tưởng phù
+                          hợp với văn hóa của họ. Bên cạnh
+                          <strong>công nghệ AI</strong>, chúng tôi cũng có thể
+                          cung cấp những dịch vụ công nghệ khác như
+                          <strong
+                            >Blockchain, Web Application, Big Data, và Game,
+                            ERP</strong
+                          >…
+                        </p>
+                        <table
+                          style="
+                            border-collapse: collapse;
+                            width: 100%;
+                            height: 96px;
+                          "
+                        >
+                          <tbody>
+                            <tr style="height: 24px">
+                              <td style="width: 50%; height: 24px">
+                                Loại hình phát triển
+                              </td>
+                              <td style="width: 50%; height: 24px">Lab</td>
+                            </tr>
+                            <tr style="height: 24px">
+                              <td style="width: 50%; height: 24px">
+                                Ngôn ngữ lập trình
+                              </td>
+                              <td style="width: 50%; height: 24px">
+                                AI<br />
+                                Deep Learning<br />
+                                Machine Learning
+                              </td>
+                            </tr>
+                            <tr style="height: 24px">
+                              <td style="width: 50%; height: 24px">Sản phẩm</td>
+                              <td style="width: 50%; height: 24px">
+                                Web, IOS, Android
+                              </td>
+                            </tr>
+                            <tr style="height: 24px">
+                              <td style="width: 50%; height: 24px">
+                                Nhà phát triển
+                              </td>
+                              <td style="width: 50%; height: 24px">
+                                BAP Software
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="item-case-study">
+                    <div class="study-img">
+                      <a href="/">
+                        <img
+                          src="https://bap-software.net/wp-content/uploads/2020/03/stackup-1.jpg"
+                          alt="Stack Up"
+                        />
+                      </a>
+                    </div>
+                    <div class="info-case">
+                      <div class="meta">
+                        <div class="heading-title">
+                          <h5>
+                            TRÒ CHƠI <span>|</span>
+                            <span> <time>03-03-2020</time> </span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="content-case">
+                        <a href="/"><h4>Stack Up</h4> </a>
+
+                        <p>
+                          Với Stack Up, chúng tôi mang đến một trò chơi đơn giản
+                          nhưng đòi hỏi độ chính xác và sự nhanh nhẹn. Chúng tôi
+                          sử dụng đồ họa 2D lấy cảm hứng từ hình ảnh các Ninja.
+                          Trò chơi mang đến cho người tham gia nhiều trải nghiệm
+                          thú vị với đa dạng các phông nền ảnh từ các nước trên
+                          thế giới. Bằng cách sử dụng những màu sắc tươi sáng,
+                          trò chơi là một lựa chọn hoàn hảo để thư giãn và là
+                          nguồn cảm hứng cho công việc cũng như cân bằng trong
+                          cuộc sống.
+                        </p>
+                        <table style="border-collapse: collapse; width: 100%">
+                          <tbody>
+                            <tr>
+                              <td style="width: 50%">Loại hình phát triển</td>
+                              <td style="width: 50%">Lab</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Đặc tính và công nghệ</td>
+                              <td style="width: 50%">
+                                2D<br />
+                                Unity<br />
+                                Ads
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Sản phẩm</td>
+                              <td style="width: 50%">IOS</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Nhà phát triển</td>
+                              <td style="width: 50%">BAP Software</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="item-case-study">
+                    <div class="study-img">
+                      <a href="/">
+                        <img
+                          src="https://bap-software.net/wp-content/uploads/2017/08/manual-app-5.jpg"
+                          alt="Ứng dụng thủ công"
+                        />
+                      </a>
+                    </div>
+                    <div class="info-case">
+                      <div class="meta">
+                        <div class="heading-title">
+                          <h5>
+                            WEBSITE/ SMARTPHONE APP <span>|</span>
+                            <span> <time>31-08-2017</time> </span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="content-case">
+                        <a href="/"><h4>Ứng dụng thủ công</h4> </a>
+
+                        <p>
+                          <strong>Thách thức:</strong> Nhiều doanh nghiệp muốn
+                          đào tạo nhân viên mới và đánh giá kết quả đó để mà họ
+                          có thể xem liệu những người mới đến có thích nghi với
+                          công việc và nội dung đào tạo có hiệu quả hay không.
+                          Điều này có thể giúp những người quản lý có thể điều
+                          chỉnh nội dung đào tạo tốt hơn. Và Manual App của BAP
+                          là một hệ thống giúp các doanh nghiệp có thể đánh giá
+                          và cũng như thu được dữ liệu qua các bài kiểm tra của
+                          nhân viên.<br />
+                          <br />
+                          <strong>Giải pháp:</strong> Manual App là một ứng dụng
+                          có khả năng giúp doanh nghiệp hướng dẫn, đào tạo những
+                          nhân viên mới trực tiếp hoặc cung cấp video cho các
+                          nhân viên tự học. Sau quá trình đào tạo, Manual App sẽ
+                          đưa ra những bài kiểm tra cho nhân viên, có hai loại
+                          bài kiểm tra chính:
+                        </p>
+                        <p>
+                          Loại 1: Nhân viên sẽ trả lời câu hỏi trắc nghiệm bằng
+                          hình thức lựa chọn đáp án A, B, C, D
+                        </p>
+                        <p>
+                          Loại 2: Đây là hình thức kiểm tra thú vị, vì các nhân
+                          viên sẽ thực hiện “bài kiểm tra trực quan”. Khi làm
+                          kiểm tra, các nhân viên sẽ lựa chọn câu trả lời qua
+                          hình ảnh. Ví dụ, với một bài kiểm tra về thực đơn thức
+                          ăn tại nhà hàng, nhân viên phải trả lời các câu hỏi
+                          gồm tên thực phẩm, giá thành bằng cách lựa chọn những
+                          câu trả lời qua hình ảnh. Hình thức này cũng rất phù
+                          hợp cho các nhân viên nhà máy với một quy trình chung
+                          để kiểm tra kiến thức lắp ráp của họ trong một khu vực
+                          cụ thể.
+                        </p>
+                        <p>
+                          Đây có thể nói là một trong những ứng dụng thành công
+                          của BAP, khi chúng tôi đã đưa ra ý tưởng dựa trên yêu
+                          cầu từ khách hàng. Đội ngũ kỹ sư của chúng tôi đã giúp
+                          khách hàng tư vấn những công nghệ phù hợp trên từng dự
+                          án như AI, Blockchain, Big Data, ERP,… , và họ cũng là
+                          những chuyên gia hiểu biết về văn hóa, con người Nhật
+                          Bản từ nhiều dự án. BAP cam đoan những sản phẩm đầu
+                          tốt nhất, đáp ứng nhu cầu doanh nghiệp.
+                        </p>
+                        <table style="border-collapse: collapse; width: 100%">
+                          <tbody>
+                            <tr>
+                              <td style="width: 50%">Loại hình phát triển</td>
+                              <td style="width: 50%">Lab</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Ngôn ngữ phát triển</td>
+                              <td style="width: 50%">
+                                PHP<br />
+                                Java
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Sản phẩm</td>
+                              <td style="width: 50%">Android</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Nhà phát triển</td>
+                              <td style="width: 50%">BAP Software</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="item-case-study">
+                    <div class="study-img">
+                      <a href="/">
+                        <img
+                          src="https://bap-software.net/wp-content/uploads/2020/03/dating-chat-app.jpg"
+                          alt="Dating chat app"
+                        />
+                      </a>
+                    </div>
+                    <div class="info-case">
+                      <div class="meta">
+                        <div class="heading-title">
+                          <h5>
+                            WEBSITE/ SMARTPHONE APP <span>|</span>
+                            <span> <time>30-03-2020</time> </span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="content-case">
+                        <a href="/"><h4>Dating chat app</h4> </a>
+                        <p>
+                          <strong>Thách thức:</strong> Trong phân khúc ứng dụng
+                          hẹn hò, nếu các doanh nghiệp muốn thành công, họ phải
+                          tạo ra nhiều giá trị khác biệt cho người dùng. Nhưng
+                          hầu như mọi doanh nghiệp đều không thể làm điều đó, vì
+                          họ thiếu các nhà <strong>tư vấn công nghệ</strong> để
+                          giúp đỡ. BAP sẽ là một nhà công nghệ cho doanh nghiệp
+                          của bạn để phát triển một ứng dụng hẹn hò tuyệt vời
+                          như Dating Chat App mà chúng tôi đã triển khai.
+                        </p>
+                        <p>
+                          <strong>Giải pháp:</strong> Chúng tôi đã đáp ứng nhu
+                          cầu khách hàng khi ứng dụng hẹn hò của họ được công bố
+                          và chào đón bởi người dùng tại Nhật Bản. Ứng dụng được
+                          phát triển với nhiều chức năng bao gồm gửi tin nhắn
+                          miễn phí, tự động phối ngẫu cũng như đưa ra đề nghị
+                          cho người dùng. Những kỹ sư của chúng tôi đáp ứng nhu
+                          cầu người dùng cao với ứng dụng, và người dùng của họ
+                          đang có những trải nghiệm tốt nhất khi họ dễ dàng tìm
+                          kiếm, nhắn tin, và lựa chọn đối tượng phù hợp với hồ
+                          sơ của họ ước tính bằng %. Thêm vào đó, chúng tôi cũng
+                          đã áp dụng <strong>thuật toán Matching</strong> để
+                          người dùng có thể tìm đúng đối tượng mong muốn dựa
+                          trên hồ sơ thông tin của họ.
+                        </p>
+                        <p>
+                          BAP tự hào khi chúng tôi đã có thể tạo ra một ứng dụng
+                          như vậy. Ngoài ra, chúng tôi còn có nhiều sản phẩm
+                          thành công như thế để các doanh nghiệp có thể tin
+                          tưởng. Đội ngũ kỹ thuật của chúng tôi đóng vai trò
+                          quan trọng trong việc đưa ra ý tưởng, và phát triển
+                          yêu cầu của các doanh nghiệp thành sản phẩm đúng như
+                          cam kết. Chúng tôi đã có kinh nghiệm làm việc với các
+                          công nghệ như
+                          <strong>AI, Big Data, Blockchain, ERP,</strong>.. Nếu
+                          doanh nghiệp của bạn muốn phát triển bất kỳ nền tảng
+                          công nghệ nào, hãy liên hệ với chúng tôi để được tư
+                          vấn.
+                        </p>
+                        <table
+                          style="
+                            border-collapse: collapse;
+                            width: 100%;
+                            height: 145px;
+                          "
+                        >
+                          <tbody>
+                            <tr style="height: 24px">
+                              <td style="width: 50%; height: 24px">
+                                Loại hình phát triển
+                              </td>
+                              <td style="width: 50%; height: 24px">Lab</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%; height: 97px">
+                                Ngôn ngữ lập trình
+                              </td>
+                              <td style="width: 50%; height: 10px">
+                                React native<br />
+                                Ruby<br />
+                                Mysql<br />
+                                Amazon aws
+                              </td>
+                            </tr>
+                            <tr style="height: 24px">
+                              <td style="width: 50%; height: 24px">
+                                Nhà phát triển
+                              </td>
+                              <td style="width: 50%; height: 24px">
+                                BAP Software
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="item-case-study">
+                    <div class="study-img">
+                      <a href="/">
+                        <img
+                          src="https://bap-software.net/wp-content/uploads/2020/03/blockn-strike-1.jpg"
+                          alt="Block’n Strike"
+                        />
+                      </a>
+                    </div>
+                    <div class="info-case">
+                      <div class="meta">
+                        <div class="heading-title">
+                          <h5>
+                            TRÒ CHƠI <span>|</span>
+                            <span> <time>03-03-2020</time> </span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="content-case">
+                        <a href="/"><h4>Block’n Strike</h4> </a>
+                        <p>
+                          Block’n Strike là một ý tưởng tạo ra để giúp nhân viên
+                          văn phòng giảm áp lực, chúng tôi xây dụng những lâu
+                          đài với nhiều dạng khối và cho người chơi một khẩu
+                          súng với số đạn giới hạn để bắn hạ như là một cách để
+                          giải tỏa cơn tức giận, áp lực, rắc rối và bất cứ thứ
+                          gì làm bạn không vui. Những gì người chơi cần làm là
+                          để tính toán chính xác điểm bắn để triệt hạ những tòa
+                          lâu đài với vài phát đạn đang có. Block’n Strike được
+                          thiết kế để dễ hiểu, điều khiển đơn giản và cảm giác
+                          vui nhộn với phong cách đồ họa 3D dựa trên phần mềm
+                          Unity.
+                        </p>
+                        <table style="border-collapse: collapse; width: 100%">
+                          <tbody>
+                            <tr>
+                              <td style="width: 50%">Loại hình phát triển</td>
+                              <td style="width: 50%">Lab</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Đặc tính và công nghệ</td>
+                              <td style="width: 50%">
+                                3D<br />
+                                Unity<br />
+                                Ads
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Sản phẩm</td>
+                              <td style="width: 50%">IOS</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Nhà phát triển</td>
+                              <td style="width: 50%">BAP Software</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="item-case-study">
+                    <div class="study-img">
+                      <a href="/">
+                        <img
+                          src="https://bap-software.net/wp-content/uploads/2020/12/magento-ecommerce-platform.jpg"
+                          alt="Magento Ecommerce Platform"
+                        />
+                      </a>
+                    </div>
+                    <div class="info-case">
+                      <div class="meta">
+                        <div class="heading-title">
+                          <h5>
+                            WEBSITE/ SMARTPHONE APP <span>|</span>
+                            <span> <time>18-12-2020</time> </span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="content-case">
+                        <a href="/"><h4>Magento Ecommerce Platform</h4> </a>
+                        <p></p>
+                        <p>
+                          <strong>Thách thức:</strong> Thương mại điện tử ngày
+                          càng phát triển mạnh mẽ hơn, vì cuộc sống con người
+                          ngày càng bận rộn hơn, cùng với công nghệ cũng thay
+                          đổi, cải thiện đáng kể. Có lẽ, sự phát triển này là vì
+                          người tiêu dùng đang tìm kiếm những phương pháp mới,
+                          và thuận tiện hơn để đáp ứng nhu cầu mua sắm của họ.
+                          Thêm vào đó, cũng có nhiều lý do khác để giải thích
+                          cho vấn đề này như trải nghiệm phù hợp, nghĩa là người
+                          mua có cảm thấy phù hợp với hồ sơ mua sắm của họ,
+                          nhiều lựa chọn về sản phẩm, giá, kích cỡ, và màu sắc,
+                          hay trải nghiệm thân thiện người dùng, khả năng thích
+                          ứng với thiết bị di động mà người tiêu dùng có thể mua
+                          sắm bất kỳ đâu, bất cứ khi nào, trên nhiều kênh bán lẻ
+                          khác nhau,..
+                        </p>
+                        <p>
+                          Do đó, chúng tôi đã phát triển nền tảng E-commerce
+                          Magento 2, đây là một trong những nền tảng được sử
+                          dụng nhiều nhất bởi những thương hiệu hàng đầu như
+                          Nike, Helly, Hansen, Cannon, Jaguar, Ford,.. Hơn thế
+                          nữa, Magento 2 mang đến nhiều sự phù hợp cho các
+                          thương hiệu như:
+                        </p>
+                        <ul>
+                          <li style="font-weight: 400">
+                            Sự linh hoạt: Magento có mã nguồn mở, cho phép người
+                            bán tự do thay đổi nếu muốn. Magento cũng mang đến
+                            nhiều lý tưởng cho cuộc sống, và đáp ứng yêu cầu tùy
+                            chỉnh backend hoặc frontend.
+                          </li>
+                          <li style="font-weight: 400">
+                            Khả năng mở rộng:Magento cung cấp cho người dùng sự
+                            lựa chọn và cơ hội phát triển. Nền tảng hoàn toàn có
+                            thể mở rộng, vì vậy ngay cả khi bạn bán năm mươi đến
+                            năm ngàn sản phẩm khác nhau, thì vẫn có thể tiếp tục
+                            cho phép người bán sử dụng những tính năng hiệu quả.
+                          </li>
+                          <li style="font-weight: 400">
+                            Cộng đồng: Magento đã có một lượng lớn lập trình
+                            viên, quản lý dự án và sản phẩm, lập trình, thậm chí
+                            là nhà nghiên cứu thị trường đều làm việc trên 1 cơ
+                            chế giúp đỡ người bán đạt được kết quả tốt hơn.
+                          </li>
+                          <li style="font-weight: 400">
+                            Mở rộng: Magento thúc đẩy thị trường ứng dụng thương
+                            mại điện tử lớn nhất thế giới. Có hàng hàng module
+                            khác nhau , và có thể được phát triển nội bộ hoặc
+                            mua ngoài.
+                          </li>
+                        </ul>
+                        <p><strong>Giải pháp:</strong></p>
+                        <p>
+                          Một trong những thương hiệu mà chúng tôi đã tích hợp
+                          Magento 2 gồm trọn gói trải nghiệm E-commerce: Website
+                          E-commerce, Mobile Application E-commerce, và Website
+                          and Mobile Application Point of sale. Tất cả các kênh
+                          và cửa hàng đều vận hành xung quanh nền tảng mã hóa
+                          Magento.
+                        </p>
+                        <p>
+                          BAP đã xây dựng mọi thứ từ đầu, tích hợp Magento 2 với
+                          hệ thống ERP của khách hàng và đảm bảo hoạt động trơn
+                          tru. Chúng tôi cũng phát triển nhiều mở rộng dựa trên
+                          nhu cầu khách hàng như: quản lý nhóm khách hàng hoặc
+                          chương trình khách hàng thân thiết như vận chuyển phần
+                          mở rộng địa phương với tốc độ, thêm thông tin nhân
+                          viên bán hàng và điều chỉnh báo cáo để phù hợp với nhu
+                          cầu của khách hàng, v.v.
+                        </p>
+                        <p>
+                          Về giao diện, chúng tôi làm việc với khách hàng để có
+                          được những thiết kế đẹp, phù hợp, và thể hiện giá trị
+                          của sản phẩm. Tất cả đều tùy chỉnh và có thể dễ dàng
+                          cập nhật, bảo trì bởi đội ngũ kỹ thuật viên của bộ
+                          phận hỗ trợ.
+                        </p>
+                        <p>
+                          Nếu bạn đang muốn phát triển Magento 2 như phát triển
+                          mở rộng, tích hợp Magento 2 từ đầu, phát triển giao
+                          diện Magento, bảo trì Magento, ứng dụng di động
+                          Magento hoặc POS. Bạn có thể liên hệ với chúng tôi để
+                          biết thêm chi tiết.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="item-case-study">
+                    <div class="study-img">
+                      <a href="/">
+                        <img
+                          src="https://bap-software.net/wp-content/uploads/2020/03/liberzy-1.jpg"
+                          alt="Liberzy"
+                        />
+                      </a>
+                    </div>
+                    <div class="info-case">
+                      <div class="meta">
+                        <div class="heading-title">
+                          <h5>
+                            WEBSITE/ SMARTPHONE APP <span>|</span>
+                            <span> <time>03-03-2020</time> </span>
+                          </h5>
+                        </div>
+                      </div>
+                      <div class="content-case">
+                        <a href="/"><h4>Liberzy</h4> </a>
+                        <p>
+                          <strong>Thách thức: </strong>Mỗi ứng dụng thành công
+                          đều có đối tượng khách hàng mục tiêu và khái niệm chủ
+                          đạo phục vụ cho nhu cầu khách hàng. Liberzy là một ứng
+                          dụng được tạo ra bởi BAP dành cho đối tượng khách du
+                          lịch, với ứng dụng này chúng tôi xây dựng
+                          <strong>trải nghiệm người dùng</strong> tốt nhất khi
+                          tạo ra một <strong>mạng lưới xã hội</strong> khách du
+                          lịch từ nó.<br />
+                          <br />
+                          <strong>Giải pháp: </strong>Hiểu khái niệm chủ đạo của
+                          ứng dụng và dịch vụ nó cung cấp, đội ngũ BAP đã có
+                          cuộc thảo luận và thiết kế trải nghiệm người dùng tốt
+                          nhất cho người dùng trong mỗi chuyến đi của họ. Trên
+                          ứng dụng này, người dùng có thể gắn nhiều sao trên một
+                          lịch trình cụ thể từ những người du lịch trước, và
+                          lịch trình chuyến đi của họ sẽ được xếp kết quả đầu
+                          tiên khi được nhiều người gắn sao. Thêm vào đó, người
+                          dùng cũng có thể mua vé máy bay, tàu điện trực tiếp từ
+                          ứng dụng mà không cần phải chuyển sang nền tảng giao
+                          dịch khác.
+                        </p>
+                        <p>
+                          Liberzy chỉ là một trong những ứng dụng của chúng tôi
+                          mà BAP đã xây dựng và đưa ra tiêu chí ưu tiên trải
+                          nghiệm người dùng từ mong muốn của các doanh nghiệp
+                          trong ứng dụng của họ. Khi các doanh nghiệp hợp tác
+                          với chúng tôi sẽ luôn được bảo đảm sản phẩm được tạo
+                          ra từ ý tưởng tốt nhất và đội ngũ kỹ sư giỏi để đáp
+                          ứng nhu cầu của họ. Lực lượng lao động tay nghề cao
+                          của BAP là một chứng minh khi họ đã có kinh nghiệm làm
+                          việc với các công ty Nhật Bản cũng như thấu hiểu từ
+                          văn hóa đến tính cách của họ.
+                        </p>
+                        <table style="border-collapse: collapse; width: 100%">
+                          <tbody>
+                            <tr>
+                              <td style="width: 50%">Loại hình phát triển</td>
+                              <td style="width: 50%">Lab</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Ngôn ngữ lập trình</td>
+                              <td style="width: 50%">
+                                Node<br />
+                                React Native<br />
+                                Redis<br />
+                                Google Map APIs<br />
+                                React Native
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Sản phẩm</td>
+                              <td style="width: 50%">APP</td>
+                            </tr>
+                            <tr>
+                              <td style="width: 50%">Nhà phát triển</td>
+                              <td style="width: 50%">BAP Software</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-[20px] justify-center">
+                <div class="col">
+                  <div class="paginations">
+                    <span aria-current="page" class="page-numbers current"
+                      >1</span
+                    >
+                    <a class="page-numbers" href="/">2</a>
+                    <a class="page-numbers" href="/">3</a>
+                    <span class="page-numbers dots">…</span>
+                    <a class="page-numbers" href="/">7</a>
+                    <a class="next page-numbers" href="/">&gt;</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-3">
+              <div class="sidebar-right sidebar-ai">
+                <div class="box-service">
+                  <h3>
+                    <span
+                      ><img
+                        src="https://bap-software.net/wp-content/themes/bapjsc/images/own-sevice.png"
+                    /></span>
+                    <span>Dịch vụ</span>
+                  </h3>
+                  <div class="content-list-service">
+                    <ul>
+                      <li>
+                        <a href="/">
+                          <img
+                            src="https://bap-software.net/wp-content/themes/bapjsc/images/service/service-01.png"
+                            alt=""
+                          />
+                        </a>
+                        <h4>
+                          <a href="/">Website/Smartphone App</a>
+                        </h4>
+                        <div class="clear"></div>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <img
+                            src="https://bap-software.net/wp-content/themes/bapjsc/images/service/service-02.png"
+                            alt=""
+                          />
+                        </a>
+                        <h4>
+                          <a href="/">ERP (Sap, SalesForce)</a>
+                        </h4>
+                        <div class="clear"></div>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <img
+                            src="https://bap-software.net/wp-content/themes/bapjsc/images/service/service-03.png"
+                            alt=""
+                          />
+                        </a>
+                        <h4>
+                          <a href="/">Business Application</a>
+                        </h4>
+                        <div class="clear"></div>
+                      </li>
+                      <li>
+                        <a href="/" target="_blank">
+                          <img
+                            src="https://bap-software.net/wp-content/themes/bapjsc/images/service/service-04.png"
+                            alt=""
+                          />
+                        </a>
+                        <h4>
+                          <a href="/" target="_blank">Blockchain</a>
+                        </h4>
+                        <div class="clear"></div>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <img
+                            src="https://bap-software.net/wp-content/themes/bapjsc/images/ai.png"
+                            alt=""
+                          />
+                        </a>
+                        <h4><a href="/">AI</a></h4>
+                        <div class="clear"></div>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <img
+                            src="https://bap-software.net/wp-content/themes/bapjsc/images/service/service-05.png"
+                            alt=""
+                          />
+                        </a>
+                        <h4>
+                          <a href="/">Cloud &amp; BigData</a>
+                        </h4>
+                        <div class="clear"></div>
+                      </li>
+                      <li>
+                        <a href="/">
+                          <img
+                            src="https://bap-software.net/wp-content/themes/bapjsc/images/service/service-06.png"
+                            alt=""
+                          />
+                        </a>
+                        <h4>
+                          <a href="/">Trò chơi</a>
+                        </h4>
+                        <div class="clear"></div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bap-footer footer-services block">
+      <div class="new-footer-bap">
+        <div class="container">
+          <div class="double-block-new">
+            <div class="row">
+              <div class="col-lg-4 relative w-full px-[10px] lg:px-[15px]">
+                <div class="footer-new-img">
+                  <img
+                    src="../public/assets/images/ayumy-4.png"
+                    alt="ayumi higashi"
+                  />
+                  <div class="comtor">
+                    <h4>ayumi higashi</h4>
+                    <span>Comtor Lead</span>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 relative w-full px-[10px] lg:px-[15px]">
+                <div class="new-item-footer">
+                  <h4>
+                    <img
+                      src="../public/assets/images/phone.png"
+                      alt="phone"
+                      class="max-w-full"
+                    />
+                    <span>Bạn cần tư vấn dịch vụ phát triển phần mềm?</span>
+                  </h4>
+                  <h5>
+                    Hãy để BAP là đối tác mang đến đột phá cho dự án của bạn!
+                  </h5>
+                  <a href="/" class="btn-see-all">Tư vấn ngay</a>
+                </div>
+              </div>
+              <div class="col-lg-4 relative w-full px-[10px] lg:px-[15px]">
+                <div class="new-item-footer">
+                  <h4>
+                    <img
+                      src="../public/assets/images/shop.png"
+                      alt="phone"
+                      class="max-w-full"
+                    />
+                    <span>Gia nhập đội ngũ tài năng?</span>
+                  </h4>
+                  <h5>
+                    Tại BAP, những tài năng là những “cộng sự” tuyệt vời nhất!
+                  </h5>
+                  <a href="/" class="btn-more-info"
+                    >Tìm hiểu thêm
+                    <img
+                      src="../public/assets/images/white-arrow-right-icon.png"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="deco-bot">
+          <img src="../public/assets/images/deco-bot.png" />
+        </div>
+      </div>
+      <div class="bap-footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 relative w-full px-[10px] lg:px-[15px]">
+              <div class="footer-logo">
+                <a class="navbar-brand" href="/">
+                  <img src="../public/assets/images/logo-bap-software-1.png" />
+                </a>
+              </div>
+              <div class="footer-info">
+                <h3>Địa chỉ</h3>
+                <p>
+                  <strong>Tokyo, Nhật Bản</strong><br />
+                  103-0025 Lầu 5 tòa nhà Okamoto, 1-11-3 Nihonbashi, Kayabacho,
+                  Chuo-ku, Tokyo<br />
+                  Tel: (+81) 03 6280 4268<br />
+                  <strong>Osaka, Nhật Bản</strong><br />
+                  541-0053 Lầu 8 tòa nhà Toshiba Osaka, 4-2-12 Honmachi,
+                  Chuo-ku, Osaka<br />
+                  <strong>Hồ Chí Minh, Việt Nam</strong><br />
+                  Lầu 17 Viettel Complex Building, 285 Cách Mạng Tháng 8, Quận
+                  10, HCM<br />
+                  Tel: (+84) 028 6270 1557<br />
+                  <strong>Đà Nẵng, Việt Nam</strong><br />
+                  Lầu 10, 81 Quang Trung – Hải Châu – Đà Nẵng<br />
+                  Tel: (+84) 0236 6565 115<br />
+                  <strong>Huế, Việt Nam</strong><br />
+                  Lầu 5, 28 Lý Thường Kiệt – Vĩnh Ninh – Huế<br />
+                  Tel: (+84) 0234 6273 555<br />
+                  <strong>Hà Nội, Việt Nam</strong><br />
+                  Tầng 9, toà nhà HB, 106 Hoàng Quốc Việt, Cầu Giấy, Hà Nội<br />
+                  Tel: Đang cập nhật
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-3 footer-item-list">
+              <div class="row">
+                <div class="relative w-full px-[10px]">
+                  <h3>Thông tin</h3>
+                  <div class="mb-[22.5px]">
+                    <ul class="my-[15px] inline-grid">
+                      <li class="mb-[2px] block">
+                        <a
+                          href="/"
+                          class="mr-[15px] text-center leading-[25px] text-[#d4edff] duration-200"
+                          >Tin tức</a
+                        >
+                      </li>
+                      <li class="mb-[2px] block">
+                        <a
+                          href="/"
+                          class="mr-[15px] text-center leading-[25px] text-[#d4edff] duration-200"
+                          >Liên Hệ</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="mb-[22.5px]">
+                    <ul class="my-[20px] flex gap-4">
+                      <li class="inline-block">
+                        <a class="social-icon" href="/">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 320 512"
+                          >
+                            <path
+                              d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="inline-block">
+                        <a class="social-icon" href="/">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 448 512"
+                          >
+                            <path
+                              d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="inline-block">
+                        <a class="social-icon" href="/">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 512 512"
+                          >
+                            <path
+                              d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                    <ul class="my-[20px] flex gap-4">
+                      <li>
+                        <img src="../public/assets/images/certification.png" />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 footer-item-list">
+              <div class="row">
+                <div class="relative w-full px-[10px]">
+                  <div class="service max-w-[50%]">
+                    <div class="mb-[22.5px]">
+                      <h3
+                        class="mb-[7.5px] text-[20px] font-medium leading-[1.2]"
+                      >
+                        Dịch vụ
+                      </h3>
+                      <ul class="my-[20px]">
+                        <li class="mb-[2px] block">
+                          <a href="/"> Phát triển Website/Smartphone App </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/"> Phát triển Business Application </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/"> Phát triển và tư vấn SAP, ERP </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/"> Phát triển trò chơi </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/">
+                            Phát triển ứng dụng dùng công nghệ Blokchain
+                          </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/">
+                            Phát triển ứng dụng dùng công nghệ AI
+                          </a>
+                        </li>
+                        <li class="mb-[2px] block">
+                          <a href="/">
+                            Phát triển ứng dụng dùng công nghệ BigData
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bap-footer-copyright">
+        <div class="container">
+          <div class="row">
+            <div class="relative w-full px-[10px] text-center">
+              <p class="leading-[1.8]">
+                Copyright © 2021 BAP IT CO., JSC. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../public/scripts/index.js" defer></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>

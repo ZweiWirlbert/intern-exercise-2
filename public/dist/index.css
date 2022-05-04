@@ -676,10 +676,6 @@ main.main-container, footer.bap-footer.footer-services{
   top: unset;
 }
 
-.left-0{
-  left: 0px;
-}
-
 .float-right{
   float: right;
 }
@@ -774,6 +770,10 @@ main.main-container, footer.bap-footer.footer-services{
 
 .mb-5{
   margin-bottom: 1.25rem;
+}
+
+.mt-\[20px\]{
+  margin-top: 20px;
 }
 
 .mb-\[20px\]{
@@ -894,6 +894,10 @@ main.main-container, footer.bap-footer.footer-services{
   flex: 0 0 50%;
 }
 
+.border-collapse{
+  border-collapse: collapse;
+}
+
 .cursor-pointer{
   cursor: pointer;
 }
@@ -936,10 +940,6 @@ main.main-container, footer.bap-footer.footer-services{
 
 .gap-4{
   gap: 1rem;
-}
-
-.gap-\[20px\]{
-  gap: 20px;
 }
 
 .overflow-hidden{
@@ -1011,11 +1011,6 @@ main.main-container, footer.bap-footer.footer-services{
 
 .bg-\[rgba\(255\2c 196\2c 192\2c \.18\)\]{
   background-color: rgba(255,196,192,.18);
-}
-
-.\!bg-white{
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity)) !important;
 }
 
 .object-cover{
@@ -1113,14 +1108,6 @@ main.main-container, footer.bap-footer.footer-services{
 
 .\!pb-\[20px\]{
   padding-bottom: 20px !important;
-}
-
-.pl-4{
-  padding-left: 1rem;
-}
-
-.pl-\[22\.5\]{
-  padding-left: 22.5;
 }
 
 .pl-\[22\.5px\]{
@@ -1364,6 +1351,14 @@ main.main-container, footer.bap-footer.footer-services{
 
   .col-lg-7{
     flex: 0 0 58.333333%;
+  }
+
+  .col-lg-9{
+    max-width: 75%;
+  }
+
+  .col-lg-9{
+    flex: 0 0 75%;
   }
 }
 
@@ -3709,10 +3704,5 @@ main.main-container, footer.bap-footer.footer-services{
 @media (max-width: 991px){
   .max-lg\:w-full{
     width: 100%;
-  }
-
-  .max-lg\:bg-white{
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 }

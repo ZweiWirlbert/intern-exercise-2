@@ -54,6 +54,7 @@ module.exports = {
         col5: "0 0 41.666667%",
         col6: "0 0 50%",
         col7: "0 0 58.333333%",
+        col9: "0 0 75%",
       },
       gridTemplateColumns: {
         keymembergrid: "4fr 6fr",
