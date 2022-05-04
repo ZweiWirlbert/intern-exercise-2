@@ -10,6 +10,9 @@
   .container {
     @apply !mx-auto !w-full !max-w-full !px-[15px] sm:!max-w-[calc(100%-20px)] md:!max-w-[720px] lg:!max-w-[960px] xl:!max-w-[1140px] 2xl:!max-w-[1170px];
   }
+  html {
+    @apply scroll-smooth;
+  }
 }
 @layer components {
   .hamburger-slice {
@@ -738,6 +741,9 @@
   .fixed-top {
     @apply fixed inset-0 bottom-[unset] z-[100];
   }
+  .col-6 {
+    @apply max-w-[50%] flex-col6;
+  }
   .col-sm-6 {
     @apply sm:max-w-[50%] sm:flex-col6;
   }
@@ -765,6 +771,9 @@
   }
   .col-lg-9 {
     @apply lg:max-w-[75%] lg:flex-col9;
+  }
+  .col-lg-12 {
+    @apply lg:max-w-full lg:flex-none;
   }
 }
 

@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+}
+
+@layer utilities {
+}
+
+section.new-about-header {
+  @apply flex h-[45vh] items-center justify-center bg-white bg-aboutheader bg-no-repeat max-lg:bg-cover max-lg:bg-center;
+  background-image: url(../assets/images/contact.jpeg);
+}
+
+.contact-banner h1 {
+  @apply mb-[7.5px] text-[45px] font-[500] uppercase leading-[1.2] text-white lg:text-[63px];
+  text-shadow: 0px 2px 22px rgba(0, 0, 0, 0.136801);
+}
+
+section.contact-intro {
+  @apply block bg-white;
+}
+
+section.contact-intro h2 {
+  @apply mb-[7.5px] text-[49px] leading-[1.2] text-[#0986ff];
+}
+section.contact-intro .main-contact-intro {
+  @apply pb-[15px];
+  background: linear-gradient(to left, #fff 52%, #f4f6fd 48%);
+}
+@media (max-width: 991px) {
+  section.contact-intro .main-contact-intro {
+    background: linear-gradient(to top, #fff 5%, #f4f6fd 95%);
+  }
+  section.connect-bap.info-tech.section {
+    background: linear-gradient(28.47deg, #006dd1 -0.83%, #1088ec 99.77%);
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .sidebar-ai {
+    @apply fixed left-[-250px] top-[43px] z-[9999999] mt-[30px] h-auto w-[250px] bg-[#fffffff5] pl-0;
+  }
+}
+@media (min-width: 992px) {
+  .contact-controler {
+    background: linear-gradient(
+      28.47deg,
+      #006dd1 -0.83%,
+      #1088ec 99.77%
+    ) !important;
+    box-shadow: 7px 12px 21px rgba(0, 40, 189, 0.253442);
+  }
+}
+
+section.contact-intro .contact-slogan {
+  @apply relative p-[45px] max-lg:mb-[50px] max-lg:block;
+}
+
+section.contact-intro .contact-slogan::before {
+  @apply absolute left-0 top-0 bottom-0 my-auto h-[95px] w-[14px];
+  content: url(../assets/images/boder.png);
+}
+
+section.contact-intro .contact-slogan::after {
+  @apply absolute right-0 top-0 bottom-0 my-auto h-[60px] w-[60px] max-lg:left-0 max-lg:rotate-90;
+  content: url(../assets/images/next.png);
+}
+
+section.contact-intro h4 {
+  @apply text-[41px] font-[300] leading-[1.2] tracking-[4.76087px] text-[#141414];
+}
+
+section.contact-intro .contact-slogan span {
+  @apply block text-[45px] font-[500] leading-[1] tracking-[4.4px] text-[#141414] lg:text-[68px];
+}
+
+section.contact-intro .contact-content {
+  @apply flex h-full items-center text-[16px] leading-[30px] tracking-[.041765px] text-[#686868] lg:text-[17px];
+}
+section.contact-intro .contact-content p {
+  @apply m-0;
+}
+
+.section {
+  @apply py-[30px] md:py-[50px] 3xl:py-[60px];
+}
+@media (max-width: 991px) {
+  section.connect-bap.section {
+    background: linear-gradient(28.47deg, #006dd1 -0.83%, #1088ec 99.77%);
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+@media (min-width: 992px) {
+  .contact-controler {
+    background: linear-gradient(
+      28.47deg,
+      #006dd1 -0.83%,
+      #1088ec 99.77%
+    ) !important;
+    box-shadow: 7px 12px 21px rgba(0, 40, 189, 0.253442);
+  }
+}
+
+.contact-controler {
+  @apply relative z-[2] rounded-[7px] md:py-[25px] md:px-[35px];
+  background: 0 0;
+}
+
+.section.contact-controler h2 {
+  @apply relative mb-[7.5px] pb-[50px] text-center text-[25px] leading-[unset] tracking-[unset] text-white lg:text-[40px] lg:tracking-[4.34475px];
+}
+
+.section.contact-controler h2::before {
+  @apply absolute left-0 right-0 bottom-[20px] mx-auto h-[7px] w-[36px] bg-[#b1d9ff];
+  content: "";
+}
+
+.section.contact-controler h4 {
+  @apply mb-[7.5px] text-center text-[20px] leading-[1.2] tracking-[.549905px] text-white;
+}
+
+.item-connect img {
+  @apply mb-[20px] max-w-full rounded-[50%] transition-all duration-300;
+}
+
+.item-connect img:hover {
+  @apply bg-[rgba(255,255,255,.5)];
+  box-shadow: #00000052 0 0 20px 0;
+}
+
+.headding-contact {
+  @apply m-0 border-l-[7px] border-solid border-[#2193ff] pl-[20px] text-[21px] leading-[1.2] text-[#141414] md:text-[27px]  lg:text-[37px] lg:tracking-[1.33639px];
+}
+
+.bapp-address .item-connect {
+  @apply relative my-[15px] overflow-hidden rounded-[4px];
+}
+
+.bapp-address .item-connect::before {
+  @apply absolute top-0 left-0 bottom-0 z-[1] w-full bg-[rgba(0,3,100,.36)];
+}
+
+.bapp-address .item-connect img {
+  @apply m-0 h-[265px] w-full max-w-full rounded-[4px] object-cover;
+}
+
+.bapp-address .address-info {
+  @apply absolute top-[25%] left-0 right-0 z-[1] m-auto w-fit text-center text-white;
+}
+
+.bapp-address .item-connect h4.address-name {
+  @apply mb-[7.5px] text-[38px] font-[600] tracking-[1px] text-white;
+}
+
+.bapp-address .item-connect .address-info span {
+  @apply text-[25px] text-white;
+}
+
+.bap-sent-mail .item-mail {
+  @apply flex w-full flex-col items-center rounded-[4px] py-[50px] text-center transition-all duration-300 ease-in-out;
+}
+
+.bap-sent-mail .item-mail:hover {
+  @apply cursor-pointer border-[0.7px] border-solid border-[#dedede] bg-white;
+  box-shadow: 0px 5px 35px rgba(0, 0, 0, 0.0603204);
+}
+
+.bap-sent-mail .item-mail img {
+  @apply max-w-full align-middle;
+}
+
+.bap-sent-mail .item-mail .email-info h4 {
+  @apply mb-[7.5px] text-[24.1518px] font-[600] tracking-[.664061px] text-[#1f1f1f] transition-all duration-200;
+}
+
+.bap-sent-mail .item-mail .email-info span {
+  @apply text-[19.8897px] tracking-[.291243px] text-[#aeb4c1] transition-all duration-200;
+}
+
+.bap-sent-mail .item-mail:hover .email-info h4,
+.bap-sent-mail .item-mail:hover .email-info span {
+  @apply text-[#2193ff];
+}
+
+.bap-form-mail img {
+  @apply object-contain;
+}
+
+.form-group {
+  @apply mb-[15px];
+}
+
+.bap-form-mail label {
+  @apply mb-0 inline-block w-full text-[12px] tracking-[0.0257862px] text-[#353535];
+}
+.bap-form-mail form {
+  @apply w-full;
+}
+
+.bap-form-mail label .required {
+  @apply text-red-600;
+}
+
+.wpcf7-form-control-wrap {
+  @apply relative;
+}
+.bap-form-mail label input,
+.bap-form-mail label select option,
+.bap-form-mail label select,
+.bap-form-mail label textarea {
+  @apply my-[5px] w-full bg-[#f5f8fd] p-[5px] text-[12px];
+  border: 0.925658px solid #e5ebf7;
+  border-radius: 1.85132px;
+}
+
+.form-control::placeholder {
+  @apply text-[#6c757d];
+}
+
+.bap-form-mail .btn-submit {
+  @apply inline-block h-auto w-full cursor-pointer select-none rounded-[5px] border-[1px] border-solid border-[#0c7cff] bg-[#0c7cff]  py-[30px] px-[15px] text-center align-middle text-[15px] leading-[1] text-white lg:w-auto lg:px-[30px];
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.btn-submit:hover {
+  @apply bg-white text-[#0c7cff];
+}
+
+.bap-address {
+  @apply pb-[60px];
+}
+
+.office-map-country {
+  @apply my-[30px];
+}
+.office-map-country .btn-gradient-blue {
+  @apply select-none rounded-none border-none bg-[#24a8ff] py-[10px] px-[20px] text-[15px] font-normal uppercase leading-[26.25px] !text-white transition-all duration-200 ease-in-out hover:shadow-btngradientblue;
+  background-image: linear-gradient(left, #24a8ff, #4ad3ff);
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#24a8ff),
+    to(#4ad3ff)
+  );
+}
+.office-map-item .bap-map-title {
+  @apply mb-[15px]  min-h-[46px];
+}
+.office-map-item .bap-map-title p {
+  @apply text-[14px] text-[#5b5b5b];
+}
+.office-map-item .bap-map-iframe {
+  @apply shadow-bapmapiframe max-lg:mb-[20px];
+}
+.office-map-item .bap-map-iframe iframe {
+  @apply -mb-[6px];
+}
